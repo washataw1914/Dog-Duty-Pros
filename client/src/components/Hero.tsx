@@ -40,26 +40,26 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
         {/* Centered Business Name */}
         <div className="text-center mb-12 relative">
           <div className="relative mb-8">
-            <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl whitespace-nowrap text-center px-4 mb-6">
-              <span className="text-black">Dog Duty Pros</span>
-            </h1>
-            
-            {/* Paw prints walking upward on both sides of the title */}
-            <div className="flex justify-center relative" style={{ height: "180px" }}>
+            {/* Title with paw prints on both sides */}
+            <div className="flex justify-center items-center mb-6 flex-wrap md:flex-nowrap">
               {/* Left side paw prints walking upward */}
-              <div className="absolute left-[15%] md:left-[25%] h-full" style={{ width: "80px" }}>
+              <div className="relative mr-2 md:mr-6 hidden sm:block" style={{ height: "140px", width: "70px" }}>
                 <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '0%' }}></div>
                 <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '25%' }}></div>
                 <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '50%' }}></div>
                 <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '75%' }}></div>
               </div>
               
-              {/* Right side paw prints walking upward */}
-              <div className="absolute right-[15%] md:right-[25%] h-full" style={{ width: "80px" }}>
-                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '0%' }}></div>
-                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '25%' }}></div>
-                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '50%' }}></div>
-                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '75%' }}></div>
+              <h1 className="font-bubble text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center px-2 mb-0">
+                <span className="text-black">Dog Duty Pros</span>
+              </h1>
+              
+              {/* Right side paw prints walking upward (mirrored) */}
+              <div className="relative ml-2 md:ml-6 hidden sm:block" style={{ height: "140px", width: "70px" }}>
+                <div className="paw-print-animated left-paw" style={{ right: '30px', bottom: '0%' }}></div>
+                <div className="paw-print-animated right-paw" style={{ right: '0', bottom: '25%' }}></div>
+                <div className="paw-print-animated left-paw" style={{ right: '30px', bottom: '50%' }}></div>
+                <div className="paw-print-animated right-paw" style={{ right: '0', bottom: '75%' }}></div>
               </div>
             </div>
           </div>

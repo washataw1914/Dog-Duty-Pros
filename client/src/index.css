@@ -195,6 +195,15 @@
   height: 40px;
 }
 
+/* Mirror effect for right side paws */
+div:nth-child(3) .left-paw {
+  transform: rotate(10deg) scaleX(-1);
+}
+
+div:nth-child(3) .right-paw {
+  transform: rotate(-10deg) scaleX(-1);
+}
+
 /* Animation delay variations */
 .paw-print-animated:nth-child(1) {
   animation-delay: 0.1s;
