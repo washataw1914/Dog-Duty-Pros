@@ -76,9 +76,9 @@ export default function Testimonials() {
                 <Star className="fill-yellow-400" size={20} />
                 <Star className="fill-yellow-400" size={20} />
                 <Star className="fill-yellow-400" size={20} />
-                <StarHalf className="fill-yellow-400" size={20} />
+                <Star className="fill-yellow-400" size={20} />
               </div>
-              <span className="ml-2 text-gray-600">4.5</span>
+              <span className="ml-2 text-gray-600">5.0</span>
             </div>
             <p className="text-gray-700 mb-6 italic">
               "I was skeptical at first about hiring someone for this, but now I can't imagine life without Dog Duty Pros! My kids can play freely in the yard, and I don't have to worry about the mess. Complete game-changer!"

@@ -28,7 +28,7 @@ async function seed() {
         {
           name: "Jessica K.",
           title: "Busy Mom",
-          rating: 4.5,
+          rating: 5,
           content: "I was skeptical at first about hiring someone for this, but now I can't imagine life without Dog Duty Pros! My kids can play freely in the yard, and I don't have to worry about the mess. Complete game-changer!",
           image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
         }
@@ -60,7 +60,7 @@ async function seed() {
         price: 1999, // $19.99
         interval: "week",
         popular: true,
-        buttonText: "Claim Your Clean Yard!"
+        buttonText: "Premium Load Off"
       }).returning();
       
       const [ultimatePlan] = await db.insert(schema.servicePlans).values({
@@ -69,7 +69,7 @@ async function seed() {
         price: 2999, // $29.99
         interval: "week",
         popular: false,
-        buttonText: "Maximum Poo Removal!"
+        buttonText: "Ultimate Load Off"
       }).returning();
       
       // Seed basic plan features

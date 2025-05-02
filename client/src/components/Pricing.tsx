@@ -145,7 +145,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
             Need a custom solution? We also offer one-time cleanups starting at $49.99. Perfect for special events or to get a fresh start before beginning regular service.
           </p>
           <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-blue-700 transition duration-200">
-            Get a Custom Quote
+            Custom Load Off Quote
           </a>
         </div>
       </div>
