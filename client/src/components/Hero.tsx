@@ -9,17 +9,17 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <h1 className="font-bubble text-4xl md:text-5xl lg:text-6xl text-black leading-tight mb-6">
-              We Scoop The Poop So You Don't Have To!
+              Dog Duty Pros: Taking A Load Off Your Lawn!
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              Professional pet waste removal service that keeps your yard clean, safe, and odor-free. More time for fun, less time dealing with doo.
+              Professional pet waste removal service that keeps your yard clean, safe, and odor-free. Enjoy your outdoor space again without the mess.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <button
                 onClick={onGetQuoteClick}
                 className="cta-button"
               >
-                Doo-Away With The Mess!
+                Take A Load Off Your Lawn!
               </button>
               <a href="#how-it-works" className="secondary-button">
                 See How It Works

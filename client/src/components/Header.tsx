@@ -47,7 +47,7 @@ export default function Header({
               <path d="M10 16l-6-6 6-6" />
               <path d="M18 18V6H8" />
             </svg>
-            <span className="font-bubble text-xl md:text-2xl font-bold text-primary">Scoop Troop</span>
+            <span className="font-bubble text-xl md:text-2xl font-bold text-primary">Dog Duty Pros</span>
           </div>
         </div>
 
@@ -119,7 +119,7 @@ export default function Header({
             }}
             className="font-bubble px-5 py-2 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200"
           >
-            Get Scooping!
+            Take A Load Off!
           </a>
         </nav>
       </div>
@@ -190,7 +190,7 @@ export default function Header({
             }}
             className="font-bubble text-center px-5 py-2 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200"
           >
-            Get Scooping!
+            Take A Load Off!
           </a>
         </div>
       </div>

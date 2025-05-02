@@ -6,15 +6,15 @@ export default function About() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
-            <h2 className="section-title">About Scoop Troop</h2>
+            <h2 className="section-title">About Dog Duty Pros</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Founded by pet lovers for pet lovers, Scoop Troop began with a simple mission: help pet parents enjoy their yards without the mess. Since our first scoop in 2018, we've been dedicated to providing exceptional service with a smile.
+              Founded by pet lovers for pet lovers, Dog Duty Pros began with a simple mission: help pet parents enjoy their yards without the mess. Since our first service in 2018, we've been dedicated to taking a load off your lawn with exceptional service.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              Our team of professional scoopers undergoes thorough training and background checks. We use eco-friendly disposal methods and sanitize our equipment between properties to ensure the health and safety of your pets.
+              Our team of professional waste removal specialists undergoes thorough training and background checks. We use eco-friendly disposal methods and sanitize our equipment between properties to ensure the health and safety of your pets.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              We're more than just poop scoopers - we're committed to making your life easier and your yard more enjoyable. That's the Scoop Troop promise!
+              We're more than just pet waste removal experts - we're committed to making your life easier and your yard more enjoyable. That's the Dog Duty Pros promise!
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary hover:text-blue-700 text-2xl">
