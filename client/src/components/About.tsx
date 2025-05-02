@@ -30,9 +30,9 @@ export default function About() {
           </div>
           <div className="md:w-1/2">
             <img
-              src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-              alt="Happy dog and owner in clean yard"
-              className="rounded-xl shadow-lg w-full"
+              src="./images/logo for vector dog duty.png"
+              alt="Dog Duty Pros Logo"
+              className="rounded-xl shadow-lg w-full h-80 object-contain bg-white p-4"
             />
           </div>
         </div>
