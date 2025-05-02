@@ -37,7 +37,7 @@ export default function Header({
         <div className="flex items-center">
           <Link to="/">
             <img 
-              src="./images/logo for vector dog duty.png" 
+              src="./images/logo for vector dog dutyyellow.png" 
               alt="Dog Duty Pros Logo"
               className="h-20 w-auto"
             />

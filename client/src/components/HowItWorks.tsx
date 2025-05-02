@@ -20,7 +20,7 @@ export default function HowItWorks() {
               Click a few buttons and poof! Your poop problems are scheduled to disappear. <span className="accent-yellow-text">No more stepping in "surprises!"</span>
             </p>
             <img
-              src="./images/logo for vector dog duty.png"
+              src="./images/logo for vector dog dutyyellow.png"
               alt="Funny dog with tongue out"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4"
               style={{ borderColor: "#00A3F7" }}

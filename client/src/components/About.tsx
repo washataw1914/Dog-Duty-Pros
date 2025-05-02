@@ -30,7 +30,7 @@ export default function About() {
           </div>
           <div className="md:w-1/2">
             <img
-              src="./images/logo for vector dog duty.png"
+              src="./images/logo for vector dog dutyyellow.png"
               alt="Dog Duty Pros Logo"
               className="rounded-xl shadow-lg w-full h-80 object-contain bg-white p-4"
             />
