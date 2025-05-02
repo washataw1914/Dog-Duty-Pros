@@ -118,7 +118,7 @@ export default function ContactForm() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="bg-primary hover:bg-blue-700 text-white rounded-full p-3 transition duration-200"
+                className="bg-primary hover:bg-[#0083D7] text-white rounded-full p-3 transition duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ export default function ContactForm() {
               </a>
               <a
                 href="#"
-                className="bg-primary hover:bg-blue-700 text-white rounded-full p-3 transition duration-200"
+                className="bg-primary hover:bg-[#0083D7] text-white rounded-full p-3 transition duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ export default function ContactForm() {
               </a>
               <a
                 href="#"
-                className="bg-primary hover:bg-blue-700 text-white rounded-full p-3 transition duration-200"
+                className="bg-primary hover:bg-[#0083D7] text-white rounded-full p-3 transition duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +174,7 @@ export default function ContactForm() {
               </a>
               <a
                 href="#"
-                className="bg-primary hover:bg-blue-700 text-white rounded-full p-3 transition duration-200"
+                className="bg-primary hover:bg-[#0083D7] text-white rounded-full p-3 transition duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

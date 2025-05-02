@@ -144,7 +144,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
           <p className="text-gray-600 mb-6">
             Need a custom solution? We also offer one-time cleanups starting at $49.99. Perfect for special events or to get a fresh start before beginning regular service.
           </p>
-          <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-blue-700 transition duration-200">
+          <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-[#0083D7] transition duration-200">
             Get Your Special Doo-ty Quote!
           </a>
         </div>
