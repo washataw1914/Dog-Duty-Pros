@@ -10,7 +10,7 @@ export default function CallToAction({ onGetStartedClick }: CallToActionProps) {
       <div className="container mx-auto px-4 text-center">
         <h2 className="font-bubble text-3xl md:text-4xl text-white mb-6">Ready to Take A Load Off Your Lawn?</h2>
         <p className="text-white text-lg mb-8 max-w-2xl mx-auto">
-          Join thousands of satisfied pet owners who've reclaimed their yards with Dog Duty Pros. Get started today and see the difference!
+          Join thousands of satisfied pet owners who've reclaimed their yards. Get started today and see the difference!
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <button 

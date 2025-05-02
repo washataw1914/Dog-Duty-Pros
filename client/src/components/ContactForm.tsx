@@ -94,7 +94,8 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg">Phone</h3>
-                  <p className="text-gray-700">(555) 123-POOP</p>
+                  <p className="text-gray-700">(501) 470-8886
+                </p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -103,7 +104,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg">Email</h3>
-                  <p className="text-gray-700">info@dogdutypros.com</p>
+                  <p className="text-gray-700">info@dogduty.biz</p>
                 </div>
               </div>
             </div>

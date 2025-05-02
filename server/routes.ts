@@ -12,6 +12,16 @@ import { eq, gte, and, desc, sql } from "drizzle-orm";
 import { db } from "@db";
 import { ZodError } from "zod";
 import { format } from "date-fns";
+import Stripe from "stripe";
+
+// Initialize Stripe
+if (!process.env.STRIPE_SECRET_KEY) {
+  throw new Error('Missing required Stripe secret: STRIPE_SECRET_KEY');
+}
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+  apiVersion: '2025-04-30.basil',
+});
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API prefix for all routes
@@ -433,6 +443,60 @@ export async function registerRoutes(app: Express): Promise<Server> {
       return res.status(500).json({
         success: false,
         message: "Internal server error"
+      });
+    }
+  });
+
+  // Stripe payment endpoints
+  app.post(`${apiPrefix}/create-payment-intent`, async (req, res) => {
+    try {
+      const { amount, serviceName, email, name, phone } = req.body;
+      
+      if (!amount || !serviceName || !email || !name || !phone) {
+        return res.status(400).json({
+          success: false,
+          message: "Missing required parameters. Need amount, serviceName, email, name, and phone."
+        });
+      }
+      
+      // Create a customer
+      const customer = await stripe.customers.create({
+        email: email,
+        name: name,
+        phone: phone,
+        metadata: {
+          service: serviceName
+        }
+      });
+      
+      // Create a PaymentIntent with the order amount and currency
+      const paymentIntent = await stripe.paymentIntents.create({
+        amount: Math.round(amount * 100), // Convert to cents
+        currency: "usd",
+        customer: customer.id,
+        automatic_payment_methods: {
+          enabled: true,
+        },
+        metadata: {
+          service: serviceName,
+          customer_email: email,
+          customer_name: name,
+          customer_phone: phone
+        },
+        receipt_email: email,
+        description: `Payment for ${serviceName} service - Dog Duty Pros`
+      });
+      
+      return res.status(200).json({
+        success: true,
+        clientSecret: paymentIntent.client_secret,
+        customerId: customer.id
+      });
+    } catch (error: any) {
+      console.error("Error creating payment intent:", error);
+      return res.status(500).json({
+        success: false,
+        message: "Error creating payment intent: " + error.message
       });
     }
   });
