@@ -44,15 +44,22 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
               <span className="text-black">Dog Duty Pros</span>
             </h1>
             
-            {/* Paw prints walking in a curved path */}
-            <div className="flex justify-center">
-              <div className="relative h-24 w-full max-w-lg mx-auto">
-                {/* Left paw (odd numbers) alternate with right paw (even numbers) in walking pattern */}
-                <div className="paw-print-animated absolute" style={{ left: '10%', top: '15%' }}></div>
-                <div className="paw-print-animated absolute" style={{ left: '25%', top: '40%' }}></div>
-                <div className="paw-print-animated absolute" style={{ left: '40%', top: '10%' }}></div>
-                <div className="paw-print-animated absolute" style={{ left: '55%', top: '50%' }}></div>
-                <div className="paw-print-animated absolute" style={{ left: '70%', top: '20%' }}></div>
+            {/* Paw prints walking upward on both sides of the title */}
+            <div className="flex justify-center relative" style={{ height: "180px" }}>
+              {/* Left side paw prints walking upward */}
+              <div className="absolute left-[15%] md:left-[25%] h-full" style={{ width: "80px" }}>
+                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '0%' }}></div>
+                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '25%' }}></div>
+                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '50%' }}></div>
+                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '75%' }}></div>
+              </div>
+              
+              {/* Right side paw prints walking upward */}
+              <div className="absolute right-[15%] md:right-[25%] h-full" style={{ width: "80px" }}>
+                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '0%' }}></div>
+                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '25%' }}></div>
+                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '50%' }}></div>
+                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '75%' }}></div>
               </div>
             </div>
           </div>
