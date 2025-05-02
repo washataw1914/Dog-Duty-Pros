@@ -23,7 +23,7 @@ export default function HowItWorks() {
               src="./images/logo for vector dog duty.png"
               alt="Funny dog with tongue out"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4"
-              style={{ borderColor: "#00A9E0" }}
+              style={{ borderColor: "#00A3F7" }}
             />
           </div>
 
@@ -37,7 +37,7 @@ export default function HowItWorks() {
               src="./images/dog-commandos.svg"
               alt="Dog with funny smiling face"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4"
-              style={{ borderColor: "#00A9E0" }}
+              style={{ borderColor: "#00A3F7" }}
             />
           </div>
 
