@@ -1,10 +1,16 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { contactMessages, insertContactMessageSchema } from "@shared/schema";
-import { eq } from "drizzle-orm";
+import { 
+  contactMessages, insertContactMessageSchema,
+  serviceTypes, timeSlots, serviceLocations, appointments, 
+  insertAppointmentSchema, insertServiceLocationSchema,
+  users
+} from "@shared/schema";
+import { eq, gte, and, desc, sql } from "drizzle-orm";
 import { db } from "@db";
 import { ZodError } from "zod";
+import { format } from "date-fns";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API prefix for all routes

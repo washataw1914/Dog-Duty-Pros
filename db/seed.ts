@@ -103,6 +103,111 @@ async function seed() {
     } else {
       console.log("Service plans already exist, skipping seeding");
     }
+
+    // Check if service types already exist
+    const existingServiceTypes = await db.select().from(schema.serviceTypes);
+    
+    // Only seed service types if none exist
+    if (existingServiceTypes.length === 0) {
+      // Seed service types
+      await db.insert(schema.serviceTypes).values([
+        {
+          name: "Regular Yard Service",
+          description: "Our most popular service! Regular cleaning of your yard on a weekly or bi-weekly schedule.",
+          price: "19.99",
+          duration: 30,
+          isActive: true
+        },
+        {
+          name: "One-Time Deep Clean",
+          description: "A thorough, one-time cleaning of yards that haven't been maintained for a while.",
+          price: "39.99",
+          duration: 60, 
+          isActive: true
+        },
+        {
+          name: "Commercial Property",
+          description: "Service for apartment complexes, HOAs, and other commercial properties.",
+          price: "89.99",
+          duration: 120,
+          isActive: true
+        }
+      ]);
+      
+      console.log("Service types seeded successfully");
+    } else {
+      console.log("Service types already exist, skipping seeding");
+    }
+
+    // Check if time slots already exist
+    const existingTimeSlots = await db.select().from(schema.timeSlots);
+    
+    // Only seed time slots if none exist
+    if (existingTimeSlots.length === 0) {
+      // Create time slots from 8:00 AM to 5:00 PM in 30-minute increments
+      const timeSlots = [];
+      
+      for (let hour = 8; hour < 17; hour++) {
+        for (let minute of [0, 30]) {
+          const startHour = hour.toString().padStart(2, '0');
+          const startMinute = minute.toString().padStart(2, '0');
+          
+          const endMinute = minute === 0 ? '30' : '00';
+          const endHour = minute === 0 ? hour.toString().padStart(2, '0') : (hour + 1).toString().padStart(2, '0');
+          
+          timeSlots.push({
+            startTime: `${startHour}:${startMinute}:00`,
+            endTime: `${endHour}:${endMinute}:00`,
+            isActive: true
+          });
+        }
+      }
+      
+      await db.insert(schema.timeSlots).values(timeSlots);
+      
+      console.log("Time slots seeded successfully");
+    } else {
+      console.log("Time slots already exist, skipping seeding");
+    }
+    
+    // Create a demo user if none exists
+    const existingUsers = await db.select().from(schema.users);
+    let demoUser;
+    
+    if (existingUsers.length === 0) {
+      // Create a demo user
+      [demoUser] = await db.insert(schema.users).values({
+        username: "demo@example.com",
+        password: "hashed_password_would_go_here" // In a real app, this would be properly hashed
+      }).returning();
+      
+      console.log("Demo user created successfully");
+    } else {
+      demoUser = existingUsers[0];
+      console.log("Users already exist, using first user for demo");
+    }
+    
+    // Check if service locations exist
+    const existingLocations = await db.select().from(schema.serviceLocations);
+    
+    if (existingLocations.length === 0 && demoUser) {
+      // Create a demo location
+      await db.insert(schema.serviceLocations).values({
+        name: "Home",
+        address: "123 Main Street",
+        city: "Anytown",
+        state: "CA",
+        zipCode: "12345",
+        instructions: "Gate code: 1234. Please clean both front and back yards.",
+        userId: demoUser.id,
+        isActive: true
+      });
+      
+      console.log("Demo service location created successfully");
+    } else {
+      console.log("Service locations already exist, skipping seeding");
+    }
+    
   } catch (error) {
     console.error("Error seeding database:", error);
   }

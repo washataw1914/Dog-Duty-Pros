@@ -1,4 +1,4 @@
-import { pgTable, text, serial, integer, boolean, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, serial, integer, boolean, timestamp, date, time, decimal } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 import { relations } from "drizzle-orm";
@@ -106,3 +106,132 @@ export type InsertServicePlan = z.infer<typeof insertServicePlanSchema>;
 export type ServicePlan = typeof servicePlans.$inferSelect;
 export type InsertServicePlanFeature = z.infer<typeof insertServicePlanFeatureSchema>;
 export type ServicePlanFeature = typeof servicePlanFeatures.$inferSelect;
+
+// Service locations table
+export const serviceLocations = pgTable("service_locations", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  address: text("address").notNull(),
+  city: text("city").notNull(),
+  state: text("state").notNull(),
+  zipCode: text("zip_code").notNull(),
+  instructions: text("instructions"),
+  userId: integer("user_id").references(() => users.id),
+  isActive: boolean("is_active").default(true).notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+// Time slots table for available appointment times
+export const timeSlots = pgTable("time_slots", {
+  id: serial("id").primaryKey(),
+  startTime: time("start_time").notNull(),
+  endTime: time("end_time").notNull(),
+  isActive: boolean("is_active").default(true).notNull(),
+});
+
+// Service types table
+export const serviceTypes = pgTable("service_types", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  description: text("description").notNull(),
+  price: decimal("price", { precision: 10, scale: 2 }).notNull(),
+  duration: integer("duration").notNull(), // Duration in minutes
+  isActive: boolean("is_active").default(true).notNull(),
+});
+
+// Appointments table
+export const appointments = pgTable("appointments", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").references(() => users.id),
+  serviceLocationId: integer("service_location_id").references(() => serviceLocations.id).notNull(),
+  serviceTypeId: integer("service_type_id").references(() => serviceTypes.id).notNull(),
+  date: date("date").notNull(),
+  timeSlotId: integer("time_slot_id").references(() => timeSlots.id).notNull(),
+  status: text("status").default("scheduled").notNull(), // scheduled, completed, cancelled
+  notes: text("notes"),
+  totalPrice: decimal("total_price", { precision: 10, scale: 2 }).notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+// Set up relations
+export const serviceLocationsRelations = relations(serviceLocations, ({ many, one }) => ({
+  appointments: many(appointments),
+  user: one(users, {
+    fields: [serviceLocations.userId],
+    references: [users.id],
+  }),
+}));
+
+export const timeSlotsRelations = relations(timeSlots, ({ many }) => ({
+  appointments: many(appointments),
+}));
+
+export const serviceTypesRelations = relations(serviceTypes, ({ many }) => ({
+  appointments: many(appointments),
+}));
+
+export const appointmentsRelations = relations(appointments, ({ one }) => ({
+  serviceLocation: one(serviceLocations, {
+    fields: [appointments.serviceLocationId],
+    references: [serviceLocations.id],
+  }),
+  serviceType: one(serviceTypes, {
+    fields: [appointments.serviceTypeId],
+    references: [serviceTypes.id],
+  }),
+  timeSlot: one(timeSlots, {
+    fields: [appointments.timeSlotId],
+    references: [timeSlots.id],
+  }),
+  user: one(users, {
+    fields: [appointments.userId],
+    references: [users.id],
+  }),
+}));
+
+// Define schemas for inserts
+export const insertServiceLocationSchema = createInsertSchema(serviceLocations, {
+  name: (schema) => schema.min(2, "Name must be at least 2 characters"),
+  address: (schema) => schema.min(5, "Address must be at least 5 characters"),
+  city: (schema) => schema.min(2, "City must be at least 2 characters"),
+  state: (schema) => schema.min(2, "State must be at least 2 characters"),
+  zipCode: (schema) => schema.min(5, "Zip code must be at least 5 characters"),
+}).omit({ id: true, createdAt: true, isActive: true });
+
+export const insertTimeSlotSchema = createInsertSchema(timeSlots).omit({ 
+  id: true, 
+  isActive: true 
+});
+
+export const insertServiceTypeSchema = createInsertSchema(serviceTypes, {
+  name: (schema) => schema.min(2, "Name must be at least 2 characters"),
+  description: (schema) => schema.min(10, "Description must be at least 10 characters"),
+  price: (schema) => schema.min(0, "Price cannot be negative"),
+  duration: (schema) => schema.min(5, "Duration must be at least 5 minutes"),
+}).omit({ id: true, isActive: true });
+
+export const insertAppointmentSchema = createInsertSchema(appointments, {
+  date: (schema) => schema.refine(
+    (date) => {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return new Date(date) >= today;
+    },
+    { message: "Appointment date must be today or in the future" }
+  ),
+  totalPrice: (schema) => schema.min(0, "Total price cannot be negative"),
+}).omit({ id: true, createdAt: true, updatedAt: true });
+
+// Export types
+export type InsertServiceLocation = z.infer<typeof insertServiceLocationSchema>;
+export type ServiceLocation = typeof serviceLocations.$inferSelect;
+
+export type InsertTimeSlot = z.infer<typeof insertTimeSlotSchema>;
+export type TimeSlot = typeof timeSlots.$inferSelect;
+
+export type InsertServiceType = z.infer<typeof insertServiceTypeSchema>;
+export type ServiceType = typeof serviceTypes.$inferSelect;
+
+export type InsertAppointment = z.infer<typeof insertAppointmentSchema>;
+export type Appointment = typeof appointments.$inferSelect;
