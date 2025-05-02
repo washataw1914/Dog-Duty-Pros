@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="50" viewBox="0 0 1200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Row of realistic paw prints across the bottom -->
+  <use href="#paw1" x="40" y="15" transform="rotate(12) scale(0.6)" />
+  <use href="#paw2" x="120" y="20" transform="rotate(-8) scale(0.55)" />
+  <use href="#paw3" x="200" y="12" transform="rotate(15) scale(0.6)" />
+  <use href="#paw4" x="280" y="18" transform="rotate(-5) scale(0.65)" />
+  <use href="#paw1" x="360" y="10" transform="rotate(20) scale(0.5)" />
+  <use href="#paw2" x="440" y="22" transform="rotate(-10) scale(0.6)" />
+  <use href="#paw3" x="520" y="15" transform="rotate(-12) scale(0.58)" />
+  <use href="#paw4" x="600" y="20" transform="rotate(5) scale(0.62)" />
+  <use href="#paw1" x="680" y="12" transform="rotate(-8) scale(0.57)" />
+  <use href="#paw2" x="760" y="18" transform="rotate(18) scale(0.63)" />
+  <use href="#paw3" x="840" y="11" transform="rotate(-12) scale(0.54)" />
+  <use href="#paw4" x="920" y="19" transform="rotate(7) scale(0.59)" />
+  <use href="#paw1" x="1000" y="14" transform="rotate(10) scale(0.61)" />
+  <use href="#paw2" x="1080" y="21" transform="rotate(-7) scale(0.56)" />
+  <use href="#paw3" x="1160" y="13" transform="rotate(14) scale(0.6)" />
+  
+  <!-- Definitions -->
+  <defs>
+    <!-- Paw 1 definition -->
+    <g id="paw1">
+      <path d="M28.2 25.6C25.4 26.9 22.5 28.8 20.5 31.5C17.3 35.7 16.2 41.1 13.1 41.1C10.6 41.1 9.2 37.8 9.2 33.6C9.2 30.7 10.4 26.4 12.2 24.1C14 21.8 18.5 19.1 20.8 17.9C23.1 16.7 26.5 15.9 28.9 15.9C31.3 15.9 32.9 16.7 32.9 17.9C32.9 19.1 31 24.2 28.2 25.6Z" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="13.2" cy="12.9" rx="5.2" ry="6.4" transform="rotate(-20 13.2 12.9)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="22.4" cy="8.1" rx="5.2" ry="6.4" transform="rotate(5 22.4 8.1)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="31.2" cy="12.9" rx="5.2" ry="6.4" transform="rotate(35 31.2 12.9)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="33.2" cy="20.9" rx="4.2" ry="5.4" transform="rotate(50 33.2 20.9)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+    </g>
+    
+    <!-- Paw 2 definition -->
+    <g id="paw2">
+      <path d="M29.9 28.2C26.9 29.6 23.8 31.7 21.6 34.6C18.2 39.2 17 45 13.6 45C10.9 45 9.4 41.5 9.4 37C9.4 33.8 10.6 29.1 12.6 26.6C14.6 24.1 19.4 21.1 21.9 19.8C24.4 18.5 28.1 17.6 30.6 17.6C33.2 17.6 34.9 18.5 34.9 19.8C34.9 21.1 32.9 26.8 29.9 28.2Z" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="13.3" cy="13.2" rx="6.4" ry="7.4" transform="rotate(-22 13.3 13.2)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="23.4" cy="7.6" rx="6.3" ry="7.4" transform="rotate(8 23.4 7.6)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="33.2" cy="13.6" rx="5.9" ry="7" transform="rotate(32 33.2 13.6)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="35.2" cy="22.5" rx="5" ry="6.2" transform="rotate(48 35.2 22.5)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+    </g>
+    
+    <!-- Paw 3 definition -->
+    <g id="paw3">
+      <path d="M26.5 24.3C23.9 25.5 21.3 27.3 19.5 29.8C16.6 33.6 15.5 38.6 12.6 38.6C10.3 38.6 9 35.5 9 31.6C9 28.9 10.1 24.9 11.8 22.8C13.5 20.7 17.6 18.1 19.7 17C21.8 15.9 25 15.2 27.2 15.2C29.4 15.2 30.9 15.9 30.9 17C30.9 18.1 29.1 23 26.5 24.3Z" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="12.5" cy="12.1" rx="5" ry="5.9" transform="rotate(-18 12.5 12.1)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="21.2" cy="7.6" rx="4.9" ry="5.9" transform="rotate(4 21.2 7.6)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="29.5" cy="12.1" rx="4.9" ry="5.9" transform="rotate(33 29.5 12.1)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="31.2" cy="19.4" rx="4" ry="5" transform="rotate(47 31.2 19.4)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+    </g>
+    
+    <!-- Paw 4 definition -->
+    <g id="paw4">
+      <path d="M31.2 29.5C28 31 24.7 33.2 22.4 36.3C18.8 41.2 17.5 47.3 13.9 47.3C11.1 47.3 9.5 43.6 9.5 38.8C9.5 35.5 10.8 30.5 12.9 27.8C15 25.1 20.1 22 22.8 20.6C25.5 19.2 29.3 18.3 32 18.3C34.7 18.3 36.5 19.2 36.5 20.6C36.5 22 34.4 28 31.2 29.5Z" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="13.4" cy="13.7" rx="6.7" ry="7.8" transform="rotate(-24 13.4 13.7)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="24.4" cy="7.9" rx="6.5" ry="7.7" transform="rotate(10 24.4 7.9)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="34.7" cy="14.1" rx="6.2" ry="7.3" transform="rotate(30 34.7 14.1)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+      <ellipse cx="36.7" cy="23.5" rx="5.2" ry="6.5" transform="rotate(45 36.7 23.5)" fill="#ffffff" stroke="#171717" stroke-width="1.5" opacity="0.8"/>
+    </g>
+  </defs>
+</svg>

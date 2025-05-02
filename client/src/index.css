@@ -73,12 +73,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./images/paw-clouds-exact.svg');
-  background-repeat: repeat-x;
-  background-size: 1200px;
+  background-image: url('./images/paws/paw-pattern.svg');
+  background-repeat: repeat;
+  background-size: 800px;
   background-position: center;
   z-index: 0;
-  opacity: 0.75;
+  opacity: 0.8;
+  animation: pawBackgroundFloat 25s linear infinite;
 }
 
 .hover-scale {
@@ -193,7 +194,15 @@
 
 /* We're using inline styles for right side paws now */
 
-/* Cloud effect removed as requested */
+/* Background paw pattern animation */
+@keyframes pawBackgroundFloat {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 800px 600px;
+  }
+}
 
 @keyframes float {
   0%, 100% {
