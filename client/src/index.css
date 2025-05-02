@@ -13,7 +13,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 198 100% 44%; /* #009fe3 from logo */
+    --primary: 214 100% 50%; /* #0084ff matched to our design */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -40,7 +40,7 @@
     --chart-3: 48 96.5% 53.9%;
     --chart-4: 130 60% 54.5%;
     --chart-5: 262 83.3% 57.8%;
-    --bright-blue: 195 100% 50%; /* Brighter blue for tagline */
+    --bright-blue: 214 100% 50%; /* #0084ff for tagline to match */
   }
 
   * {
@@ -128,7 +128,7 @@
 
 .section-title {
   @apply font-bubble text-3xl md:text-4xl text-black mb-4;
-  text-shadow: 2px 2px 0px rgba(0, 159, 227, 0.5);
+  text-shadow: 2px 2px 0px rgba(0, 132, 255, 0.5);
   display: inline-block;
 }
 

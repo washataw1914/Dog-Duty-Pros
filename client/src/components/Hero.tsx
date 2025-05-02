@@ -6,6 +6,9 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
   return (
     <section id="home" className="pt-24 bg-primary-gradient">
       <div className="container mx-auto px-4 py-16 md:py-24 relative">
+        <div className="absolute bottom-0 w-full left-0 h-16 overflow-hidden">
+          <img src="/images/paw-trail.svg" alt="" className="w-full object-contain" />
+        </div>
         {/* Centered Business Name */}
         <div className="text-center mb-12 relative">
           <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl text-black leading-tight mb-4">
@@ -26,7 +29,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <div className="md:w-1/2 mb-10 md:mb-0 relative">
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover-scale">
               <p className="text-lg md:text-xl text-gray-700 mb-8">
-                Your lawn's best friend! We're the poop-scooping superheroes that keep your yard clean, safe, and smell-tacular. <span className="font-bold text-primary">Life's too short to pick up poop!</span>
+                We handle the dirty work so you don't have to! Professional and reliable pet waste removal services that keep your yard pristine and enjoyable. <span className="font-bold" style={{ color: "#0084ff" }}>Let us take care of your lawn while you enjoy more time with your pets!</span>
               </p>
               <div className="flex justify-center mb-8">
                 <button
@@ -38,19 +41,19 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
               </div>
               <div className="flex flex-col space-y-4">
                 <div className="text-gray-700 flex items-center font-medium">
-                  <svg viewBox="0 0 24 24" className="w-6 h-6 mr-3 text-primary flex-shrink-0" fill="currentColor">
+                  <svg viewBox="0 0 24 24" className="w-6 h-6 mr-3 flex-shrink-0" style={{ color: "#0084ff" }} fill="currentColor">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
                   </svg>
                   <span>Professional & reliable service</span>
                 </div>
                 <div className="text-gray-700 flex items-center font-medium">
-                  <svg viewBox="0 0 24 24" className="w-6 h-6 mr-3 text-primary flex-shrink-0" fill="currentColor">
+                  <svg viewBox="0 0 24 24" className="w-6 h-6 mr-3 flex-shrink-0" style={{ color: "#0084ff" }} fill="currentColor">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
                   </svg>
                   <span>Weekly, bi-weekly & one-time options</span>
                 </div>
                 <div className="text-gray-700 flex items-center font-medium">
-                  <svg viewBox="0 0 24 24" className="w-6 h-6 mr-3 text-primary flex-shrink-0" fill="currentColor">
+                  <svg viewBox="0 0 24 24" className="w-6 h-6 mr-3 flex-shrink-0" style={{ color: "#0084ff" }} fill="currentColor">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
                   </svg>
                   <span>No contracts, cancel anytime!</span>
@@ -61,8 +64,8 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1526440847959-4e2e11e8e2e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Cute dog with a funny face"
+                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Happy dog on clean lawn"
                 className="rounded-xl shadow-2xl w-full max-w-lg object-cover border-8 border-white hover-scale"
               />
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-xl font-bubble transform rotate-6 shadow-lg text-lg">
