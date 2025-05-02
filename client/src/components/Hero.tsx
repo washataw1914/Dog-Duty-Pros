@@ -41,13 +41,13 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
         <div className="text-center mb-12 relative">
           <div className="relative mb-8">
             {/* Title with paw prints on both sides */}
-            <div className="flex justify-center items-center mb-6 flex-wrap md:flex-nowrap">
+            <div className="flex justify-center items-center mb-6 relative">
               {/* Left side paw prints walking upward */}
-              <div className="relative mr-8 md:mr-12 lg:mr-16 hidden sm:block" style={{ height: "80px", width: "120px" }}>
+              <div className="absolute left-0 md:left-8 lg:left-16 hidden sm:block" style={{ height: "30px", width: "120px", top: "50%", transform: "translateY(-50%)" }}>
                 <div className="paw-print-animated" 
                      style={{ 
                        left: '0px', 
-                       bottom: '0%',
+                       top: '-5px',
                        backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-8deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
@@ -55,8 +55,8 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      }}></div>
                 <div className="paw-print-animated" 
                      style={{ 
-                       left: '70px', 
-                       bottom: '25%',
+                       left: '40px', 
+                       top: '-2px',
                        backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(12deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
@@ -64,34 +64,25 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      }}></div>
                 <div className="paw-print-animated" 
                      style={{ 
-                       left: '20px', 
-                       bottom: '50%',
+                       left: '80px', 
+                       top: '-8px',
                        backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.4s"
                      }}></div>
-                <div className="paw-print-animated" 
-                     style={{ 
-                       left: '90px', 
-                       bottom: '75%',
-                       backgroundImage: "url('./images/paw-print.svg')",
-                       transform: "rotate(8deg)",
-                       animation: "pawFloat 3s ease-in-out infinite",
-                       animationDelay: "1.1s"
-                     }}></div>
               </div>
               
-              <h1 className="font-bubble text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center px-2 mb-0">
+              <h1 className="font-bubble text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center px-2 mb-0 mx-4 sm:mx-20">
                 <span className="text-black">Dog Duty Pros</span>
               </h1>
               
               {/* Right side paw prints walking upward (different pattern) */}
-              <div className="relative ml-8 md:ml-12 lg:ml-16 hidden sm:block" style={{ height: "80px", width: "120px" }}>
+              <div className="absolute right-0 md:right-8 lg:right-16 hidden sm:block" style={{ height: "30px", width: "120px", top: "50%", transform: "translateY(-50%)" }}>
                 <div className="paw-print-animated" 
                      style={{ 
-                       right: '10px', 
-                       bottom: '5%',
+                       right: '0px', 
+                       top: '-7px',
                        backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(12deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
@@ -99,8 +90,8 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      }}></div>
                 <div className="paw-print-animated" 
                      style={{ 
-                       right: '80px', 
-                       bottom: '30%',
+                       right: '40px', 
+                       top: '-3px',
                        backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-6deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
@@ -108,21 +99,12 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      }}></div>
                 <div className="paw-print-animated" 
                      style={{ 
-                       right: '30px', 
-                       bottom: '55%',
+                       right: '80px', 
+                       top: '-6px',
                        backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.3s"
-                     }}></div>
-                <div className="paw-print-animated" 
-                     style={{ 
-                       right: '90px', 
-                       bottom: '80%',
-                       backgroundImage: "url('./images/paw-print.svg')",
-                       transform: "rotate(-7deg)",
-                       animation: "pawFloat 3s ease-in-out infinite",
-                       animationDelay: "0.9s"
                      }}></div>
               </div>
             </div>
