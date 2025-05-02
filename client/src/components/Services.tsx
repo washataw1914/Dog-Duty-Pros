@@ -5,12 +5,7 @@ export default function Services() {
     <section id="services" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-bubble text-3xl md:text-4xl mb-4 text-center">
-            <span className="inline-block mx-1 px-2 py-1 bg-primary text-white rounded-md">Our</span>
-            <span className="inline-block mx-1 px-2 py-1 bg-primary text-white rounded-md">Dog</span>
-            <span className="inline-block mx-1 px-2 py-1 bg-primary text-white rounded-md">Duty</span>
-            <span className="inline-block mx-1 px-2 py-1 bg-primary text-white rounded-md">Services</span>
-          </h2>
+          <h2 className="section-title">Our Dog Duty Services</h2>
           <p className="section-subtitle">
             We offer a variety of pet waste removal services to meet your needs and keep your yard fresh and clean.
           </p>
