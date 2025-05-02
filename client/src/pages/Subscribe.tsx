@@ -135,9 +135,6 @@ function SubscriptionForm({ amount, serviceName, onProceed }: SubscriptionFormPr
                       </FormControl>
                       <FormLabel className="font-normal">
                         Monthly - ${(amount * 4).toFixed(2)}/month
-                        <span className="ml-2 text-sm text-green-600 font-medium">
-                          (Save 5%)
-                        </span>
                       </FormLabel>
                     </FormItem>
                     <FormItem className="flex items-center space-x-3 space-y-0">
@@ -147,7 +144,7 @@ function SubscriptionForm({ amount, serviceName, onProceed }: SubscriptionFormPr
                       <FormLabel className="font-normal">
                         Quarterly - ${(amount * 12).toFixed(2)}/quarter
                         <span className="ml-2 text-sm text-green-600 font-medium">
-                          (Save 10%)
+                          (Save 5%)
                         </span>
                       </FormLabel>
                     </FormItem>
@@ -259,11 +256,11 @@ export default function Subscribe() {
       // Calculate the actual amount based on the interval for discounts
       let intervalAmount = amount;
       if (formData.interval === 'monthly') {
-        // 5% discount on monthly
-        intervalAmount = amount * 4 * 0.95;
+        // No discount for monthly payments
+        intervalAmount = amount * 4;
       } else if (formData.interval === 'quarterly') {
-        // 10% discount on quarterly
-        intervalAmount = amount * 12 * 0.9;
+        // 5% discount on quarterly payments
+        intervalAmount = amount * 12 * 0.95;
       }
       
       const response = await apiRequest('POST', '/api/create-subscription', {
