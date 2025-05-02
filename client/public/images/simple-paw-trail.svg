@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="50" viewBox="0 0 1200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Row of simple paw prints across the bottom -->
+  <use href="#paw" x="40" y="15" transform="scale(0.7)" />
+  <use href="#paw" x="120" y="20" transform="rotate(-5) scale(0.6)" />
+  <use href="#paw" x="200" y="12" transform="scale(0.65)" />
+  <use href="#paw" x="280" y="18" transform="rotate(5) scale(0.7)" />
+  <use href="#paw" x="360" y="10" transform="scale(0.6)" />
+  <use href="#paw" x="440" y="22" transform="rotate(-5) scale(0.65)" />
+  <use href="#paw" x="520" y="15" transform="scale(0.7)" />
+  <use href="#paw" x="600" y="20" transform="rotate(5) scale(0.6)" />
+  <use href="#paw" x="680" y="12" transform="scale(0.65)" />
+  <use href="#paw" x="760" y="18" transform="rotate(-5) scale(0.7)" />
+  <use href="#paw" x="840" y="11" transform="scale(0.6)" />
+  <use href="#paw" x="920" y="19" transform="rotate(5) scale(0.65)" />
+  <use href="#paw" x="1000" y="14" transform="scale(0.7)" />
+  <use href="#paw" x="1080" y="21" transform="rotate(-5) scale(0.6)" />
+  <use href="#paw" x="1160" y="13" transform="scale(0.65)" />
+  
+  <!-- Definitions -->
+  <defs>
+    <g id="paw">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12 9.06C9.12 7.08 10.52 5.46 12.24 5.46C13.96 5.46 15.36 7.08 15.36 9.06C15.36 11.04 13.96 12.66 12.24 12.66C10.52 12.66 9.12 11.04 9.12 9.06ZM3.6 11.94C3.6 10.38 4.72 9.06 6.12 9.06C7.52 9.06 8.64 10.38 8.64 11.94C8.64 13.5 7.52 14.82 6.12 14.82C4.72 14.82 3.6 13.5 3.6 11.94ZM23.88 11.94C23.88 10.38 22.76 9.06 21.36 9.06C19.96 9.06 18.84 10.38 18.84 11.94C18.84 13.5 19.96 14.82 21.36 14.82C22.76 14.82 23.88 13.5 23.88 11.94ZM15.12 9.06C15.12 7.08 16.52 5.46 18.24 5.46C19.96 5.46 21.36 7.08 21.36 9.06C21.36 11.04 19.96 12.66 18.24 12.66C16.52 12.66 15.12 11.04 15.12 9.06ZM10.68 24.54C8.76 24.54 7.08 19.14 7.08 17.1C7.08 16.08 7.65 15.42 8.4 15.42C9.48 15.42 10.32 16.68 11.52 16.68C12.84 16.68 13.32 16.02 15 16.02C16.68 16.02 17.16 16.68 18.48 16.68C19.68 16.68 20.52 15.42 21.6 15.42C22.35 15.42 22.92 16.08 22.92 17.1C22.92 19.14 21.24 24.54 19.32 24.54C17.52 24.54 16.92 23.52 15 23.52C13.08 23.52 12.48 24.54 10.68 24.54Z" fill="white"/>
+    </g>
+  </defs>
+</svg>

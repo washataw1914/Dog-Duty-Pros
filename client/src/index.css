@@ -73,7 +73,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./images/paws/paw-pattern.svg');
+  background-image: url('./images/paws/simple-paw-pattern.svg');
   background-repeat: repeat;
   background-size: 800px;
   background-position: center;
@@ -163,7 +163,7 @@
 /* Fun decorative elements */
 .paw-divider {
   height: 30px;
-  background-image: url('./images/realistic-animated-paw.svg');
+  background-image: url('./images/simple-animated-paw.svg');
   background-repeat: repeat-x;
   background-size: 30px;
   margin: 20px 0;
