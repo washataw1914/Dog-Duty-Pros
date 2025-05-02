@@ -174,56 +174,9 @@
   display: inline-block;
   width: 45px;
   height: 45px;
-  background-image: url('/images/white-paw.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  animation: pawFloat 3s ease-in-out infinite;
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
-}
-
-/* Use the right-side paw SVG for the right side */
-.right-side-paw {
-  background-image: url('/images/white-paw-right.svg');
-}
-
-/* Left paw print styling */
-.left-paw {
-  transform: rotate(-10deg);
-  width: 40px;
-  height: 40px;
-}
-
-/* Right paw print styling */
-.right-paw {
-  transform: rotate(10deg);
-  width: 40px;
-  height: 40px;
-}
-
-/* Right side paws - no need for scaleX since we're using mirrored image */
-.right-side-paw.left-paw {
-  transform: rotate(-10deg);
-}
-
-.right-side-paw.right-paw {
-  transform: rotate(10deg);
-}
-
-/* Animation delay variations */
-.paw-print-animated:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.paw-print-animated:nth-child(2) {
-  animation-delay: 0.7s;
-}
-
-.paw-print-animated:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.paw-print-animated:nth-child(4) {
-  animation-delay: 1.1s;
 }
 
 /* Animation for left side paws */
@@ -238,10 +191,7 @@
   }
 }
 
-/* Animation for right side paws */
-.right-side-paw {
-  animation-name: pawFloat; /* Use the same animation, no need for mirroring in transform */
-}
+/* We're using inline styles for right side paws now */
 
 /* Cloud effect removed as requested */
 

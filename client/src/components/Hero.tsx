@@ -44,10 +44,42 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
             <div className="flex justify-center items-center mb-6 flex-wrap md:flex-nowrap">
               {/* Left side paw prints walking upward */}
               <div className="relative mr-2 md:mr-6 hidden sm:block" style={{ height: "140px", width: "70px" }}>
-                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '0%' }}></div>
-                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '25%' }}></div>
-                <div className="paw-print-animated left-paw" style={{ left: '0', bottom: '50%' }}></div>
-                <div className="paw-print-animated right-paw" style={{ left: '30px', bottom: '75%' }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       left: '0', 
+                       bottom: '0%',
+                       backgroundImage: "url('./images/white-paw.svg')",
+                       transform: "rotate(-10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "0.1s"
+                     }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       left: '30px', 
+                       bottom: '25%',
+                       backgroundImage: "url('./images/white-paw.svg')",
+                       transform: "rotate(10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "0.7s"
+                     }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       left: '0', 
+                       bottom: '50%',
+                       backgroundImage: "url('./images/white-paw.svg')",
+                       transform: "rotate(-10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "0.4s"
+                     }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       left: '30px', 
+                       bottom: '75%',
+                       backgroundImage: "url('./images/white-paw.svg')",
+                       transform: "rotate(10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "1.1s"
+                     }}></div>
               </div>
               
               <h1 className="font-bubble text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center px-2 mb-0">
@@ -56,10 +88,42 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
               
               {/* Right side paw prints walking upward (mirrored) */}
               <div className="relative ml-2 md:ml-6 hidden sm:block" style={{ height: "140px", width: "70px" }}>
-                <div className="paw-print-animated left-paw right-side-paw" style={{ right: '30px', bottom: '0%' }}></div>
-                <div className="paw-print-animated right-paw right-side-paw" style={{ right: '0', bottom: '25%' }}></div>
-                <div className="paw-print-animated left-paw right-side-paw" style={{ right: '30px', bottom: '50%' }}></div>
-                <div className="paw-print-animated right-paw right-side-paw" style={{ right: '0', bottom: '75%' }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       right: '30px', 
+                       bottom: '0%',
+                       backgroundImage: "url('./images/white-paw-right.svg')",
+                       transform: "rotate(10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "0.1s"
+                     }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       right: '0', 
+                       bottom: '25%',
+                       backgroundImage: "url('./images/white-paw-right.svg')",
+                       transform: "rotate(-10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "0.7s"
+                     }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       right: '30px', 
+                       bottom: '50%',
+                       backgroundImage: "url('./images/white-paw-right.svg')",
+                       transform: "rotate(10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "0.4s"
+                     }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       right: '0', 
+                       bottom: '75%',
+                       backgroundImage: "url('./images/white-paw-right.svg')",
+                       transform: "rotate(-10deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "1.1s"
+                     }}></div>
               </div>
             </div>
           </div>
