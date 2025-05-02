@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
+
 import HowItWorks from "@/components/HowItWorks";
 import Services from "@/components/Services";
 import Pricing from "@/components/Pricing";
@@ -33,7 +33,6 @@ export default function Home() {
       />
       <main className="flex-grow">
         <Hero onGetQuoteClick={() => scrollToSection(getQuoteRef)} />
-        <Stats />
         <HowItWorks />
         <div ref={servicesRef}>
           <Services />
