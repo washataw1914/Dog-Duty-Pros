@@ -16,9 +16,9 @@ export default function Services() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1625571281240-e5889bdbc504?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Professional cleaning a residential yard"
-                className="rounded-xl shadow-lg w-full h-80 object-cover"
+                src="/images/logo for vector dog duty.png"
+                alt="Dog Duty Pros logo with shovel"
+                className="rounded-xl shadow-lg w-full h-80 object-contain bg-white"
               />
             </div>
             <div className="md:w-1/2 md:pl-8">
@@ -54,7 +54,7 @@ export default function Services() {
           <div className="flex flex-col md:flex-row-reverse items-center">
             <div className="md:w-1/2 md:pl-8 mb-8 md:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1588117305388-c2631a279f82?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="/images/family-playing.svg"
                 alt="Family playing with dog in clean yard"
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
               />
@@ -92,7 +92,7 @@ export default function Services() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1568480289746-25c1f048f351?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="/images/apartment-dog-park.svg"
                 alt="Dog park by apartment buildings"
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
               />

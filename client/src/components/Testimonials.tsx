@@ -29,7 +29,7 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
+                src="/images/testimonial-person1.svg"
                 alt="Sarah M. with her dogs"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary shadow-md"
               />
@@ -57,7 +57,7 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1551730459-92db2a308d6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
+                src="/images/testimonial-person2.svg"
                 alt="Michael T. with dog"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-destructive shadow-md"
               />
@@ -85,7 +85,7 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1525253013412-55c1a69a5738?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
+                src="/images/testimonial-person3.svg"
                 alt="Jessica K. with kids and dog"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary/80 shadow-md"
               />

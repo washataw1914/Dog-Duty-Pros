@@ -65,7 +65,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1525963089891-da0ec399ee56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="/images/great-pyrenees.svg"
                 alt="Happy Great Pyrenees dog in a nice yard"
                 className="rounded-xl shadow-2xl w-full max-w-lg object-cover border-8 border-white hover-scale"
               />
