@@ -485,6 +485,142 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     }
   });
+  
+  // Subscription endpoints
+  app.post(`${apiPrefix}/create-subscription`, async (req, res) => {
+    try {
+      const { 
+        amount, 
+        serviceName, 
+        email, 
+        name, 
+        phone, 
+        interval, // 'weekly', 'monthly', or 'quarterly'
+      } = req.body;
+      
+      if (!amount || !serviceName || !email || !name || !phone || !interval) {
+        return res.status(400).json({
+          success: false,
+          message: "Missing required parameters. Need amount, serviceName, email, name, phone, and interval."
+        });
+      }
+      
+      // Find or create customer
+      let customer;
+      const existingCustomers = await stripe.customers.list({ email });
+      
+      if (existingCustomers.data.length > 0) {
+        customer = existingCustomers.data[0];
+      } else {
+        customer = await stripe.customers.create({
+          email,
+          name,
+          phone,
+          metadata: {
+            service: serviceName
+          }
+        });
+      }
+      
+      // Convert interval to Stripe's expected format
+      let intervalValue = 'month'; // Default to monthly
+      let intervalCount = 1;
+      
+      if (interval === 'weekly') {
+        intervalValue = 'week';
+        intervalCount = 1;
+      } else if (interval === 'monthly') {
+        intervalValue = 'month';
+        intervalCount = 1;
+      } else if (interval === 'quarterly') {
+        intervalValue = 'month';
+        intervalCount = 3;
+      }
+      
+      // Create a product for this service if it doesn't exist
+      let product;
+      const existingProducts = await stripe.products.list({
+        active: true,
+      });
+      
+      const matchingProduct = existingProducts.data.find(
+        p => p.name.toLowerCase() === serviceName.toLowerCase()
+      );
+      
+      if (matchingProduct) {
+        product = matchingProduct;
+      } else {
+        product = await stripe.products.create({
+          name: serviceName,
+          description: `${serviceName} service - Dog Duty Pros`,
+        });
+      }
+      
+      // Create or retrieve price for the product
+      const priceAmount = Math.round(amount * 100); // Convert to cents
+      let price;
+      
+      const existingPrices = await stripe.prices.list({
+        product: product.id,
+        active: true,
+      });
+      
+      // Find a matching price with the same interval and amount
+      const matchingPrice = existingPrices.data.find(
+        p => p.unit_amount === priceAmount && 
+             p.recurring?.interval === intervalValue && 
+             p.recurring?.interval_count === intervalCount
+      );
+      
+      if (matchingPrice) {
+        price = matchingPrice;
+      } else {
+        price = await stripe.prices.create({
+          product: product.id,
+          unit_amount: priceAmount,
+          currency: 'usd',
+          recurring: {
+            interval: intervalValue as Stripe.Price.Recurring.Interval,
+            interval_count: intervalCount,
+          },
+        });
+      }
+      
+      // Create the subscription with payment settings
+      const subscription = await stripe.subscriptions.create({
+        customer: customer.id,
+        items: [{ price: price.id }],
+        payment_behavior: 'default_incomplete',
+        payment_settings: {
+          save_default_payment_method: 'on_subscription',
+          payment_method_types: ['card'],
+        },
+        expand: ['latest_invoice.payment_intent'],
+      });
+      
+      // Extract the payment intent from the invoice
+      // The type definition might not be up-to-date, so we need to handle this carefully
+      const invoice = subscription.latest_invoice as any;
+      let clientSecret = '';
+      
+      if (invoice && invoice.payment_intent) {
+        const paymentIntent = invoice.payment_intent as any;
+        clientSecret = paymentIntent.client_secret;
+      }
+      
+      return res.status(200).json({
+        success: true,
+        subscriptionId: subscription.id,
+        clientSecret: clientSecret,
+      });
+    } catch (error: any) {
+      console.error("Error creating subscription:", error);
+      return res.status(500).json({
+        success: false,
+        message: "Error creating subscription: " + error.message
+      });
+    }
+  });
 
   // Helper function to format time strings
   function formatTimeString(timeString: string) {
