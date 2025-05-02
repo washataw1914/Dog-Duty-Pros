@@ -79,10 +79,30 @@ export default {
             height: "0",
           },
         },
+        "bounce-slow": {
+          "0%, 100%": { transform: "translateY(0) rotate(12deg)" },
+          "50%": { transform: "translateY(-20px) rotate(12deg)" },
+        },
+        "bounce-slow-delay": {
+          "0%, 100%": { transform: "translateY(0) rotate(-12deg)" },
+          "50%": { transform: "translateY(-25px) rotate(-12deg)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "wiggle": {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bounce-slow": "bounce-slow 6s infinite ease-in-out",
+        "bounce-slow-delay": "bounce-slow-delay 5s infinite ease-in-out",
+        "float": "float 4s infinite ease-in-out",
+        "wiggle": "wiggle 3s infinite ease-in-out",
       },
     },
   },
