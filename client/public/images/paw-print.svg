@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- White outline paw with light inner color - to be used on both sides -->
+  <g fill="none">
+    <!-- Main pad -->
+    <path d="M50 70C65 70 77 55 65 45C53 35 30 45 35 60C40 75 50 70 50 70Z" fill="#f0f9ff" stroke="white" stroke-width="5"/>
+    
+    <!-- Toe pads -->
+    <ellipse cx="30" cy="35" rx="12" ry="15" transform="rotate(-10 30 35)" fill="#f0f9ff" stroke="white" stroke-width="5"/>
+    <ellipse cx="50" cy="30" rx="12" ry="15" transform="rotate(10 50 30)" fill="#f0f9ff" stroke="white" stroke-width="5"/>
+    <ellipse cx="70" cy="35" rx="12" ry="15" transform="rotate(20 70 35)" fill="#f0f9ff" stroke="white" stroke-width="5"/>
+    <ellipse cx="75" cy="55" rx="10" ry="12" transform="rotate(40 75 55)" fill="#f0f9ff" stroke="white" stroke-width="5"/>
+  </g>
+</svg>

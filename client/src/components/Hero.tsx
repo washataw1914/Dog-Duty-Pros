@@ -48,7 +48,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        left: '0', 
                        bottom: '0%',
-                       backgroundImage: "url('./images/left-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.1s"
@@ -57,7 +57,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        left: '30px', 
                        bottom: '25%',
-                       backgroundImage: "url('./images/left-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.7s"
@@ -66,7 +66,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        left: '0', 
                        bottom: '50%',
-                       backgroundImage: "url('./images/left-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.4s"
@@ -75,7 +75,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        left: '30px', 
                        bottom: '75%',
-                       backgroundImage: "url('./images/left-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "1.1s"
@@ -86,43 +86,43 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                 <span className="text-black">Dog Duty Pros</span>
               </h1>
               
-              {/* Right side paw prints walking upward (mirrored) */}
+              {/* Right side paw prints walking upward (different pattern) */}
               <div className="relative ml-2 md:ml-6 hidden sm:block" style={{ height: "140px", width: "70px" }}>
                 <div className="paw-print-animated" 
                      style={{ 
-                       right: '30px', 
-                       bottom: '0%',
-                       backgroundImage: "url('./images/right-paw.svg')",
-                       transform: "rotate(10deg)",
-                       animation: "pawFloat 3s ease-in-out infinite",
-                       animationDelay: "0.1s"
-                     }}></div>
-                <div className="paw-print-animated" 
-                     style={{ 
                        right: '0', 
-                       bottom: '25%',
-                       backgroundImage: "url('./images/right-paw.svg')",
-                       transform: "rotate(-10deg)",
+                       bottom: '10%',
+                       backgroundImage: "url('./images/paw-print.svg')",
+                       transform: "rotate(15deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
-                       animationDelay: "0.7s"
+                       animationDelay: "0.2s"
                      }}></div>
                 <div className="paw-print-animated" 
                      style={{ 
-                       right: '30px', 
-                       bottom: '50%',
-                       backgroundImage: "url('./images/right-paw.svg')",
-                       transform: "rotate(10deg)",
+                       right: '25px', 
+                       bottom: '30%',
+                       backgroundImage: "url('./images/paw-print.svg')",
+                       transform: "rotate(-5deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
-                       animationDelay: "0.4s"
+                       animationDelay: "0.6s"
                      }}></div>
                 <div className="paw-print-animated" 
                      style={{ 
-                       right: '0', 
+                       right: '5px', 
+                       bottom: '55%',
+                       backgroundImage: "url('./images/paw-print.svg')",
+                       transform: "rotate(15deg)",
+                       animation: "pawFloat 3s ease-in-out infinite",
+                       animationDelay: "0.3s"
+                     }}></div>
+                <div className="paw-print-animated" 
+                     style={{ 
+                       right: '20px', 
                        bottom: '75%',
-                       backgroundImage: "url('./images/right-paw.svg')",
-                       transform: "rotate(-10deg)",
+                       backgroundImage: "url('./images/paw-print.svg')",
+                       transform: "rotate(-8deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
-                       animationDelay: "1.1s"
+                       animationDelay: "0.9s"
                      }}></div>
               </div>
             </div>
