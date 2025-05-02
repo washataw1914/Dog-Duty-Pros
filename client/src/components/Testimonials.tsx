@@ -31,7 +31,7 @@ export default function Testimonials() {
               <img
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
                 alt="Sarah M."
-                className="w-12 h-12 rounded-full object-cover mr-4"
+                className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary shadow-md"
               />
               <div>
                 <h4 className="font-semibold">Sarah M.</h4>
@@ -59,7 +59,7 @@ export default function Testimonials() {
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
                 alt="Michael T."
-                className="w-12 h-12 rounded-full object-cover mr-4"
+                className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-destructive shadow-md"
               />
               <div>
                 <h4 className="font-semibold">Michael T.</h4>
@@ -69,7 +69,7 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonial 3 */}
-          <div className="bg-white p-8 rounded-xl shadow-md">
+          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all border-2 border-transparent hover:border-primary/80">
             <div className="flex items-center mb-4">
               <div className="text-yellow-400 flex">
                 <Star className="fill-yellow-400" size={20} />
@@ -87,7 +87,7 @@ export default function Testimonials() {
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
                 alt="Jessica K."
-                className="w-12 h-12 rounded-full object-cover mr-4"
+                className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary/80 shadow-md"
               />
               <div>
                 <h4 className="font-semibold">Jessica K.</h4>
