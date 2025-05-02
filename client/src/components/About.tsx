@@ -7,10 +7,10 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <h2 className="section-title text-center mb-8">About Dog Duty Pros</h2>
           <p className="text-lg text-gray-700 mb-6">
-            Founded by pet lovers for pet lovers, Dog Duty Pros began with a simple mission: help pet parents enjoy their yards without the mess. Since our first service in 2018, we've been dedicated to taking a load off your lawn with exceptional service.
+            
           </p>
           <p className="text-lg text-gray-700 mb-6">
-            Our team of professional waste removal specialists undergoes thorough training and background checks. We use eco-friendly disposal methods and sanitize our equipment between properties to ensure the health and safety of your pets.
+            We are a family-owned business dedicated to providing top-notch pet waste removal services to keep your yard clean and enjoyable. We are committed to excellence, reliability, and 100% customer satisfaction.
           </p>
           <p className="text-lg text-gray-700 mb-6">
             We're more than just pet waste removal experts - we're committed to making your life easier and your yard more enjoyable. That's the Dog Duty Pros promise!

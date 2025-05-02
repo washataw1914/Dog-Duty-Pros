@@ -34,7 +34,7 @@ export default function Footer({
               <span className="font-bubble text-xl font-bold text-white">Dog Duty Pros</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Professional pet waste removal service. Making yards clean and enjoyable since 2018.
+              Professional pet waste removal service. Making yards clean people happy.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition duration-200">
@@ -205,11 +205,11 @@ export default function Footer({
               </li>
               <li className="flex items-start">
                 <Phone className="text-destructive mt-1 mr-2" size={18} />
-                <span className="text-gray-400">(555) 123-POOP</span>
+                <span className="text-gray-400">(501) 470-8886</span>
               </li>
               <li className="flex items-start">
                 <Mail className="text-destructive mt-1 mr-2" size={18} />
-                <span className="text-gray-400">info@dogdutypros.com</span>
+                <span className="text-gray-400">info@dogduty.biz</span>
               </li>
               <li className="flex items-start">
                 <Clock className="text-destructive mt-1 mr-2" size={18} />

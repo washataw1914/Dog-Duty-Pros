@@ -37,7 +37,7 @@ export default function FAQ() {
               </AccordionTrigger>
               <AccordionContent className="pt-0 px-4 pb-4 border-t border-gray-200 bg-white">
                 <p className="text-gray-700">
-                  We work in most weather conditions! Light rain doesn't stop us. However, for severe weather, we'll reschedule your service for the next available day and notify you of the change. Your yard will never go more than a day or two beyond your regular schedule.
+                  We work in most weather conditions! Light rain doesn't stop us. However, for severe weather, we'll reschedule your service for the next available day and notify you of the change.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -48,7 +48,7 @@ export default function FAQ() {
               </AccordionTrigger>
               <AccordionContent className="pt-0 px-4 pb-4 border-t border-gray-200 bg-white">
                 <p className="text-gray-700">
-                  We remove all waste from your property in sealed, biodegradable bags. We dispose of it according to local regulations, typically at approved waste facilities. We never place it in your trash cans unless specifically requested.
+                  For most of our customers we double bag and dispose of the waste in your trash receptacles. Waste removal options are available for those who prefer a different method.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -59,7 +59,7 @@ export default function FAQ() {
               </AccordionTrigger>
               <AccordionContent className="pt-0 px-4 pb-4 border-t border-gray-200 bg-white">
                 <p className="text-gray-700">
-                  We currently service all major metropolitan areas. Not sure if you're in our service zone? Contact us with your address, and we'll let you know if we can help!
+                  We are currently accepting clients in Greenbrier and Conway. Contact us with your address, and we'll let you know if we can help!
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -70,7 +70,7 @@ export default function FAQ() {
               </AccordionTrigger>
               <AccordionContent className="pt-0 px-4 pb-4 border-t border-gray-200 bg-white">
                 <p className="text-gray-700">
-                  Yes! We offer discounts for seniors, military personnel, and first responders. We also have referral bonuses - if you refer a friend who signs up, you both get a free service! Additionally, customers who pay quarterly receive a 5% discount.
+                  Yes, We offer referral bonuses - if you refer a friend who signs up, you both get a free service! Additionally, customers who pay quarterly receive a 5% discount.
                 </p>
               </AccordionContent>
             </AccordionItem>

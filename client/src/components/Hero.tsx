@@ -122,7 +122,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                 We handle the dirty work so you don't have to!
               </h3>
               <p className="text-lg md:text-xl text-gray-700 mb-8 text-center">
-                Professional and reliable pet waste removal services that keep your yard pristine and enjoyable. <span className="font-bold" style={{ color: "#00A3F7" }}>Let us take care of your lawn while you enjoy more time with your pets!</span>
+                Professional and reliable pet waste removal services that keep your yard pristine and enjoyable. <span className="font-bold" style={{ color: "#00A3F7" }}>Let us take care of your lawn while you enjoy more time doing what you love!</span>
               </p>
               <div className="flex justify-center mb-8">
                 <button

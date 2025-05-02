@@ -11,7 +11,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
         <div className="text-center mb-16">
           <h2 className="section-title">Simple, Transparent Pricing</h2>
           <p className="section-subtitle">
-            Choose the perfect plan for your yard size and pet count. All packages include our thorough cleanup and disposal service.
+            Choose the perfect plan for your yard size and pet count.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
               <h3 className="font-bubble text-lg text-black mb-1">Basic Package</h3>
               <p className="text-gray-600 mb-2 text-sm">Small yards with 1-2 pets</p>
               <div className="flex items-end mb-2">
-                <span className="font-bubble text-2xl text-primary">$14.99</span>
+                <span className="font-bubble text-2xl text-primary">$14.95</span>
                 <span className="text-gray-600 ml-1 text-xs">/week</span>
               </div>
               <ul className="space-y-1 mb-3 text-sm">
@@ -32,7 +32,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 </li>
                 <li className="flex items-start">
                   <Check className="text-primary mt-0.5 mr-1" size={12} />
-                  <span>Yards up to 1/4 acre</span>
+                  <span>Yards up to 5000 Sq. Ft.</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-primary mt-0.5 mr-1" size={12} />
@@ -40,7 +40,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 </li>
                 <li className="flex items-start">
                   <Check className="text-primary mt-0.5 mr-1" size={12} />
-                  <span>Email confirmation</span>
+                  <span>Text & email confirmations</span>
                 </li>
               </ul>
               <button 
@@ -61,7 +61,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
               <h3 className="font-bubble text-lg text-black mb-1">Premium Package</h3>
               <p className="text-gray-600 mb-2 text-sm">Medium yards with 2-3 pets</p>
               <div className="flex items-end mb-2">
-                <span className="font-bubble text-2xl text-primary">$19.99</span>
+                <span className="font-bubble text-2xl text-primary">$19.95</span>
                 <span className="text-gray-600 ml-1 text-xs">/week</span>
               </div>
               <ul className="space-y-1 mb-3 text-sm">
@@ -71,7 +71,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 </li>
                 <li className="flex items-start">
                   <Check className="text-primary mt-0.5 mr-1" size={12} />
-                  <span>Yards up to 1/2 acre</span>
+                  <span>Yards up to 1/4 acre</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-primary mt-0.5 mr-1" size={12} />
