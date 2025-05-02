@@ -81,10 +81,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                   <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>Text & email confirmations</span>
                 </li>
-                <li className="flex items-start">
-                  <Check className="text-primary mt-0.5 mr-1" size={12} />
-                  <span>Deodorizing treatment</span>
-                </li>
+
               </ul>
               <button
                 onClick={onGetStartedClick}
