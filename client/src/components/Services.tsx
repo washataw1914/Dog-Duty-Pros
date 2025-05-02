@@ -92,8 +92,8 @@ export default function Services() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Group of happy dogs playing"
+                src="https://images.unsplash.com/photo-1568480289746-25c1f048f351?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Dog park by apartment buildings"
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
               />
             </div>
