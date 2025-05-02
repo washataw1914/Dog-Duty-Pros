@@ -16,8 +16,8 @@ export default function Services() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Dog wearing sunglasses"
+                src="https://images.unsplash.com/photo-1625571281240-e5889bdbc504?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Professional cleaning a residential yard"
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
               />
             </div>
@@ -54,8 +54,8 @@ export default function Services() {
           <div className="flex flex-col md:flex-row-reverse items-center">
             <div className="md:w-1/2 md:pl-8 mb-8 md:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Dog jumping in celebration"
+                src="https://images.unsplash.com/photo-1588117305388-c2631a279f82?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Family playing with dog in clean yard"
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
               />
             </div>
