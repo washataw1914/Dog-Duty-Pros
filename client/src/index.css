@@ -172,8 +172,8 @@
 .paw-print-animated {
   position: absolute;
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   background-size: contain;
   background-repeat: no-repeat;
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
