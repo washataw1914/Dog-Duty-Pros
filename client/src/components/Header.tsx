@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "wouter";
 
@@ -17,26 +17,14 @@ export default function Header({
   onContactClick,
   onGetStartedClick
 }: HeaderProps) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // Close mobile menu when window is resized to desktop size
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768 && mobileMenuOpen) {
-        setMobileMenuOpen(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [mobileMenuOpen]);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    setShowMobileMenu(!showMobileMenu);
   };
 
   const handleNavClick = (callback: () => void) => {
-    setMobileMenuOpen(false);
+    setShowMobileMenu(false);
     callback();
   };
 
@@ -113,30 +101,25 @@ export default function Header({
           <button
             onClick={toggleMobileMenu}
             className="md:hidden text-primary focus:outline-none p-2 hover:bg-gray-100 rounded-full transition-colors"
-            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={mobileMenuOpen}
+            aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`md:hidden bg-white overflow-hidden transition-all duration-300 shadow-lg ${
-          mobileMenuOpen ? "max-h-96 border-t border-gray-200" : "max-h-0"
-        }`}
-      >
-        <div className="px-4 py-2">
-          <div className="flex flex-col space-y-1">
+      {showMobileMenu && (
+        <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
+          <div className="px-4 py-3">
             <a
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                setMobileMenuOpen(false);
+                setShowMobileMenu(false);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="py-3 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              className="block py-2 text-gray-700 hover:text-primary"
             >
               Home
             </a>
@@ -146,7 +129,7 @@ export default function Header({
                 e.preventDefault();
                 handleNavClick(onServicesClick);
               }}
-              className="py-3 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              className="block py-2 text-gray-700 hover:text-primary"
             >
               Services
             </a>
@@ -156,7 +139,7 @@ export default function Header({
                 e.preventDefault();
                 handleNavClick(onPricingClick);
               }}
-              className="py-3 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              className="block py-2 text-gray-700 hover:text-primary"
             >
               Pricing
             </a>
@@ -166,7 +149,7 @@ export default function Header({
                 e.preventDefault();
                 handleNavClick(onAboutClick);
               }}
-              className="py-3 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              className="block py-2 text-gray-700 hover:text-primary"
             >
               About
             </a>
@@ -176,13 +159,13 @@ export default function Header({
                 e.preventDefault();
                 handleNavClick(onContactClick);
               }}
-              className="py-3 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+              className="block py-2 text-gray-700 hover:text-primary"
             >
               Contact
             </a>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }
