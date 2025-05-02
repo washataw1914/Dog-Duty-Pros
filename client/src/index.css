@@ -86,7 +86,7 @@
 
 .section-title {
   @apply font-bubble text-3xl md:text-4xl text-black mb-4;
-  text-shadow: 2px 2px 0px rgba(37, 99, 235, 0.3);
+  text-shadow: 2px 2px 0px rgba(0, 102, 153, 0.4);
   transform: rotate(-1deg);
   display: inline-block;
 }
