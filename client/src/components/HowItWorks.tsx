@@ -47,12 +47,6 @@ export default function HowItWorks() {
             <p className="text-gray-700 mb-4">
               <span className="accent-yellow-text">Go barefoot again!</span> Your yard is now a poop-free paradise. Your nose and shoes will thank you profusely.
             </p>
-            <img
-              src="./images/clean-yard.svg"
-              alt="Dog jumping in celebration"
-              className="w-20 h-20 mx-auto rounded-full object-cover border-4"
-              style={{ borderColor: "#00A3F7" }}
-            />
           </div>
         </div>
 

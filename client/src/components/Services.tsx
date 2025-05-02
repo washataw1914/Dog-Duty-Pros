@@ -11,23 +11,17 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="space-y-16">
+        <div className="mb-12">
           {/* Paw divider */}
           <div className="paw-divider"></div>
           
-          {/* Service 1 */}
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
-              <img
-                src="./images/logo for vector dog duty.png"
-                alt="Dog Duty Pros logo with shovel"
-                className="rounded-xl shadow-lg w-full h-80 object-contain bg-white"
-              />
-            </div>
-            <div className="md:w-1/2 md:pl-8">
-              <h3 className="font-bubble text-2xl md:text-3xl text-black mb-4">Regular Yard Service</h3>
+          {/* Services grid layout */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Service 1 */}
+            <div className="bg-white rounded-xl shadow-lg p-6 transform transition-transform hover:scale-105 duration-300">
+              <h3 className="font-bubble text-2xl text-black mb-4 text-center">Regular Yard Service</h3>
               <p className="text-gray-700 mb-6">
-                Our most popular option! We'll visit your yard on a regular schedule (weekly or bi-weekly) to keep it consistently clean and odor-free. Perfect for busy pet owners who want to maintain a beautiful yard.
+                Our most popular option! We'll visit your yard on a regular schedule (weekly or bi-weekly) to keep it consistently clean and odor-free.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="service-check">
@@ -40,28 +34,25 @@ export default function Services() {
                 </li>
                 <li className="service-check">
                   <Check className="service-check-icon" />
-                  <span>Consistent scheduling you can count on</span>
+                  <span>Consistent scheduling</span>
                 </li>
                 <li className="service-check">
                   <Check className="service-check-icon" />
                   <span>Service notification when complete</span>
                 </li>
               </ul>
-              <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                No Doo-Doo Drama!
-              </a>
+              <div className="text-center">
+                <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
+                  No Doo-Doo Drama!
+                </a>
+              </div>
             </div>
-          </div>
 
-          {/* Paw divider */}
-          <div className="paw-divider"></div>
-          
-          {/* Service 2 */}
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-full md:pr-8">
-              <h3 className="font-bubble text-2xl md:text-3xl text-black mb-4">One-Time Deep Clean</h3>
+            {/* Service 2 */}
+            <div className="bg-white rounded-xl shadow-lg p-6 transform transition-transform hover:scale-105 duration-300">
+              <h3 className="font-bubble text-2xl text-black mb-4 text-center">One-Time Deep Clean</h3>
               <p className="text-gray-700 mb-6">
-                Need a fresh start? Our one-time cleanup service is perfect for yards that haven't been maintained for a while or for special events when you want your outdoor space looking its best.
+                Need a fresh start? Our one-time cleanup service is perfect for yards that haven't been maintained for a while or for special events.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="service-check">
@@ -81,21 +72,18 @@ export default function Services() {
                   <span>Same-week scheduling available</span>
                 </li>
               </ul>
-              <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                Poop Begone!
-              </a>
+              <div className="text-center">
+                <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
+                  Poop Begone!
+                </a>
+              </div>
             </div>
-          </div>
 
-          {/* Paw divider */}
-          <div className="paw-divider"></div>
-          
-          {/* Service 3 */}
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-full md:pr-8">
-              <h3 className="font-bubble text-2xl md:text-3xl text-black mb-4">Commercial Properties</h3>
+            {/* Service 3 */}
+            <div className="bg-white rounded-xl shadow-lg p-6 transform transition-transform hover:scale-105 duration-300">
+              <h3 className="font-bubble text-2xl text-black mb-4 text-center">Commercial Properties</h3>
               <p className="text-gray-700 mb-6">
-                We service apartment complexes, dog parks, homeowners associations, and other commercial properties. Keep your community spaces clean and enjoyable for everyone.
+                We service apartment complexes, dog parks, homeowners associations, and other commercial properties. Keep your spaces clean and enjoyable.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="service-check">
@@ -115,9 +103,11 @@ export default function Services() {
                   <span>Liability insurance coverage</span>
                 </li>
               </ul>
-              <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                Major Duty Calls!
-              </a>
+              <div className="text-center">
+                <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
+                  Major Duty Calls!
+                </a>
+              </div>
             </div>
           </div>
         </div>
