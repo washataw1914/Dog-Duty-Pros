@@ -13,7 +13,7 @@ export default function HowItWorks() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Step 1 */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative badge-new">
+          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
             <h3 className="font-bubble text-2xl text-black mb-4">Book Online</h3>
             <p className="text-gray-700 mb-4">
               Click a few buttons and poof! Your poop problems are scheduled to disappear. <span className="accent-yellow-text">No more stepping in "surprises!"</span>
@@ -26,7 +26,7 @@ export default function HowItWorks() {
           </div>
 
           {/* Step 2 */}
-          <div className="highlight-box bg-white p-8 rounded-xl shadow-lg text-center relative">
+          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
             <h3 className="font-bubble text-2xl text-black mb-4">We Take The Load Off</h3>
             <p className="text-gray-700 mb-4">
               Our elite poop commandos deploy to your yard with military precision. <span className="accent-yellow-text">We leave no turd behind!</span>
@@ -47,7 +47,7 @@ export default function HowItWorks() {
             <img
               src="/images/clean-yard.svg"
               alt="Dog jumping in celebration"
-              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-yellow-400"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
           </div>
         </div>

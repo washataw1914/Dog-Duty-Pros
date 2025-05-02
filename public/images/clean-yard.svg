@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .grass {
+      fill: #4CAF50;
+    }
+    .sky {
+      fill: #87CEEB;
+    }
+    .sun {
+      fill: #FFD700;
+      animation: shine 3s infinite alternate;
+      transform-origin: center;
+    }
+    .dog {
+      fill: #F5F5DC;
+    }
+    .tail {
+      animation: wag 1s infinite alternate;
+      transform-origin: 110px 130px;
+    }
+    @keyframes wag {
+      0% { transform: rotate(-15deg); }
+      100% { transform: rotate(15deg); }
+    }
+    @keyframes shine {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+  </style>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#f9f9f9" />
+  
+  <!-- Sky -->
+  <path d="M10,90 C10,40 190,40 190,90 L190,170 L10,170 Z" class="sky" />
+  
+  <!-- Sun -->
+  <circle cx="160" cy="60" r="20" class="sun" />
+  
+  <!-- Grass -->
+  <rect x="10" y="90" width="180" height="80" class="grass" />
+  
+  <!-- Dog -->
+  <g>
+    <!-- Body -->
+    <ellipse cx="100" cy="130" rx="25" ry="20" class="dog" />
+    
+    <!-- Head -->
+    <circle cx="70" cy="120" r="15" class="dog" />
+    
+    <!-- Ears -->
+    <ellipse cx="60" cy="110" rx="10" ry="12" class="dog" transform="rotate(-20 60 110)" />
+    <ellipse cx="80" cy="110" rx="10" ry="12" class="dog" transform="rotate(20 80 110)" />
+    
+    <!-- Nose -->
+    <ellipse cx="60" cy="125" rx="5" ry="3" fill="#333" />
+    
+    <!-- Tail -->
+    <path class="tail" d="M120,130 C140,120 150,140 155,130" stroke="#F5F5DC" stroke-width="10" fill="none" />
+    
+    <!-- Legs -->
+    <rect x="90" y="145" width="5" height="15" class="dog" />
+    <rect x="110" y="145" width="5" height="15" class="dog" />
+    <rect x="80" y="145" width="5" height="15" class="dog" />
+    <rect x="100" y="145" width="5" height="15" class="dog" />
+  </g>
+  
+  <!-- Happy face on grass -->
+  <circle cx="120" cy="110" r="10" fill="#FFFFFF" />
+  <circle cx="120" cy="107" r="2" fill="#333" />
+  <path d="M115,113 Q120,118 125,113" stroke="#333" stroke-width="2" fill="none" />
+</svg>

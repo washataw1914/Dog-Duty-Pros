@@ -12,6 +12,9 @@ export default function Services() {
         </div>
 
         <div className="space-y-16">
+          {/* Paw divider */}
+          <div className="paw-divider"></div>
+          
           {/* Service 1 */}
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
@@ -50,6 +53,9 @@ export default function Services() {
             </div>
           </div>
 
+          {/* Paw divider */}
+          <div className="paw-divider"></div>
+          
           {/* Service 2 */}
           <div className="flex flex-col md:flex-row-reverse items-center">
             <div className="md:w-1/2 md:pl-8 mb-8 md:mb-0">
@@ -88,6 +94,9 @@ export default function Services() {
             </div>
           </div>
 
+          {/* Paw divider */}
+          <div className="paw-divider"></div>
+          
           {/* Service 3 */}
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
