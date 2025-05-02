@@ -118,7 +118,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 relative">
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover-scale">
-              <h3 className="font-bubble text-2xl md:text-3xl text-center mb-4" style={{ color: "#00A3F7" }}>
+              <h3 className="font-bubble text-xl md:text-2xl text-center mb-4 text-black">
                 We handle the dirty work so you don't have to!
               </h3>
               <p className="text-lg md:text-xl text-gray-700 mb-8 text-center">
