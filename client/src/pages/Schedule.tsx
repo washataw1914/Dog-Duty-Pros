@@ -207,7 +207,7 @@ export default function Schedule() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="font-display text-4xl text-center mb-8">Schedule Your Poop Pickup</h1>
+      <h1 className="font-bubble text-4xl text-center mb-8">Schedule Your Poop Pickup</h1>
       
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column - Selection Form */}

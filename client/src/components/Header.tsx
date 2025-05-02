@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "wouter";
 
 interface HeaderProps {
   onServicesClick: () => void;
@@ -103,6 +104,13 @@ export default function Header({
           >
             Contact
           </a>
+          <Link
+            to="/schedule"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Schedule
+          </Link>
           <a
             href="#get-started"
             onClick={(e) => {
@@ -175,6 +183,13 @@ export default function Header({
           >
             Contact
           </a>
+          <Link
+            to="/schedule"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Schedule
+          </Link>
           <a
             href="#get-started"
             onClick={(e) => {
