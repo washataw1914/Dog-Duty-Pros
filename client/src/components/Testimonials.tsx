@@ -29,8 +29,8 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
-                alt="Sarah M."
+                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
+                alt="Sarah M. with her dogs"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary shadow-md"
               />
               <div>
@@ -57,8 +57,8 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
-                alt="Michael T."
+                src="https://images.unsplash.com/photo-1551730459-92db2a308d6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
+                alt="Michael T. with dog"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-destructive shadow-md"
               />
               <div>
@@ -85,8 +85,8 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
-                alt="Jessica K."
+                src="https://images.unsplash.com/photo-1525253013412-55c1a69a5738?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
+                alt="Jessica K. with kids and dog"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary/80 shadow-md"
               />
               <div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    .paw-pad {
+      fill: #0084ff;
+    }
+    
+    .pad1 { animation: fadeIn 0.4s ease-in-out 0s forwards; }
+    .pad2 { animation: fadeIn 0.4s ease-in-out 0.1s forwards; opacity: 0; }
+    .pad3 { animation: fadeIn 0.4s ease-in-out 0.2s forwards; opacity: 0; }
+    .pad4 { animation: fadeIn 0.4s ease-in-out 0.3s forwards; opacity: 0; }
+    .pad5 { animation: fadeIn 0.4s ease-in-out 0.4s forwards; opacity: 0; }
+  </style>
+  
+  <!-- Paw Print -->
+  <g transform="translate(25, 25)">
+    <ellipse class="paw-pad pad1" cx="0" cy="-10" rx="7" ry="8" />
+    <ellipse class="paw-pad pad2" cx="-9" cy="-5" rx="6" ry="7" />
+    <ellipse class="paw-pad pad3" cx="9" cy="-5" rx="6" ry="7" />
+    <ellipse class="paw-pad pad4" cx="-7" cy="8" rx="5" ry="7" />
+    <ellipse class="paw-pad pad5" cx="7" cy="8" rx="5" ry="7" />
+  </g>
+</svg>
