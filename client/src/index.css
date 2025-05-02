@@ -73,25 +73,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/images/subtle-paws.svg');
-  background-repeat: repeat;
-  background-size: 400px;
-  z-index: 0;
-  opacity: 0.15;
-}
-
-.bg-primary-gradient::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('/images/cloud-pattern.svg');
+  background-image: url('/images/clouds-only.svg');
   background-repeat: repeat-x;
   background-size: 1200px;
+  background-position: center;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.35;
 }
 
 .hover-scale {
