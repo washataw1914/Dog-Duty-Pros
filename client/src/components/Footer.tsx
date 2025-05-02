@@ -31,7 +31,7 @@ export default function Footer({
                 <path d="M10 16l-6-6 6-6" />
                 <path d="M18 18V6H8" />
               </svg>
-              <span className="font-bubble text-xl font-bold text-white">Scoop Troop</span>
+              <span className="font-bubble text-xl font-bold text-white">Dog Duty Pros</span>
             </div>
             <p className="text-gray-400 mb-4">
               Professional pet waste removal service. Making yards clean and enjoyable since 2018.
@@ -201,7 +201,7 @@ export default function Footer({
             <ul className="space-y-2">
               <li className="flex items-start">
                 <MapPin className="text-destructive mt-1 mr-2" size={18} />
-                <span className="text-gray-400">123 Scoop Street, Dogtown, USA 12345</span>
+                <span className="text-gray-400">123 Dog Duty Lane, Dogtown, USA 12345</span>
               </li>
               <li className="flex items-start">
                 <Phone className="text-destructive mt-1 mr-2" size={18} />
@@ -209,7 +209,7 @@ export default function Footer({
               </li>
               <li className="flex items-start">
                 <Mail className="text-destructive mt-1 mr-2" size={18} />
-                <span className="text-gray-400">info@scooptroop.com</span>
+                <span className="text-gray-400">info@dogdutypros.com</span>
               </li>
               <li className="flex items-start">
                 <Clock className="text-destructive mt-1 mr-2" size={18} />
@@ -221,7 +221,7 @@ export default function Footer({
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Scoop Troop. All Rights Reserved.
+              &copy; {new Date().getFullYear()} Dog Duty Pros. All Rights Reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition duration-200">

@@ -93,7 +93,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg">Address</h3>
-                  <p className="text-gray-700">123 Scoop Street, Dogtown, USA 12345</p>
+                  <p className="text-gray-700">123 Dog Duty Lane, Dogtown, USA 12345</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -111,7 +111,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg">Email</h3>
-                  <p className="text-gray-700">info@scooptroop.com</p>
+                  <p className="text-gray-700">info@dogdutypros.com</p>
                 </div>
               </div>
             </div>
@@ -296,7 +296,7 @@ export default function ContactForm() {
                   disabled={isSubmitting}
                   className="font-bubble px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full disabled:opacity-70"
                 >
-                  {isSubmitting ? "Sending..." : "Send Your Message"}
+                  {isSubmitting ? "Sending..." : "Take A Load Off Your Lawn!"}
                 </button>
               </form>
             </Form>
