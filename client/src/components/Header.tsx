@@ -33,15 +33,15 @@ export default function Header({
   return (
     <header className="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - positioned in the upper left corner */}
         <div className="flex items-center">
-          <div className="flex items-center">
+          <Link to="/">
             <img 
-              src="./images/dog-duty-logo.svg" 
+              src="./images/logo for vector dog duty.png" 
               alt="Dog Duty Pros Logo"
               className="h-20 w-auto"
             />
-          </div>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}

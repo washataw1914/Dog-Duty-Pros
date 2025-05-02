@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import { Link } from "wouter";
 
 export default function HowItWorks() {
   return (
@@ -21,7 +22,8 @@ export default function HowItWorks() {
             <img
               src="./images/logo for vector dog duty.png"
               alt="Funny dog with tongue out"
-              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4"
+              style={{ borderColor: "#00A9E0" }}
             />
           </div>
 
@@ -34,7 +36,8 @@ export default function HowItWorks() {
             <img
               src="./images/dog-commandos.svg"
               alt="Dog with funny smiling face"
-              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4"
+              style={{ borderColor: "#00A9E0" }}
             />
           </div>
 
@@ -47,15 +50,16 @@ export default function HowItWorks() {
             <img
               src="./images/clean-yard.svg"
               alt="Dog jumping in celebration"
-              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4"
+              style={{ borderColor: "#00A9E0" }}
             />
           </div>
         </div>
 
         <div className="text-center mt-12">
-          <a href="#get-started" className="cta-button inline-block">
+          <Link to="/schedule" className="cta-button inline-block">
             Let Us Handle Your Doo-ties!
-          </a>
+          </Link>
         </div>
       </div>
     </section>
