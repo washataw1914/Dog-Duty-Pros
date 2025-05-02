@@ -40,14 +40,20 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
         {/* Centered Business Name */}
         <div className="text-center mb-12 relative">
           <div className="relative mb-8">
-            <div className="flex justify-center items-center gap-5 md:gap-8">
-              <div className="paw-print-animated hidden sm:block"></div>
-              <div className="paw-print-animated"></div>
-              <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl whitespace-nowrap text-center px-4">
-                <span className="text-black">Dog Duty Pros</span>
-              </h1>
-              <div className="paw-print-animated"></div>
-              <div className="paw-print-animated hidden sm:block"></div>
+            <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl whitespace-nowrap text-center px-4 mb-6">
+              <span className="text-black">Dog Duty Pros</span>
+            </h1>
+            
+            {/* Paw prints walking in a curved path */}
+            <div className="flex justify-center">
+              <div className="relative h-24 w-full max-w-lg mx-auto">
+                {/* Left paw (odd numbers) alternate with right paw (even numbers) in walking pattern */}
+                <div className="paw-print-animated absolute" style={{ left: '10%', top: '15%' }}></div>
+                <div className="paw-print-animated absolute" style={{ left: '25%', top: '40%' }}></div>
+                <div className="paw-print-animated absolute" style={{ left: '40%', top: '10%' }}></div>
+                <div className="paw-print-animated absolute" style={{ left: '55%', top: '50%' }}></div>
+                <div className="paw-print-animated absolute" style={{ left: '70%', top: '20%' }}></div>
+              </div>
             </div>
           </div>
           
