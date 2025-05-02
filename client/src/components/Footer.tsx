@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Phone, Mail, Clock } from "lucide-react";
 
 interface FooterProps {
   onServicesClick: () => void;
@@ -199,10 +199,6 @@ export default function Footer({
           <div>
             <h3 className="font-bubble text-lg mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-start">
-                <MapPin className="text-destructive mt-1 mr-2" size={18} />
-                <span className="text-gray-400">123 Dog Duty Lane, Dogtown, USA 12345</span>
-              </li>
               <li className="flex items-start">
                 <Phone className="text-destructive mt-1 mr-2" size={18} />
                 <span className="text-gray-400">(501) 470-8886</span>
