@@ -108,13 +108,7 @@ export default function Header({
           >
             Contact
           </a>
-          <Link
-            to="/schedule"
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Schedule
-          </Link>
+
         </nav>
       </div>
 
@@ -186,14 +180,7 @@ export default function Header({
             <span className="text-primary mr-3">•</span>
             Contact
           </a>
-          <Link
-            to="/schedule"
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            <span className="text-primary mr-3">•</span>
-            Schedule
-          </Link>
+
         </div>
       </div>
     </header>

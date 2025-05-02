@@ -34,7 +34,7 @@ export default function Footer({
               <span className="font-bubble text-xl font-bold text-white">Dog Duty Pros</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Professional pet waste removal service. Making yards clean people happy.
+              Professional pet waste removal service. Making yards clean and people happy.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition duration-200">
