@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { Link } from "wouter";
 
 interface PricingProps {
   onGetStartedClick: () => void;
@@ -43,12 +44,12 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                   <span>Text & email confirmations</span>
                 </li>
               </ul>
-              <button 
-                onClick={onGetStartedClick}
+              <Link 
+                to="/checkout?serviceName=Basic%20Package&amount=14.95"
                 className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
                 Scoop There It Is!
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -83,12 +84,12 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 </li>
 
               </ul>
-              <button
-                onClick={onGetStartedClick}
+              <Link
+                to="/checkout?serviceName=Premium%20Package&amount=19.95"
                 className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
                 Doo Business With Us!
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -97,9 +98,17 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
           <p className="text-gray-600 mb-6">
             Need a custom solution? We also offer one-time cleanups starting at $49.99. Perfect for special events or to get a fresh start before beginning regular service.
           </p>
-          <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-[#0083D7] transition duration-200">
-            Get Your Special Doo-ty Quote!
-          </a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link 
+              to="/checkout?serviceName=One-Time%20Cleanup&amount=49.99"
+              className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200"
+            >
+              Pay for One-Time Cleanup
+            </Link>
+            <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-[#0083D7] transition duration-200">
+              Get Your Special Doo-ty Quote!
+            </a>
+          </div>
         </div>
       </div>
     </section>
