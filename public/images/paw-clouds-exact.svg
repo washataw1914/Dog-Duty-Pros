@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Paw Clouds Pattern (Matching reference image) -->
+  
+  <!-- Paw Prints Group -->
+  <g fill="white" opacity="0.8">
+    <!-- Paw Print 1 -->
+    <g transform="translate(160, 120)">
+      <ellipse cx="0" cy="0" rx="60" ry="50" />
+      <ellipse cx="-35" cy="-30" rx="30" ry="25" />
+      <ellipse cx="35" cy="-30" rx="30" ry="25" />
+      <ellipse cx="-35" cy="30" rx="30" ry="25" />
+      <ellipse cx="35" cy="30" rx="30" ry="25" />
+    </g>
+    
+    <!-- Paw Print 2 -->
+    <g transform="translate(400, 250)">
+      <ellipse cx="0" cy="0" rx="50" ry="40" />
+      <ellipse cx="-30" cy="-25" rx="25" ry="20" />
+      <ellipse cx="30" cy="-25" rx="25" ry="20" />
+      <ellipse cx="-30" cy="25" rx="25" ry="20" />
+      <ellipse cx="30" cy="25" rx="25" ry="20" />
+    </g>
+    
+    <!-- Paw Print 3 -->
+    <g transform="translate(640, 140)">
+      <ellipse cx="0" cy="0" rx="45" ry="38" />
+      <ellipse cx="-27" cy="-22" rx="22" ry="18" />
+      <ellipse cx="27" cy="-22" rx="22" ry="18" />
+      <ellipse cx="-27" cy="22" rx="22" ry="18" />
+      <ellipse cx="27" cy="22" rx="22" ry="18" />
+    </g>
+    
+    <!-- Paw Print 4 -->
+    <g transform="translate(880, 220)">
+      <ellipse cx="0" cy="0" rx="55" ry="45" />
+      <ellipse cx="-33" cy="-28" rx="28" ry="23" />
+      <ellipse cx="33" cy="-28" rx="28" ry="23" />
+      <ellipse cx="-33" cy="28" rx="28" ry="23" />
+      <ellipse cx="33" cy="28" rx="28" ry="23" />
+    </g>
+    
+    <!-- Paw Print 5 -->
+    <g transform="translate(1050, 120)">
+      <ellipse cx="0" cy="0" rx="40" ry="35" />
+      <ellipse cx="-25" cy="-20" rx="20" ry="16" />
+      <ellipse cx="25" cy="-20" rx="20" ry="16" />
+      <ellipse cx="-25" cy="20" rx="20" ry="16" />
+      <ellipse cx="25" cy="20" rx="20" ry="16" />
+    </g>
+    
+    <!-- Paw Print 6 -->
+    <g transform="translate(260, 350)">
+      <ellipse cx="0" cy="0" rx="42" ry="36" />
+      <ellipse cx="-25" cy="-21" rx="21" ry="17" />
+      <ellipse cx="25" cy="-21" rx="21" ry="17" />
+      <ellipse cx="-25" cy="21" rx="21" ry="17" />
+      <ellipse cx="25" cy="21" rx="21" ry="17" />
+    </g>
+    
+    <!-- Paw Print 7 -->
+    <g transform="translate(550, 380)">
+      <ellipse cx="0" cy="0" rx="52" ry="44" />
+      <ellipse cx="-31" cy="-26" rx="26" ry="22" />
+      <ellipse cx="31" cy="-26" rx="26" ry="22" />
+      <ellipse cx="-31" cy="26" rx="26" ry="22" />
+      <ellipse cx="31" cy="26" rx="26" ry="22" />
+    </g>
+    
+    <!-- Paw Print 8 -->
+    <g transform="translate(780, 450)">
+      <ellipse cx="0" cy="0" rx="48" ry="40" />
+      <ellipse cx="-29" cy="-24" rx="24" ry="20" />
+      <ellipse cx="29" cy="-24" rx="24" ry="20" />
+      <ellipse cx="-29" cy="24" rx="24" ry="20" />
+      <ellipse cx="29" cy="24" rx="24" ry="20" />
+    </g>
+    
+    <!-- Paw Print 9 -->
+    <g transform="translate(980, 350)">
+      <ellipse cx="0" cy="0" rx="44" ry="37" />
+      <ellipse cx="-26" cy="-22" rx="22" ry="18" />
+      <ellipse cx="26" cy="-22" rx="22" ry="18" />
+      <ellipse cx="-26" cy="22" rx="22" ry="18" />
+      <ellipse cx="26" cy="22" rx="22" ry="18" />
+    </g>
+  </g>
+</svg>
