@@ -196,11 +196,11 @@
 }
 
 /* Mirror effect for right side paws */
-div:nth-child(3) .left-paw {
+.right-side-paw.left-paw {
   transform: rotate(10deg) scaleX(-1);
 }
 
-div:nth-child(3) .right-paw {
+.right-side-paw.right-paw {
   transform: rotate(-10deg) scaleX(-1);
 }
 
@@ -221,6 +221,7 @@ div:nth-child(3) .right-paw {
   animation-delay: 1.1s;
 }
 
+/* Animation for left side paws */
 @keyframes pawFloat {
   0%, 100% {
     transform: translateY(0) scale(1);
@@ -228,6 +229,22 @@ div:nth-child(3) .right-paw {
   }
   50% {
     transform: translateY(-4px) scale(1.02);
+    opacity: 0.95;
+  }
+}
+
+/* Animation for right side mirrored paws */
+.right-side-paw {
+  animation-name: pawFloatMirror;
+}
+
+@keyframes pawFloatMirror {
+  0%, 100% {
+    transform: translateY(0) scale(1) scaleX(-1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-4px) scale(1.02) scaleX(-1);
     opacity: 0.95;
   }
 }

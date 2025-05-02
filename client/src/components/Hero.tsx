@@ -56,10 +56,10 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
               
               {/* Right side paw prints walking upward (mirrored) */}
               <div className="relative ml-2 md:ml-6 hidden sm:block" style={{ height: "140px", width: "70px" }}>
-                <div className="paw-print-animated left-paw" style={{ right: '30px', bottom: '0%' }}></div>
-                <div className="paw-print-animated right-paw" style={{ right: '0', bottom: '25%' }}></div>
-                <div className="paw-print-animated left-paw" style={{ right: '30px', bottom: '50%' }}></div>
-                <div className="paw-print-animated right-paw" style={{ right: '0', bottom: '75%' }}></div>
+                <div className="paw-print-animated left-paw right-side-paw" style={{ right: '30px', bottom: '0%' }}></div>
+                <div className="paw-print-animated right-paw right-side-paw" style={{ right: '0', bottom: '25%' }}></div>
+                <div className="paw-print-animated left-paw right-side-paw" style={{ right: '30px', bottom: '50%' }}></div>
+                <div className="paw-print-animated right-paw right-side-paw" style={{ right: '0', bottom: '75%' }}></div>
               </div>
             </div>
           </div>
