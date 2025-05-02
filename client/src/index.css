@@ -160,7 +160,7 @@
 /* Fun decorative elements */
 .paw-divider {
   height: 30px;
-  background-image: url('/images/animated-paw.svg');
+  background-image: url('./images/animated-paw.svg');
   background-repeat: repeat-x;
   background-size: 30px;
   margin: 20px 0;

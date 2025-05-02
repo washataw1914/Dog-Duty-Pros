@@ -29,7 +29,7 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="/images/testimonial-person1.svg"
+                src="./images/testimonial-person1.svg"
                 alt="Sarah M. with her dogs"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary shadow-md"
               />
@@ -57,7 +57,7 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="/images/testimonial-person2.svg"
+                src="./images/testimonial-person2.svg"
                 alt="Michael T. with dog"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-destructive shadow-md"
               />
@@ -85,7 +85,7 @@ export default function Testimonials() {
             </p>
             <div className="flex items-center">
               <img
-                src="/images/testimonial-person3.svg"
+                src="./images/testimonial-person3.svg"
                 alt="Jessica K. with kids and dog"
                 className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-primary/80 shadow-md"
               />
