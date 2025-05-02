@@ -19,7 +19,7 @@
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 48 100% 50%; /* Bright yellow accent */
     --accent-foreground: 240 5.9% 10%;
     --destructive: 358 85% 50%; /* #e41e25 from logo */
     --destructive-foreground: 0 0% 98%;
@@ -146,4 +146,68 @@
 
 .service-check-icon {
   @apply text-primary mt-1 mr-2;
+}
+
+/* Yellow accent elements */
+.accent-yellow {
+  @apply bg-yellow-400 text-black;
+}
+
+.accent-yellow-text {
+  @apply text-yellow-400 font-bold;
+}
+
+/* Fun decorative elements */
+.paw-divider {
+  height: 30px;
+  background-image: url('/images/animated-paw.svg');
+  background-repeat: repeat-x;
+  background-size: 30px;
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.highlight-box {
+  border: 2px dashed #0084ff;
+  background-color: rgba(255, 255, 0, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  position: relative;
+}
+
+.highlight-box::before {
+  content: "★";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background-color: #ffff00;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Badge effect */
+.badge-new {
+  position: relative;
+}
+
+.badge-new::after {
+  content: "NEW";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ffff00;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transform: rotate(15deg);
 }

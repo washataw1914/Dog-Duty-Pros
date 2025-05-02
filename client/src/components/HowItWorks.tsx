@@ -13,28 +13,28 @@ export default function HowItWorks() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Step 1 */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
-            <div className="step-number">1</div>
+          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative badge-new">
+            <div className="step-number accent-yellow">1</div>
             <h3 className="font-bubble text-2xl text-black mb-4">Book Online</h3>
             <p className="text-gray-700 mb-4">
-              Click a few buttons and poof! Your poop problems are scheduled to disappear. No more stepping in "surprises!"
+              Click a few buttons and poof! Your poop problems are scheduled to disappear. <span className="accent-yellow-text">No more stepping in "surprises!"</span>
             </p>
             <img
-              src="https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              src="/images/logo for vector dog duty.png"
               alt="Funny dog with tongue out"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
           </div>
 
           {/* Step 2 */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
+          <div className="highlight-box bg-white p-8 rounded-xl shadow-lg text-center relative">
             <div className="step-number">2</div>
             <h3 className="font-bubble text-2xl text-black mb-4">We Take The Load Off</h3>
             <p className="text-gray-700 mb-4">
-              Our elite poop commandos deploy to your yard with military precision. We leave no turd behind!
+              Our elite poop commandos deploy to your yard with military precision. <span className="accent-yellow-text">We leave no turd behind!</span>
             </p>
             <img
-              src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              src="/images/dog-commandos.svg"
               alt="Dog with funny smiling face"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
@@ -45,12 +45,12 @@ export default function HowItWorks() {
             <div className="step-number">3</div>
             <h3 className="font-bubble text-2xl text-black mb-4">Enjoy Your Clean Yard</h3>
             <p className="text-gray-700 mb-4">
-              Go barefoot again! Your yard is now a poop-free paradise. Your nose and shoes will thank you profusely.
+              <span className="accent-yellow-text">Go barefoot again!</span> Your yard is now a poop-free paradise. Your nose and shoes will thank you profusely.
             </p>
             <img
-              src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              src="/images/clean-yard.svg"
               alt="Dog jumping in celebration"
-              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-yellow-400"
             />
           </div>
         </div>
