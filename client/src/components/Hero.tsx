@@ -11,14 +11,12 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
         </div>
         {/* Centered Business Name */}
         <div className="text-center mb-12 relative">
-          <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl text-black leading-tight mb-4 flex items-center justify-center">
+          <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-4 flex items-center justify-center">
             <span>Dog Duty Pros</span>
             <img src="./images/animated-paw.svg" alt="" className="w-12 h-12 md:w-16 md:h-16 ml-3" />
           </h1>
-          <h2 className="font-bubble text-3xl md:text-4xl mb-6" style={{ textShadow: "2px 2px 0px #00A3F7" }}>
-            <span className="text-white">Taking A </span>
-            <span className="text-yellow-400">Load Off </span>
-            <span className="text-white">Your Lawn!</span>
+          <h2 className="font-bubble text-3xl md:text-4xl mb-6 text-white" style={{ textShadow: "2px 2px 0px #F4F00F" }}>
+            Taking A Load Off Your Lawn!
           </h2>
           
           <div className="max-w-xl mx-auto bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md">
