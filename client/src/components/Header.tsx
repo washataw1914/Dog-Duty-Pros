@@ -110,7 +110,7 @@ export default function Header({
               handleNavClick(onGetStartedClick);
             }}
             className="font-bubble px-8 py-2 text-white rounded-full transition duration-200"
-            style={{ backgroundColor: "#e41e25", minWidth: "200px", textAlign: "center" }}
+            style={{ backgroundColor: "#ff0000", minWidth: "200px", textAlign: "center" }}
           >
             Take A Load Off!
           </a>
@@ -182,7 +182,7 @@ export default function Header({
               handleNavClick(onGetStartedClick);
             }}
             className="font-bubble text-center px-8 py-2 text-white rounded-full transition duration-200"
-            style={{ backgroundColor: "#e41e25", width: "100%" }}
+            style={{ backgroundColor: "#ff0000", width: "100%" }}
           >
             Take A Load Off!
           </a>
