@@ -30,13 +30,13 @@ export default function Header({
   };
 
   return (
-    <header className="bg-white shadow-md fixed w-full z-50">
+    <header className="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
           <div className="flex items-center space-x-2">
             <svg 
-              className="h-12 w-12 text-primary"
+              className="h-14 w-14 text-primary"
               viewBox="0 0 100 100"
               fill="currentColor"
             >
@@ -115,7 +115,8 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onGetStartedClick);
             }}
-            className="font-bubble px-5 py-2 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200"
+            className="font-bubble px-8 py-2 text-white rounded-full transition duration-200"
+            style={{ backgroundColor: "#990000", minWidth: "200px", textAlign: "center" }}
           >
             Take A Load Off!
           </a>
