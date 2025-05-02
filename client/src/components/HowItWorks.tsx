@@ -29,9 +29,9 @@ export default function HowItWorks() {
           {/* Step 2 */}
           <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
             <div className="step-number">2</div>
-            <h3 className="font-bubble text-2xl text-black mb-4">We Do The Dirty Work</h3>
+            <h3 className="font-bubble text-2xl text-black mb-4">We Take The Load Off</h3>
             <p className="text-gray-700 mb-4">
-              Our professional scoopers will visit your yard and remove all pet waste thoroughly.
+              Our Dog Duty Pros will visit your yard and remove all pet waste thoroughly.
             </p>
             <img
               src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
@@ -57,7 +57,7 @@ export default function HowItWorks() {
 
         <div className="text-center mt-12">
           <a href="#get-started" className="cta-button inline-block">
-            Start Your Poo-Free Life Now!
+            Take A Load Off Your Lawn Now!
           </a>
         </div>
       </div>

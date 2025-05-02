@@ -5,7 +5,7 @@ export default function Services() {
     <section id="services" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="section-title">Our Scooptastic Services</h2>
+          <h2 className="section-title">Our Dog Duty Services</h2>
           <p className="section-subtitle">
             We offer a variety of pet waste removal services to meet your needs and keep your yard fresh and clean.
           </p>
@@ -45,7 +45,7 @@ export default function Services() {
                 </li>
               </ul>
               <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                Check Our Packages
+                Take A Load Off Weekly
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Services() {
                 </li>
               </ul>
               <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                Book A Deep Clean
+                One-Time Load Off
               </a>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function Services() {
                 </li>
               </ul>
               <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                Request Commercial Quote
+                Commercial Load Off
               </a>
             </div>
           </div>
