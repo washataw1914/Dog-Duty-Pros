@@ -187,7 +187,8 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onGetStartedClick);
             }}
-            className="font-bubble text-center px-5 py-2 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200"
+            className="font-bubble text-center px-8 py-2 text-white rounded-full transition duration-200"
+            style={{ backgroundColor: "#990000", width: "100%" }}
           >
             Take A Load Off!
           </a>
