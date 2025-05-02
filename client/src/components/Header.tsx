@@ -55,16 +55,12 @@ export default function Header({
             >
               Home
             </a>
-            <a
-              href="#services"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick(onServicesClick);
-              }}
+            <Link 
+              href="/services" 
               className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
             >
               Services
-            </a>
+            </Link>
             <a
               href="#pricing"
               onClick={(e) => {
@@ -123,16 +119,13 @@ export default function Header({
             >
               Home
             </a>
-            <a
-              href="#services"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick(onServicesClick);
-              }}
+            <Link 
+              href="/services"
+              onClick={() => setShowMobileMenu(false)}
               className="block py-2 text-gray-700 hover:text-primary"
             >
               Services
-            </a>
+            </Link>
             <a
               href="#pricing"
               onClick={(e) => {

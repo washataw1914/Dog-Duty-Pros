@@ -7,11 +7,13 @@ import Home from "@/pages/Home";
 import Checkout from "@/pages/Checkout";
 import Subscribe from "@/pages/Subscribe";
 import PaymentSuccess from "@/pages/PaymentSuccess";
+import AllServices from "@/pages/AllServices";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/services" component={AllServices} />
       <Route path="/checkout" component={Checkout} />
       <Route path="/subscribe" component={Subscribe} />
       <Route path="/payment-success" component={PaymentSuccess} />
