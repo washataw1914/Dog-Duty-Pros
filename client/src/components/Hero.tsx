@@ -6,8 +6,8 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
   return (
     <section id="home" className="pt-24 bg-primary-gradient">
       <div className="container mx-auto px-4 py-16 md:py-24 relative">
-        {/* Call Us button at top right corner of hero section */}
-        <div className="absolute top-2 right-4 md:right-10 z-20">
+        {/* Call Us button positioned below the header */}
+        <div className="absolute top-12 right-4 md:right-10 z-20">
           <a 
             href="#contact" 
             className="font-bubble px-3 py-2 text-white rounded-full transition duration-200 flex items-center justify-center gap-1 shadow-lg hover:shadow-xl"
