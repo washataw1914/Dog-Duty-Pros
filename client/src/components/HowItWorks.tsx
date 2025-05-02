@@ -51,7 +51,7 @@ export default function HowItWorks() {
               src="./images/clean-yard.svg"
               alt="Dog jumping in celebration"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4"
-              style={{ borderColor: "#00A9E0" }}
+              style={{ borderColor: "#00A3F7" }}
             />
           </div>
         </div>
