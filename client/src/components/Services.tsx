@@ -45,7 +45,7 @@ export default function Services() {
                 </li>
               </ul>
               <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                Take A Load Off Weekly
+                No Doo-Doo Drama!
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Services() {
                 </li>
               </ul>
               <a href="#pricing" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                One-Time Load Off
+                Poop Begone!
               </a>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function Services() {
                 </li>
               </ul>
               <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200">
-                Commercial Load Off
+                Major Duty Calls!
               </a>
             </div>
           </div>
