@@ -15,21 +15,21 @@ async function seed() {
           name: "Sarah M.",
           title: "Dog Mom of 3",
           rating: 5,
-          content: "With 3 large dogs, our yard was impossible to keep clean. Scoop Troop has been a lifesaver! Their weekly service means we can actually enjoy our backyard again. Worth every penny!",
+          content: "With 3 large dogs, our yard was impossible to keep clean. Dog Duty Pros has been a lifesaver! Their weekly service means we can actually enjoy our backyard again. Worth every penny!",
           image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
         },
         {
           name: "Michael T.",
           title: "Property Manager",
           rating: 5,
-          content: "As a property manager for a large apartment complex, I needed a reliable service. Scoop Troop has been professional, thorough, and our residents are thrilled with the cleaner common areas.",
+          content: "As a property manager for a large apartment complex, I needed a reliable service. Dog Duty Pros has been professional, thorough, and our residents are thrilled with the cleaner common areas.",
           image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
         },
         {
           name: "Jessica K.",
           title: "Busy Mom",
           rating: 4.5,
-          content: "I was skeptical at first about hiring someone for this, but now I can't imagine life without Scoop Troop! My kids can play freely in the yard, and I don't have to worry about the mess. Complete game-changer!",
+          content: "I was skeptical at first about hiring someone for this, but now I can't imagine life without Dog Duty Pros! My kids can play freely in the yard, and I don't have to worry about the mess. Complete game-changer!",
           image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64&q=80"
         }
       ]);
@@ -51,7 +51,7 @@ async function seed() {
         price: 1499, // $14.99
         interval: "week",
         popular: false,
-        buttonText: "Scoop Away The Poo!"
+        buttonText: "Basic Load Off"
       }).returning();
       
       const [premiumPlan] = await db.insert(schema.servicePlans).values({

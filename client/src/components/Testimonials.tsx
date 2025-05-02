@@ -5,7 +5,7 @@ export default function Testimonials() {
     <section className="py-16 bg-primary/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="section-title">Happy Tails, Clean Yards</h2>
+          <h2 className="section-title">We Take The Load Off Their Lawn</h2>
           <p className="section-subtitle">
             Don't just take our word for it. See what our customers have to say about our service!
           </p>
@@ -25,7 +25,7 @@ export default function Testimonials() {
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
             <p className="text-gray-700 mb-6 italic">
-              "With 3 large dogs, our yard was impossible to keep clean. Scoop Troop has been a lifesaver! Their weekly service means we can actually enjoy our backyard again. Worth every penny!"
+              "With 3 large dogs, our yard was impossible to keep clean. Dog Duty Pros has been a lifesaver! Their weekly service means we can actually enjoy our backyard again. Worth every penny!"
             </p>
             <div className="flex items-center">
               <img
@@ -53,7 +53,7 @@ export default function Testimonials() {
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
             <p className="text-gray-700 mb-6 italic">
-              "As a property manager for a large apartment complex, I needed a reliable service. Scoop Troop has been professional, thorough, and our residents are thrilled with the cleaner common areas."
+              "As a property manager for a large apartment complex, I needed a reliable service. Dog Duty Pros has been professional, thorough, and our residents are thrilled with the cleaner common areas."
             </p>
             <div className="flex items-center">
               <img
@@ -81,7 +81,7 @@ export default function Testimonials() {
               <span className="ml-2 text-gray-600">4.5</span>
             </div>
             <p className="text-gray-700 mb-6 italic">
-              "I was skeptical at first about hiring someone for this, but now I can't imagine life without Scoop Troop! My kids can play freely in the yard, and I don't have to worry about the mess. Complete game-changer!"
+              "I was skeptical at first about hiring someone for this, but now I can't imagine life without Dog Duty Pros! My kids can play freely in the yard, and I don't have to worry about the mess. Complete game-changer!"
             </p>
             <div className="flex items-center">
               <img
