@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'wouter';
+import { useLocation } from 'wouter';
 import { Check, Loader2 } from 'lucide-react';
 import { 
   Card,
@@ -53,7 +53,7 @@ const sanitizationOptions: SanitizationOption[] = [
 export default function SanitizationServices() {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
-  const navigate = useNavigate();
+  const [, setLocation] = useLocation();
 
   const handleProceedToCheckout = () => {
     if (!selectedOption) return;
@@ -67,7 +67,7 @@ export default function SanitizationServices() {
     }
     
     // Navigate to checkout with the selected option details
-    navigate(`/checkout?serviceId=${option.id}&serviceName=${encodeURIComponent(option.name)}&amount=${option.price}`);
+    setLocation(`/checkout?serviceId=${option.id}&serviceName=${encodeURIComponent(option.name)}&amount=${option.price}`);
   };
 
   return (

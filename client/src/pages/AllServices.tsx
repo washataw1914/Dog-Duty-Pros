@@ -21,7 +21,21 @@ interface ServiceOption {
   interval?: string;
   features: string[];
   popular?: boolean;
+  addon?: {
+    id: string;
+    name: string;
+    description: string;
+    price: number;
+  };
 }
+
+// Spot sanitization addon
+const spotSanitizationAddon = {
+  id: 'spot-sanitization',
+  name: 'Spot Sanitization',
+  description: 'Targeted sanitization for specific high-traffic or problem areas in your yard.',
+  price: 49.99,
+};
 
 // Regular dog waste removal services
 const regularServices: ServiceOption[] = [
@@ -38,7 +52,8 @@ const regularServices: ServiceOption[] = [
       'Satisfaction guarantee',
       'No long-term contracts'
     ],
-    popular: false
+    popular: false,
+    addon: spotSanitizationAddon
   },
   {
     id: 'premium-weekly',
@@ -53,7 +68,8 @@ const regularServices: ServiceOption[] = [
       'Satisfaction guarantee',
       'Perfect for multiple dogs'
     ],
-    popular: true
+    popular: true,
+    addon: spotSanitizationAddon
   },
   {
     id: 'basic-monthly',
@@ -68,7 +84,8 @@ const regularServices: ServiceOption[] = [
       'Satisfaction guarantee',
       'No long-term contracts'
     ],
-    popular: false
+    popular: false,
+    addon: spotSanitizationAddon
   },
   {
     id: 'quarterly',
@@ -83,7 +100,8 @@ const regularServices: ServiceOption[] = [
       'Text notification when complete',
       'Satisfaction guarantee'
     ],
-    popular: false
+    popular: false,
+    addon: spotSanitizationAddon
   }
 ];
 
@@ -100,19 +118,6 @@ const sanitizationServices: ServiceOption[] = [
       'Reduces pet waste odors',
       'Pet-friendly, eco-conscious solution',
       'Helps prevent disease transmission'
-    ]
-  },
-  {
-    id: 'spot',
-    name: 'Spot Sanitization',
-    description: 'Targeted sanitization for specific high-traffic or problem areas in your yard.',
-    price: 49.99,
-    features: [
-      'Treats up to 3 specific problem areas',
-      'Perfect for dog runs or pet play areas',
-      'Eliminates odors at the source',
-      'Breaks down waste residue',
-      'Quick-drying formula'
     ]
   }
 ];
@@ -151,15 +156,32 @@ export default function AllServices() {
   const [selectedTab, setSelectedTab] = useState('regular');
   const [isProcessing, setIsProcessing] = useState(false);
   const [selectedService, setSelectedService] = useState<string | null>(null);
+  const [includedAddons, setIncludedAddons] = useState<Record<string, boolean>>({});
   const [, setLocation] = useLocation();
+
+  const toggleAddon = (serviceId: string) => {
+    setIncludedAddons(prev => ({
+      ...prev,
+      [serviceId]: !prev[serviceId]
+    }));
+  };
 
   const handleProceedToCheckout = (service: ServiceOption) => {
     setIsProcessing(true);
     setSelectedService(service.id);
     
+    // Calculate the total price including addons if selected
+    let totalPrice = service.price;
+    let serviceName = service.name;
+    
+    if (service.addon && includedAddons[service.id]) {
+      totalPrice += service.addon.price;
+      serviceName = `${service.name} with ${service.addon.name}`;
+    }
+    
     // Navigate to checkout with the selected service details
     setTimeout(() => {
-      setLocation(`/checkout?serviceId=${service.id}&serviceName=${encodeURIComponent(service.name)}&amount=${service.price}`);
+      setLocation(`/checkout?serviceId=${service.id}&serviceName=${encodeURIComponent(serviceName)}&amount=${totalPrice}`);
     }, 500);
   };
 
@@ -224,6 +246,26 @@ export default function AllServices() {
                             </li>
                           ))}
                         </ul>
+                        
+                        {service.addon && (
+                          <div className="mt-4 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                            <div className="flex items-center mb-2">
+                              <input
+                                type="checkbox"
+                                id={`addon-${service.id}`}
+                                checked={!!includedAddons[service.id]}
+                                onChange={() => toggleAddon(service.id)}
+                                className="h-4 w-4 text-primary border-gray-300 rounded focus:ring-primary"
+                              />
+                              <label htmlFor={`addon-${service.id}`} className="ml-2 text-sm font-medium text-gray-700">
+                                Add {service.addon.name} (+${service.addon.price.toFixed(2)})
+                              </label>
+                            </div>
+                            <div className="text-xs text-gray-500">
+                              {service.addon.description}
+                            </div>
+                          </div>
+                        )}
                       </CardContent>
                       <CardFooter>
                         <Button 
@@ -238,8 +280,17 @@ export default function AllServices() {
                             </>
                           ) : (
                             <>
-                              Select & Checkout
-                              <ArrowRight className="ml-2 h-4 w-4" />
+                              {service.addon && includedAddons[service.id] ? (
+                                <>
+                                  ${(service.price + service.addon.price).toFixed(2)} - Checkout
+                                  <ArrowRight className="ml-2 h-4 w-4" />
+                                </>
+                              ) : (
+                                <>
+                                  ${service.price.toFixed(2)} - Checkout
+                                  <ArrowRight className="ml-2 h-4 w-4" />
+                                </>
+                              )}
                             </>
                           )}
                         </Button>
