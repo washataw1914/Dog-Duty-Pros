@@ -7,13 +7,13 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
     <section id="home" className="pt-24 bg-primary-gradient">
       <div className="container mx-auto px-4 py-16 md:py-24 relative">
         <div className="absolute bottom-0 w-full left-0 h-16 overflow-hidden">
-          <img src="/images/paw-trail.svg" alt="" className="w-full object-contain" />
+          <img src="./images/paw-trail.svg" alt="" className="w-full object-contain" />
         </div>
         {/* Centered Business Name */}
         <div className="text-center mb-12 relative">
           <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl text-black leading-tight mb-4 flex items-center justify-center">
             <span>Dog Duty Pros</span>
-            <img src="/images/animated-paw.svg" alt="" className="w-12 h-12 md:w-16 md:h-16 ml-3" />
+            <img src="./images/animated-paw.svg" alt="" className="w-12 h-12 md:w-16 md:h-16 ml-3" />
           </h1>
           <h2 className="font-bubble text-3xl md:text-4xl mb-6" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.4)" }}>
             <span className="text-white">Taking A </span>
@@ -67,7 +67,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <img
-                src="/images/great-pyrenees.svg"
+                src="./images/great-pyrenees.svg"
                 alt="Happy Great Pyrenees dog in a nice yard"
                 className="rounded-xl shadow-2xl w-full max-w-lg object-cover border-8 border-white hover-scale"
               />

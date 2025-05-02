@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Combined Clouds and Paw Prints Pattern -->
+  
+  <!-- Clouds Group -->
+  <g fill="white" opacity="0.7">
+    <!-- Cloud 1 -->
+    <path d="M150,150 C120,130 80,140 60,170 C40,200 50,240 80,260 C100,272 130,270 155,250 C180,230 210,210 200,180 C190,150 175,130 150,150 Z" />
+    
+    <!-- Cloud 2 -->
+    <path d="M550,100 C520,80 480,90 460,120 C440,150 450,190 480,210 C500,222 530,220 555,200 C580,180 610,160 600,130 C590,100 575,80 550,100 Z" />
+    
+    <!-- Cloud 3 -->
+    <path d="M900,200 C880,185 850,192 837,215 C823,237 830,265 850,280 C865,288 885,286 903,272 C920,258 941,238 935,215 C928,193 918,180 900,200 Z" />
+    
+    <!-- Cloud 4 -->
+    <path d="M350,350 C330,335 300,342 287,365 C273,387 280,415 300,430 C315,438 335,436 353,422 C370,408 391,388 385,365 C378,343 368,330 350,350 Z" />
+    
+    <!-- Cloud 5 -->
+    <path d="M700,450 C680,435 650,442 637,465 C623,487 630,515 650,530 C665,538 685,536 703,522 C720,508 741,488 735,465 C728,443 718,430 700,450 Z" />
+    
+    <!-- Medium Cloud 6 -->
+    <path d="M1050,350 C1030,335 1000,342 987,365 C973,387 980,415 1000,430 C1015,438 1035,436 1053,422 C1070,408 1091,388 1085,365 C1078,343 1068,330 1050,350 Z" />
+  </g>
+  
+  <!-- Paw Prints Group -->
+  <g fill="white" opacity="0.25">
+    <!-- Paw Print 1 -->
+    <g transform="translate(120, 100)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" />
+    </g>
+    
+    <!-- Paw Print 2 -->
+    <g transform="translate(500, 180)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" />
+    </g>
+    
+    <!-- Paw Print 3 -->
+    <g transform="translate(800, 120)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" />
+    </g>
+    
+    <!-- Paw Print 4 -->
+    <g transform="translate(250, 300)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" />
+    </g>
+    
+    <!-- Paw Print 5 -->
+    <g transform="translate(650, 400)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" />
+    </g>
+    
+    <!-- Paw Print 6 -->
+    <g transform="translate(1000, 280)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" />
+    </g>
+    
+    <!-- Paw Print 7 -->
+    <g transform="translate(400, 80)">
+      <ellipse cx="0" cy="-15" rx="8" ry="10" />
+      <ellipse cx="-12" cy="-6" rx="6" ry="8" />
+      <ellipse cx="12" cy="-6" rx="6" ry="8" />
+      <ellipse cx="-6" cy="12" rx="6" ry="10" />
+      <ellipse cx="6" cy="12" rx="6" ry="10" />
+    </g>
+    
+    <!-- Paw Print 8 -->
+    <g transform="translate(850, 350)">
+      <ellipse cx="0" cy="-15" rx="8" ry="10" />
+      <ellipse cx="-12" cy="-6" rx="6" ry="8" />
+      <ellipse cx="12" cy="-6" rx="6" ry="8" />
+      <ellipse cx="-6" cy="12" rx="6" ry="10" />
+      <ellipse cx="6" cy="12" rx="6" ry="10" />
+    </g>
+    
+    <!-- Paw Print 9 -->
+    <g transform="translate(300, 500)">
+      <ellipse cx="0" cy="-15" rx="8" ry="10" />
+      <ellipse cx="-12" cy="-6" rx="6" ry="8" />
+      <ellipse cx="12" cy="-6" rx="6" ry="8" />
+      <ellipse cx="-6" cy="12" rx="6" ry="10" />
+      <ellipse cx="6" cy="12" rx="6" ry="10" />
+    </g>
+  </g>
+</svg>

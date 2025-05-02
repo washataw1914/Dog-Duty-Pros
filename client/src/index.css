@@ -73,7 +73,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/images/paw-clouds-exact.svg');
+  background-image: url('./images/paw-clouds-exact.svg');
   background-repeat: repeat-x;
   background-size: 1200px;
   background-position: center;

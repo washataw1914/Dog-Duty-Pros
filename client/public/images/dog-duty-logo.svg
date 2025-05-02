@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dog -->
+  <g>
+    <!-- Body outline -->
+    <path d="M175,50 C165,45 155,60 140,55 C125,50 120,80 125,90 C130,100 140,120 150,130 C160,140 170,150 185,145 C200,140 210,130 215,115 C220,100 225,85 220,70 C215,55 185,55 175,50Z" fill="white" stroke="black" stroke-width="4"/>
+    
+    <!-- Head outline -->
+    <path d="M150,70 C140,60 130,55 120,60 C110,65 105,80 110,95 C115,110 125,120 140,125 C155,130 175,125 185,115 C195,105 200,90 195,75 C190,60 175,55 160,65 C155,55 155,50 150,70Z" fill="white" stroke="black" stroke-width="4"/>
+    
+    <!-- Ears -->
+    <path d="M120,65 C115,55 110,50 100,55 C90,60 85,70 90,80 C95,90 105,95 115,90 C125,85 125,75 120,65Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M180,70 C185,60 195,55 205,60 C215,65 220,75 215,85 C210,95 200,100 190,95 C180,90 175,80 180,70Z" fill="white" stroke="black" stroke-width="4"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="140" cy="95" rx="8" ry="10" fill="black"/>
+    <ellipse cx="170" cy="95" rx="8" ry="10" fill="black"/>
+    <circle cx="143" cy="92" r="2" fill="white"/>
+    <circle cx="173" cy="92" r="2" fill="white"/>
+    
+    <!-- Nose -->
+    <ellipse cx="155" cy="110" rx="15" ry="10" fill="black"/>
+    <circle cx="150" cy="107" r="3" fill="white"/>
+    
+    <!-- Mouth -->
+    <ellipse cx="155" cy="130" rx="15" ry="10" fill="#e41e25"/>
+    <path d="M145,125 C150,135 160,135 165,125" fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Paw with shovel -->
+    <rect x="110" y="160" width="10" height="40" fill="#009fe3" stroke="black" stroke-width="2"/>
+    <path d="M110,160 C100,145 90,150 95,160 C100,170 105,175 110,160Z" fill="#cccccc" stroke="black" stroke-width="2"/>
+  </g>
+  
+  <!-- Text "DOG DUTY PROS" in bubble style -->
+  <g transform="translate(40, 210)">
+    <path d="M10,0 C0,-10 0,-20 20,-20 H300 C320,-20 320,-10 310,0 L290,20 C280,30 280,40 260,40 H40 C20,40 20,30 30,20 Z" fill="#009fe3" stroke="black" stroke-width="4"/>
+    <path d="M35,10 C25,0 25,-10 45,-10 H285 C305,-10 305,0 295,10 L275,30 C265,40 265,50 245,50 H75 C55,50 55,40 65,30 Z" fill="white" stroke="black" stroke-width="3"/>
+    <text x="75" y="28" font-family="Coiny, Arial, sans-serif" font-size="28" font-weight="bold" fill="black">DOG DUTY PROS</text>
+  </g>
+</svg>

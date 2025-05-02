@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="320" viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Paw prints pattern -->
+  <g opacity="0.25">
+    <!-- Paw print 1 -->
+    <g transform="translate(50, 50) rotate(25)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" fill="white" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" fill="white" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" fill="white" />
+    </g>
+    
+    <!-- Paw print 2 -->
+    <g transform="translate(150, 120) rotate(-15)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" fill="white" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" fill="white" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" fill="white" />
+    </g>
+    
+    <!-- Paw print 3 -->
+    <g transform="translate(260, 60) rotate(45)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" fill="white" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" fill="white" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" fill="white" />
+    </g>
+    
+    <!-- Paw print 4 -->
+    <g transform="translate(90, 220) rotate(-30)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" fill="white" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" fill="white" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" fill="white" />
+    </g>
+    
+    <!-- Paw print 5 -->
+    <g transform="translate(330, 180) rotate(15)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" fill="white" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" fill="white" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" fill="white" />
+    </g>
+    
+    <!-- Paw print 6 -->
+    <g transform="translate(190, 270) rotate(5)">
+      <ellipse cx="0" cy="-15" rx="10" ry="12" fill="white" />
+      <ellipse cx="-14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="14" cy="-8" rx="8" ry="10" fill="white" />
+      <ellipse cx="-8" cy="15" rx="8" ry="12" fill="white" />
+      <ellipse cx="8" cy="15" rx="8" ry="12" fill="white" />
+    </g>
+  </g>
+</svg>
