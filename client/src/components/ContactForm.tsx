@@ -87,15 +87,7 @@ export default function ContactForm() {
               Have questions? Need a custom quote? We're here to help! Fill out the form and we'll get back to you within 24 hours.
             </p>
             <div className="space-y-4 mb-8">
-              <div className="flex items-start">
-                <div className="bg-primary rounded-full p-3 mr-4 text-white">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <h3 className="font-medium text-lg">Address</h3>
-                  <p className="text-gray-700">123 Dog Duty Lane, Dogtown, USA 12345</p>
-                </div>
-              </div>
+              
               <div className="flex items-start">
                 <div className="bg-primary rounded-full p-3 mr-4 text-white">
                   <Phone size={20} />
