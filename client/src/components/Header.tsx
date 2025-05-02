@@ -36,7 +36,7 @@ export default function Header({
         <div className="flex items-center">
           <div className="flex items-center">
             <img 
-              src="/images/dog-duty-logo.svg" 
+              src="./images/dog-duty-logo.svg" 
               alt="Dog Duty Pros Logo"
               className="h-20 w-auto"
             />

@@ -19,7 +19,7 @@ export default function HowItWorks() {
               Click a few buttons and poof! Your poop problems are scheduled to disappear. <span className="accent-yellow-text">No more stepping in "surprises!"</span>
             </p>
             <img
-              src="/images/logo for vector dog duty.png"
+              src="./images/logo for vector dog duty.png"
               alt="Funny dog with tongue out"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
@@ -32,7 +32,7 @@ export default function HowItWorks() {
               Our elite poop commandos deploy to your yard with military precision. <span className="accent-yellow-text">We leave no turd behind!</span>
             </p>
             <img
-              src="/images/dog-commandos.svg"
+              src="./images/dog-commandos.svg"
               alt="Dog with funny smiling face"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
@@ -45,7 +45,7 @@ export default function HowItWorks() {
               <span className="accent-yellow-text">Go barefoot again!</span> Your yard is now a poop-free paradise. Your nose and shoes will thank you profusely.
             </p>
             <img
-              src="/images/clean-yard.svg"
+              src="./images/clean-yard.svg"
               alt="Dog jumping in celebration"
               className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
