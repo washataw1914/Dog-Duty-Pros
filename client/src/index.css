@@ -61,7 +61,7 @@
 }
 
 .bg-primary-gradient {
-  background: linear-gradient(135deg, rgba(220, 240, 255, 0.9) 0%, rgba(0, 159, 227, 0.5) 35%, rgba(0, 120, 190, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(0, 220, 255, 0.85) 0%, rgba(0, 180, 240, 0.8) 50%, rgba(0, 150, 220, 0.75) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -73,12 +73,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/images/clouds-only.svg');
+  background-image: url('/images/clouds-with-paws.svg');
   background-repeat: repeat-x;
   background-size: 1200px;
   background-position: center;
   z-index: 0;
-  opacity: 0.35;
+  opacity: 0.6;
 }
 
 .hover-scale {

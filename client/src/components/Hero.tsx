@@ -11,7 +11,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl text-black leading-tight mb-4">
             Dog Duty Pros
           </h1>
-          <h2 className="font-bubble text-3xl md:text-4xl text-bright-blue mb-6">
+          <h2 className="font-bubble text-3xl md:text-4xl mb-6 text-white" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.4)" }}>
             Taking A Load Off Your Lawn!
           </h2>
           
@@ -61,8 +61,8 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1546421845-6471bdcf3edf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Playful dog enjoying the lawn"
+                src="https://images.unsplash.com/photo-1526440847959-4e2e11e8e2e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Cute dog with a funny face"
                 className="rounded-xl shadow-2xl w-full max-w-lg object-cover border-8 border-white hover-scale"
               />
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-xl font-bubble transform rotate-6 shadow-lg text-lg">
