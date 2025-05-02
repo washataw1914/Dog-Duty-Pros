@@ -34,7 +34,7 @@ export default function Header({
     <header className="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 py-3">
         {/* Top Bar with Logo and Hamburger Menu */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center relative">
           {/* Logo - positioned in the upper left corner */}
           <div className="flex items-center">
             <Link to="/">
@@ -49,8 +49,9 @@ export default function Header({
           {/* Mobile Menu Button - moved to upper right corner */}
           <button
             onClick={toggleMobileMenu}
-            className="text-primary focus:outline-none p-2 hover:bg-gray-100 rounded-full transition-colors"
+            className="text-primary focus:outline-none p-2 hover:bg-gray-100 rounded-full transition-colors z-50"
             aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -113,76 +114,68 @@ export default function Header({
       </div>
 
       {/* Mobile Navigation - dropdown menu */}
-      <div
-        className={`md:hidden absolute top-[100%] left-0 right-0 bg-white px-4 py-3 shadow-lg transition-all duration-300 ease-in-out ${
-          mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
-        style={{ 
-          visibility: mobileMenuOpen ? 'visible' : 'hidden',
-          transitionProperty: 'opacity, transform, visibility',
-          transitionDelay: mobileMenuOpen ? '0s' : '0s, 0s, 300ms'
-        }}
-      >
-        <div className="flex flex-col divide-y divide-gray-100">
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              setMobileMenuOpen(false);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
-          >
-            <span className="text-primary mr-3">•</span>
-            Home
-          </a>
-          <a
-            href="#services"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick(onServicesClick);
-            }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
-          >
-            <span className="text-primary mr-3">•</span>
-            Services
-          </a>
-          <a
-            href="#pricing"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick(onPricingClick);
-            }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
-          >
-            <span className="text-primary mr-3">•</span>
-            Pricing
-          </a>
-          <a
-            href="#about"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick(onAboutClick);
-            }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
-          >
-            <span className="text-primary mr-3">•</span>
-            About
-          </a>
-          <a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick(onContactClick);
-            }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
-          >
-            <span className="text-primary mr-3">•</span>
-            Contact
-          </a>
-
+      {mobileMenuOpen && (
+        <div className="md:hidden fixed top-[72px] left-0 right-0 bg-white px-4 py-3 shadow-lg z-50 w-full border-t border-gray-200 max-h-[80vh] overflow-auto">
+          <div className="flex flex-col divide-y divide-gray-100">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileMenuOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
+            >
+              <span className="text-primary mr-3">•</span>
+              Home
+            </a>
+            <a
+              href="#services"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(onServicesClick);
+              }}
+              className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
+            >
+              <span className="text-primary mr-3">•</span>
+              Services
+            </a>
+            <a
+              href="#pricing"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(onPricingClick);
+              }}
+              className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
+            >
+              <span className="text-primary mr-3">•</span>
+              Pricing
+            </a>
+            <a
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(onAboutClick);
+              }}
+              className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
+            >
+              <span className="text-primary mr-3">•</span>
+              About
+            </a>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(onContactClick);
+              }}
+              className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
+            >
+              <span className="text-primary mr-3">•</span>
+              Contact
+            </a>
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }
