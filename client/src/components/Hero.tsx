@@ -115,8 +115,9 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           </h2>
         </div>
         
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-10 md:mb-0 relative">
+        <div className="flex flex-col items-center">
+          {/* Centered text block */}
+          <div className="max-w-2xl mx-auto mb-10 relative">
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover-scale">
               <h3 className="font-bubble text-xl md:text-2xl text-center mb-4 text-black">
                 We handle the dirty work so you don't have to!
@@ -154,12 +155,14 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-center">
+          
+          {/* Dog image underneath */}
+          <div className="flex justify-center">
             <div className="relative">
               <img
                 src="./images/great-pyrenees.svg"
                 alt="Happy Great Pyrenees dog in a nice yard"
-                className="rounded-xl shadow-2xl w-full max-w-lg object-cover border-8 border-white hover-scale"
+                className="rounded-xl shadow-2xl w-full max-w-md object-cover border-8 border-white hover-scale"
               />
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-xl font-bubble transform rotate-6 shadow-lg text-lg">
                 We 💙 Dogs!
