@@ -15,12 +15,12 @@ export default function Testimonials() {
           {/* Testimonial 1 */}
           <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all border-2 border-transparent hover:border-primary">
             <div className="flex items-center mb-4">
-              <div className="text-yellow-400 flex">
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
+              <div className="flex" style={{ color: "#F4F00F" }}>
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
               </div>
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
@@ -43,12 +43,12 @@ export default function Testimonials() {
           {/* Testimonial 2 */}
           <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all border-2 border-transparent hover:border-destructive">
             <div className="flex items-center mb-4">
-              <div className="text-yellow-400 flex">
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
+              <div className="flex" style={{ color: "#F4F00F" }}>
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
               </div>
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
@@ -71,12 +71,12 @@ export default function Testimonials() {
           {/* Testimonial 3 */}
           <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all border-2 border-transparent hover:border-primary/80">
             <div className="flex items-center mb-4">
-              <div className="text-yellow-400 flex">
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
-                <Star className="fill-yellow-400" size={20} />
+              <div className="flex" style={{ color: "#F4F00F" }}>
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
+                <Star style={{ fill: "#F4F00F" }} size={20} />
               </div>
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
