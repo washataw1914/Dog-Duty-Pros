@@ -111,17 +111,6 @@ export default function Header({
           >
             Schedule
           </Link>
-          <a
-            href="#get-started"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick(onGetStartedClick);
-            }}
-            className="font-bubble px-8 py-2 text-white rounded-full transition duration-200"
-            style={{ backgroundColor: "#cc0000", minWidth: "200px", textAlign: "center" }}
-          >
-            Take A Load Off!
-          </a>
         </nav>
       </div>
 
@@ -190,17 +179,6 @@ export default function Header({
           >
             Schedule
           </Link>
-          <a
-            href="#get-started"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick(onGetStartedClick);
-            }}
-            className="font-bubble text-center px-8 py-2 text-white rounded-full transition duration-200"
-            style={{ backgroundColor: "#cc0000", width: "100%" }}
-          >
-            Take A Load Off!
-          </a>
         </div>
       </div>
     </header>
