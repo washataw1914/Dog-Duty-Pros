@@ -17,12 +17,6 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <h2 className="font-bubble text-3xl md:text-4xl mb-6 text-white" style={{ textShadow: "2px 2px 0px #F4F00F" }}>
             Taking A Load Off Your Lawn!
           </h2>
-          
-          <div className="max-w-xl mx-auto bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md">
-            <p className="text-xl text-center font-medium text-gray-700">
-              🐾 We scoop the poop, so you don't have to! 🐾
-            </p>
-          </div>
         </div>
         
         <div className="flex flex-col md:flex-row items-center">
