@@ -452,10 +452,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const { amount, serviceName, email, name, phone } = req.body;
       
-      if (!amount || !serviceName) {
+      if (!amount || !serviceName || !email || !name || !phone) {
         return res.status(400).json({
           success: false,
-          message: "Missing required parameters. Need at least amount and serviceName."
+          message: "Missing required parameters. Need amount, serviceName, email, name, and phone."
         });
       }
       

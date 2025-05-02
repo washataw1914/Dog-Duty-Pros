@@ -228,7 +228,11 @@ export default function Checkout() {
         setLoading(true);
         const response = await apiRequest('POST', '/api/create-payment-intent', {
           amount,
-          serviceName
+          serviceName,
+          // Use placeholder values for now - customer details will be provided during confirmation
+          email: 'placeholder@example.com',
+          name: 'Placeholder Name',
+          phone: '5555555555'
         });
         
         if (!response.ok) {
