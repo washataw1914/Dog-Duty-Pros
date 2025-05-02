@@ -452,45 +452,30 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const { amount, serviceName, email, name, phone } = req.body;
       
-      if (!amount || !serviceName || !email || !name || !phone) {
+      if (!amount || !serviceName) {
         return res.status(400).json({
           success: false,
-          message: "Missing required parameters. Need amount, serviceName, email, name, and phone."
+          message: "Missing required parameters. Need at least amount and serviceName."
         });
       }
       
-      // Create a customer
-      const customer = await stripe.customers.create({
-        email: email,
-        name: name,
-        phone: phone,
-        metadata: {
-          service: serviceName
-        }
-      });
-      
-      // Create a PaymentIntent with the order amount and currency
+      // Create a PaymentIntent without customer information first
+      // Customer data will be associated during confirmation on the client side
       const paymentIntent = await stripe.paymentIntents.create({
         amount: Math.round(amount * 100), // Convert to cents
         currency: "usd",
-        customer: customer.id,
         automatic_payment_methods: {
           enabled: true,
         },
         metadata: {
-          service: serviceName,
-          customer_email: email,
-          customer_name: name,
-          customer_phone: phone
+          service: serviceName
         },
-        receipt_email: email,
         description: `Payment for ${serviceName} service - Dog Duty Pros`
       });
       
       return res.status(200).json({
         success: true,
-        clientSecret: paymentIntent.client_secret,
-        customerId: customer.id
+        clientSecret: paymentIntent.client_secret
       });
     } catch (error: any) {
       console.error("Error creating payment intent:", error);

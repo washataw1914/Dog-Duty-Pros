@@ -82,17 +82,22 @@ function CheckoutForm({ amount, serviceName, clientSecret }: {
     setIsProcessing(true);
     setPaymentStatus('processing');
 
+    // Prepare return URL with customer email for receipt page
+    const returnUrl = new URL(`${window.location.origin}/payment-success`);
+    returnUrl.searchParams.append('email', email);
+
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `${window.location.origin}/payment-success`,
+        return_url: returnUrl.toString(),
         payment_method_data: {
           billing_details: {
             name,
             email,
             phone
           }
-        }
+        },
+        receipt_email: email,
       },
       redirect: 'if_required'
     });
@@ -223,11 +228,7 @@ export default function Checkout() {
         setLoading(true);
         const response = await apiRequest('POST', '/api/create-payment-intent', {
           amount,
-          serviceName,
-          // These will be updated in the form, but we need to pass placeholder values
-          email: '',
-          name: '',
-          phone: ''
+          serviceName
         });
         
         if (!response.ok) {
