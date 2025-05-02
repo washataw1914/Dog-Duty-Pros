@@ -7,7 +7,7 @@ export default function HowItWorks() {
         <div className="text-center mb-16">
           <h2 className="section-title">How It Works</h2>
           <p className="section-subtitle">
-            Getting a cleaner yard is as easy as 1, 2, 3! Our simple process makes it effortless to enjoy a poop-free yard.
+            From "Oops!" to "Ahhh!" in three simple steps! Our poop patrol makes yard cleanup as easy as watching your dog do their business.
           </p>
         </div>
 
@@ -17,12 +17,12 @@ export default function HowItWorks() {
             <div className="step-number">1</div>
             <h3 className="font-bubble text-2xl text-black mb-4">Book Online</h3>
             <p className="text-gray-700 mb-4">
-              Schedule your service online in minutes. Choose from weekly, bi-weekly, or one-time cleanings.
+              Click a few buttons and poof! Your poop problems are scheduled to disappear. No more stepping in "surprises!"
             </p>
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-              alt="Person booking service on phone"
-              className="w-16 h-16 mx-auto rounded-full object-cover"
+              src="https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              alt="Funny dog with tongue out"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
           </div>
 
@@ -34,9 +34,9 @@ export default function HowItWorks() {
               Our Dog Duty Pros will visit your yard and remove all pet waste thoroughly.
             </p>
             <img
-              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-              alt="Dog running in clean yard"
-              className="w-16 h-16 mx-auto rounded-full object-cover"
+              src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              alt="Dog with funny smiling face"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
           </div>
 
@@ -48,16 +48,16 @@ export default function HowItWorks() {
               Relax and enjoy your clean, odor-free yard! We'll send you a notification when service is complete.
             </p>
             <img
-              src="https://images.unsplash.com/photo-1564732795220-08ffd59e2c7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-              alt="Family enjoying backyard"
-              className="w-16 h-16 mx-auto rounded-full object-cover"
+              src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              alt="Dog jumping in celebration"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-primary"
             />
           </div>
         </div>
 
         <div className="text-center mt-12">
           <a href="#get-started" className="cta-button inline-block">
-            Take A Load Off Your Lawn Now!
+            Let Us Handle Your Doo-ties!
           </a>
         </div>
       </div>

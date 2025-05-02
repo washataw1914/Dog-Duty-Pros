@@ -90,7 +90,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 onClick={onGetStartedClick}
                 className="font-bubble block text-center px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
-                Take A Premium Load Off!
+                Doo Business With Us!
               </button>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 onClick={onGetStartedClick}
                 className="font-bubble block text-center px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
-                The Ultimate Load Off!
+                Holy Crap, What a Deal!
               </button>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
             Need a custom solution? We also offer one-time cleanups starting at $49.99. Perfect for special events or to get a fresh start before beginning regular service.
           </p>
           <a href="#contact" className="font-bubble inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-blue-700 transition duration-200">
-            Custom Load Off Quote
+            Get Your Special Doo-ty Quote!
           </a>
         </div>
       </div>
