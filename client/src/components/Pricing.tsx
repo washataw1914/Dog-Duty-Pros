@@ -47,7 +47,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 onClick={onGetStartedClick}
                 className="font-bubble block text-center px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
-                Take A Load Off!
+                Scoop There It Is!
               </button>
             </div>
           </div>
