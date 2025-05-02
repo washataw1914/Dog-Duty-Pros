@@ -457,10 +457,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
   const wss = new WebSocketServer({ server: httpServer, path: '/ws' });
   
   // Track all connected clients
-  const clients = new Map();
+  const clients = new Map<WebSocket, { id: string, ip: string | undefined, isSupport: boolean }>();
   
   // Store support staff connections separately
-  const supportStaff = new Map();
+  const supportStaff = new Map<WebSocket, { id: string, ip: string | undefined, isSupport: boolean }>();
   
   wss.on('connection', (ws, req) => {
     // Generate a unique ID for this client
@@ -499,7 +499,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
               
               // If message has a recipient, send only to them
               if (data.to) {
-                for (const [client, info] of clients.entries()) {
+                clients.forEach((info, client) => {
                   if (info.id === data.to && client.readyState === WebSocket.OPEN) {
                     client.send(JSON.stringify({
                       type: 'chat',
@@ -507,14 +507,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
                       message: data.message,
                       timestamp: new Date().toISOString()
                     }));
-                    break;
                   }
-                }
+                });
               }
             } else {
               // Regular user message - broadcast to all support staff
               const clientInfo = clients.get(ws);
-              for (const [support, info] of supportStaff.entries()) {
+              supportStaff.forEach((info, support) => {
                 if (support.readyState === WebSocket.OPEN) {
                   support.send(JSON.stringify({
                     type: 'chat',
@@ -523,7 +522,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
                     timestamp: new Date().toISOString()
                   }));
                 }
-              }
+              });
               
               // Also echo back to the user so they see their own message
               ws.send(JSON.stringify({
@@ -539,26 +538,25 @@ export async function registerRoutes(app: Express): Promise<Server> {
             // Broadcast typing indicator
             if (data.role === 'support') {
               // Send typing indicator to specific client
-              for (const [client, info] of clients.entries()) {
+              clients.forEach((info, client) => {
                 if (info.id === data.to && client.readyState === WebSocket.OPEN) {
                   client.send(JSON.stringify({
                     type: 'typing',
                     from: 'support'
                   }));
-                  break;
                 }
-              }
+              });
             } else {
               // Send user typing to all support staff
               const clientInfo = clients.get(ws);
-              for (const [support, info] of supportStaff.entries()) {
+              supportStaff.forEach((info, support) => {
                 if (support.readyState === WebSocket.OPEN) {
                   support.send(JSON.stringify({
                     type: 'typing',
                     from: clientInfo?.id || 'unknown'
                   }));
                 }
-              }
+              });
             }
             break;
             
@@ -577,14 +575,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Notify support staff when a user disconnects
       if (client && !client.isSupport) {
-        for (const [support, info] of supportStaff.entries()) {
+        supportStaff.forEach((info, support) => {
           if (support.readyState === WebSocket.OPEN) {
             support.send(JSON.stringify({
               type: 'system',
               message: `Client ${client.id} has disconnected`
             }));
           }
-        }
+        });
       }
       
       // Clean up

@@ -443,6 +443,7 @@ export default function Schedule() {
           </Card>
         </div>
       </div>
+      <LiveChat />
     </div>
   );
 }
