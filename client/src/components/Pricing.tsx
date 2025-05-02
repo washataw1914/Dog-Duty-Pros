@@ -15,37 +15,37 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 justify-center max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 gap-4 justify-center max-w-xl mx-auto">
           {/* Basic Plan */}
           <div className="bg-white border-2 border-gray-200 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300 flex-1">
-            <div className="p-6">
-              <h3 className="font-bubble text-2xl text-black mb-2">Basic Package</h3>
-              <p className="text-gray-600 mb-4">Perfect for small yards with 1-2 pets</p>
-              <div className="flex items-end mb-4">
-                <span className="font-bubble text-4xl text-primary">$14.99</span>
-                <span className="text-gray-600 ml-2">/week</span>
+            <div className="p-4">
+              <h3 className="font-bubble text-lg text-black mb-1">Basic Package</h3>
+              <p className="text-gray-600 mb-2 text-sm">Small yards with 1-2 pets</p>
+              <div className="flex items-end mb-2">
+                <span className="font-bubble text-2xl text-primary">$14.99</span>
+                <span className="text-gray-600 ml-1 text-xs">/week</span>
               </div>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-1 mb-3 text-sm">
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
-                  <span>Weekly service (once per week)</span>
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
+                  <span>Weekly service</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>Yards up to 1/4 acre</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>1-2 pets</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>Email confirmation</span>
                 </li>
               </ul>
               <button 
                 onClick={onGetStartedClick}
-                className="font-bubble block text-center px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
+                className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
                 Scoop There It Is!
               </button>
@@ -54,41 +54,41 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
 
           {/* Popular Plan */}
           <div className="bg-white border-2 border-primary rounded-xl shadow-xl overflow-hidden relative flex-1">
-            <div className="absolute top-0 right-0 bg-destructive text-white py-1 px-3 font-bubble text-sm">
+            <div className="absolute top-0 right-0 bg-destructive text-white py-0.5 px-2 font-bubble text-xs">
               Most Popular
             </div>
-            <div className="p-6">
-              <h3 className="font-bubble text-2xl text-black mb-2">Premium Package</h3>
-              <p className="text-gray-600 mb-4">Ideal for medium yards with 2-3 pets</p>
-              <div className="flex items-end mb-4">
-                <span className="font-bubble text-4xl text-primary">$19.99</span>
-                <span className="text-gray-600 ml-2">/week</span>
+            <div className="p-4">
+              <h3 className="font-bubble text-lg text-black mb-1">Premium Package</h3>
+              <p className="text-gray-600 mb-2 text-sm">Medium yards with 2-3 pets</p>
+              <div className="flex items-end mb-2">
+                <span className="font-bubble text-2xl text-primary">$19.99</span>
+                <span className="text-gray-600 ml-1 text-xs">/week</span>
               </div>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-1 mb-3 text-sm">
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
-                  <span>Weekly service (once per week)</span>
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
+                  <span>Weekly service</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>Yards up to 1/2 acre</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>2-3 pets</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>Text & email confirmations</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="text-primary mt-1 mr-2" size={16} />
+                  <Check className="text-primary mt-0.5 mr-1" size={12} />
                   <span>Deodorizing treatment</span>
                 </li>
               </ul>
               <button
                 onClick={onGetStartedClick}
-                className="font-bubble block text-center px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
+                className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
                 Doo Business With Us!
               </button>
