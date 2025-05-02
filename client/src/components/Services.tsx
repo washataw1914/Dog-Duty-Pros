@@ -57,15 +57,8 @@ export default function Services() {
           <div className="paw-divider"></div>
           
           {/* Service 2 */}
-          <div className="flex flex-col md:flex-row-reverse items-center">
-            <div className="md:w-1/2 md:pl-8 mb-8 md:mb-0">
-              <img
-                src="./images/family-playing.svg"
-                alt="Family playing with dog in clean yard"
-                className="rounded-xl shadow-lg w-full h-80 object-cover"
-              />
-            </div>
-            <div className="md:w-1/2 md:pr-8">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-full md:pr-8">
               <h3 className="font-bubble text-2xl md:text-3xl text-black mb-4">One-Time Deep Clean</h3>
               <p className="text-gray-700 mb-6">
                 Need a fresh start? Our one-time cleanup service is perfect for yards that haven't been maintained for a while or for special events when you want your outdoor space looking its best.
