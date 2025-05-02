@@ -17,13 +17,13 @@ export default function About() {
               We're more than just pet waste removal experts - we're committed to making your life easier and your yard more enjoyable. That's the Dog Duty Pros promise!
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-primary hover:text-blue-700 text-2xl">
+              <a href="#" className="text-primary hover:text-[#0083D7] text-2xl">
                 <Facebook size={28} />
               </a>
-              <a href="#" className="text-primary hover:text-blue-700 text-2xl">
+              <a href="#" className="text-primary hover:text-[#0083D7] text-2xl">
                 <Instagram size={28} />
               </a>
-              <a href="#" className="text-primary hover:text-blue-700 text-2xl">
+              <a href="#" className="text-primary hover:text-[#0083D7] text-2xl">
                 <Twitter size={28} />
               </a>
             </div>
