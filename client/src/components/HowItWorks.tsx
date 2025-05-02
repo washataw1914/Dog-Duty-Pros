@@ -1,5 +1,4 @@
 import { CheckCircle } from "lucide-react";
-import { Link } from "wouter";
 
 export default function HowItWorks() {
   return (
@@ -59,9 +58,9 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/schedule" className="cta-button inline-block">
+          <a href="#contact" className="cta-button inline-block">
             Let Us Handle Your Doo-ties!
-          </Link>
+          </a>
         </div>
       </div>
     </section>
