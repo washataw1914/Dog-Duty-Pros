@@ -12,35 +12,49 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Step 1 */}
+        <div className="max-w-3xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
-            <h3 className="font-bubble text-2xl text-black mb-4">Book Online</h3>
-            <p className="text-gray-700 mb-4">
-              Click a few buttons and poof! Your poop problems are scheduled to disappear. <span className="accent-yellow-text">No more stepping in "surprises!"</span>
-            </p>
             <img
               src="./images/logo for vector dog dutyyellow.png"
-              alt="Funny dog with tongue out"
-              className="w-20 h-20 mx-auto rounded-full object-cover border-4"
+              alt="Dog Duty Logo"
+              className="w-20 h-20 mx-auto rounded-full object-cover border-4 mb-4"
               style={{ borderColor: "#00A3F7" }}
             />
-          </div>
+            
+            <div className="space-y-6">
+              {/* Step 1 */}
+              <div className="border-b border-gray-100 pb-4">
+                <div className="flex items-center mb-2">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">1</div>
+                  <h3 className="font-bubble text-xl text-black">Book Online</h3>
+                </div>
+                <p className="text-gray-700">
+                  Click a few buttons and poof! Your poop problems are scheduled to disappear. <span className="accent-yellow-text">No more stepping in "surprises!"</span>
+                </p>
+              </div>
 
-          {/* Step 2 */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
-            <h3 className="font-bubble text-2xl text-black mb-4">We Take The Load Off</h3>
-            <p className="text-gray-700 mb-4">
-              Our elite poop commandos deploy to your yard with military precision. <span className="accent-yellow-text">We leave no turd behind!</span>
-            </p>
-          </div>
+              {/* Step 2 */}
+              <div className="border-b border-gray-100 pb-4">
+                <div className="flex items-center mb-2">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">2</div>
+                  <h3 className="font-bubble text-xl text-black">We Take The Load Off</h3>
+                </div>
+                <p className="text-gray-700">
+                  Our elite poop commandos deploy to your yard with military precision. <span className="accent-yellow-text">We leave no turd behind!</span>
+                </p>
+              </div>
 
-          {/* Step 3 */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center relative">
-            <h3 className="font-bubble text-2xl text-black mb-4">Enjoy Your Clean Yard</h3>
-            <p className="text-gray-700 mb-4">
-              <span className="accent-yellow-text">Go barefoot again!</span> Your yard is now a poop-free paradise. Your nose and shoes will thank you profusely.
-            </p>
+              {/* Step 3 */}
+              <div>
+                <div className="flex items-center mb-2">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">3</div>
+                  <h3 className="font-bubble text-xl text-black">Enjoy Your Clean Yard</h3>
+                </div>
+                <p className="text-gray-700">
+                  <span className="accent-yellow-text">Go barefoot again!</span> Your yard is now a poop-free paradise. Your nose and shoes will thank you profusely.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
