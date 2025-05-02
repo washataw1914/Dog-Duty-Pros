@@ -128,7 +128,7 @@
 
 .section-title {
   @apply font-bubble text-3xl md:text-4xl text-black mb-4;
-  text-shadow: 2px 2px 0px rgba(0, 163, 247, 0.5);
+  text-shadow: 2px 2px 0px #00A3F7;
   display: inline-block;
 }
 
