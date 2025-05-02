@@ -92,14 +92,7 @@ export default function Services() {
           
           {/* Service 3 */}
           <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
-              <img
-                src="./images/apartment-dog-park.svg"
-                alt="Dog park by apartment buildings"
-                className="rounded-xl shadow-lg w-full h-80 object-cover"
-              />
-            </div>
-            <div className="md:w-1/2 md:pl-8">
+            <div className="md:w-full md:pr-8">
               <h3 className="font-bubble text-2xl md:text-3xl text-black mb-4">Commercial Properties</h3>
               <p className="text-gray-700 mb-6">
                 We service apartment complexes, dog parks, homeowners associations, and other commercial properties. Keep your community spaces clean and enjoyable for everyone.
