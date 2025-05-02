@@ -181,6 +181,11 @@
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
 }
 
+/* Use the right-side paw SVG for the right side */
+.right-side-paw {
+  background-image: url('/images/white-paw-right.svg');
+}
+
 /* Left paw print styling */
 .left-paw {
   transform: rotate(-10deg);
@@ -195,13 +200,13 @@
   height: 40px;
 }
 
-/* Mirror effect for right side paws */
+/* Right side paws - no need for scaleX since we're using mirrored image */
 .right-side-paw.left-paw {
-  transform: rotate(10deg) scaleX(-1);
+  transform: rotate(-10deg);
 }
 
 .right-side-paw.right-paw {
-  transform: rotate(-10deg) scaleX(-1);
+  transform: rotate(10deg);
 }
 
 /* Animation delay variations */
@@ -233,20 +238,9 @@
   }
 }
 
-/* Animation for right side mirrored paws */
+/* Animation for right side paws */
 .right-side-paw {
-  animation-name: pawFloatMirror;
-}
-
-@keyframes pawFloatMirror {
-  0%, 100% {
-    transform: translateY(0) scale(1) scaleX(-1);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-4px) scale(1.02) scaleX(-1);
-    opacity: 0.95;
-  }
+  animation-name: pawFloat; /* Use the same animation, no need for mirroring in transform */
 }
 
 /* Cloud effect removed as requested */
