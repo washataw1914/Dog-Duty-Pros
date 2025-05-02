@@ -65,8 +65,8 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1587559070757-f72a388edbba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Professional cleaning a green lawn"
+                src="https://images.unsplash.com/photo-1525963089891-da0ec399ee56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Happy Great Pyrenees dog in a nice yard"
                 className="rounded-xl shadow-2xl w-full max-w-lg object-cover border-8 border-white hover-scale"
               />
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-xl font-bubble transform rotate-6 shadow-lg text-lg">
