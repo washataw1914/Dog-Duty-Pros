@@ -1,5 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import { WebSocketServer, WebSocket } from "ws";
 import { storage } from "./storage";
 import { 
   contactMessages, insertContactMessageSchema,
@@ -451,6 +452,146 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }
 
   const httpServer = createServer(app);
+  
+  // Set up WebSocket server for customer support chat
+  const wss = new WebSocketServer({ server: httpServer, path: '/ws' });
+  
+  // Track all connected clients
+  const clients = new Map();
+  
+  // Store support staff connections separately
+  const supportStaff = new Map();
+  
+  wss.on('connection', (ws, req) => {
+    // Generate a unique ID for this client
+    const id = Math.random().toString(36).substring(2, 10);
+    const clientIp = req.socket.remoteAddress;
+    
+    // Store client connection
+    clients.set(ws, { id, ip: clientIp, isSupport: false });
+    
+    console.log(`New WebSocket connection: ${id} from ${clientIp}`);
+    
+    // Send welcome message
+    ws.send(JSON.stringify({
+      type: 'connected',
+      clientId: id,
+      message: 'Connected to Dog Duty Pros support chat. How can we help you?'
+    }));
+
+    // Handle incoming messages
+    ws.on('message', (message) => {
+      try {
+        const data = JSON.parse(message.toString());
+        console.log(`Received: ${JSON.stringify(data)}`);
+        
+        // Handle different message types
+        switch (data.type) {
+          case 'chat': 
+            // Basic message broadcasting logic
+            if (data.role === 'support') {
+              // Mark this connection as support staff
+              const client = clients.get(ws);
+              if (client) {
+                client.isSupport = true;
+                supportStaff.set(ws, client);
+              }
+              
+              // If message has a recipient, send only to them
+              if (data.to) {
+                for (const [client, info] of clients.entries()) {
+                  if (info.id === data.to && client.readyState === WebSocket.OPEN) {
+                    client.send(JSON.stringify({
+                      type: 'chat',
+                      from: 'support',
+                      message: data.message,
+                      timestamp: new Date().toISOString()
+                    }));
+                    break;
+                  }
+                }
+              }
+            } else {
+              // Regular user message - broadcast to all support staff
+              const clientInfo = clients.get(ws);
+              for (const [support, info] of supportStaff.entries()) {
+                if (support.readyState === WebSocket.OPEN) {
+                  support.send(JSON.stringify({
+                    type: 'chat',
+                    from: clientInfo?.id || 'unknown',
+                    message: data.message,
+                    timestamp: new Date().toISOString()
+                  }));
+                }
+              }
+              
+              // Also echo back to the user so they see their own message
+              ws.send(JSON.stringify({
+                type: 'chat',
+                from: 'you',
+                message: data.message,
+                timestamp: new Date().toISOString()
+              }));
+            }
+            break;
+            
+          case 'typing':
+            // Broadcast typing indicator
+            if (data.role === 'support') {
+              // Send typing indicator to specific client
+              for (const [client, info] of clients.entries()) {
+                if (info.id === data.to && client.readyState === WebSocket.OPEN) {
+                  client.send(JSON.stringify({
+                    type: 'typing',
+                    from: 'support'
+                  }));
+                  break;
+                }
+              }
+            } else {
+              // Send user typing to all support staff
+              const clientInfo = clients.get(ws);
+              for (const [support, info] of supportStaff.entries()) {
+                if (support.readyState === WebSocket.OPEN) {
+                  support.send(JSON.stringify({
+                    type: 'typing',
+                    from: clientInfo?.id || 'unknown'
+                  }));
+                }
+              }
+            }
+            break;
+            
+          default:
+            console.log(`Unknown message type: ${data.type}`);
+        }
+      } catch (error) {
+        console.error('Error processing WebSocket message:', error);
+      }
+    });
+    
+    // Handle disconnection
+    ws.on('close', () => {
+      const client = clients.get(ws);
+      console.log(`WebSocket closed: ${client?.id}`);
+      
+      // Notify support staff when a user disconnects
+      if (client && !client.isSupport) {
+        for (const [support, info] of supportStaff.entries()) {
+          if (support.readyState === WebSocket.OPEN) {
+            support.send(JSON.stringify({
+              type: 'system',
+              message: `Client ${client.id} has disconnected`
+            }));
+          }
+        }
+      }
+      
+      // Clean up
+      supportStaff.delete(ws);
+      clients.delete(ws);
+    });
+  });
 
   return httpServer;
 }

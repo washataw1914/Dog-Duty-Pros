@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import { format } from "date-fns";
+import LiveChat from "@/components/LiveChat";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
