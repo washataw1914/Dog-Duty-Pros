@@ -33,9 +33,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           </a>
         </div>
         
-        <div className="absolute bottom-0 w-full left-0 h-16 overflow-hidden">
-          <img src="./images/simple-paw-trail.svg" alt="" className="w-full object-contain" />
-        </div>
+        {/* Removed paw trail at the bottom as requested */}
         
         {/* Centered Business Name */}
         <div className="text-center mb-12 relative">
@@ -48,7 +46,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        left: '0px', 
                        top: '-5px',
-                       backgroundImage: "url('./images/paws/simple-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-8deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.1s"
@@ -57,7 +55,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        left: '40px', 
                        top: '-2px',
-                       backgroundImage: "url('./images/paws/simple-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(12deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.7s"
@@ -66,7 +64,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        left: '80px', 
                        top: '-8px',
-                       backgroundImage: "url('./images/paws/simple-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.4s"
@@ -83,7 +81,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        right: '0px', 
                        top: '-7px',
-                       backgroundImage: "url('./images/paws/simple-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(12deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.2s"
@@ -92,7 +90,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        right: '40px', 
                        top: '-3px',
-                       backgroundImage: "url('./images/paws/simple-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(-6deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.6s"
@@ -101,7 +99,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                      style={{ 
                        right: '80px', 
                        top: '-6px',
-                       backgroundImage: "url('./images/paws/simple-paw.svg')",
+                       backgroundImage: "url('./images/paw-print.svg')",
                        transform: "rotate(10deg)",
                        animation: "pawFloat 3s ease-in-out infinite",
                        animationDelay: "0.3s"
