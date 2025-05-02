@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+
 
 interface CallToActionProps {
   onGetStartedClick: () => void;
@@ -19,12 +19,6 @@ export default function CallToAction({ onGetStartedClick }: CallToActionProps) {
           >
             Take A Load Off Your Lawn!
           </button>
-          <Link
-            to="/schedule"
-            className="font-bubble inline-block px-8 py-4 bg-white text-primary rounded-full text-lg hover:bg-gray-100 transition duration-200 shadow-lg"
-          >
-            Schedule Now
-          </Link>
         </div>
       </div>
     </section>
