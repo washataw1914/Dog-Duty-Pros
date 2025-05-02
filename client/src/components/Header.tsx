@@ -32,35 +32,39 @@ export default function Header({
 
   return (
     <header className="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-50">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo - positioned in the upper left corner */}
-        <div className="flex items-center">
-          <Link to="/">
-            <img 
-              src="./images/logo for vector dog dutyyellow.png" 
-              alt="Dog Duty Pros Logo"
-              className="h-20 w-auto"
-            />
-          </Link>
+      <div className="container mx-auto px-4 py-3">
+        {/* Top Bar with Logo and Hamburger Menu */}
+        <div className="flex justify-between items-center">
+          {/* Logo - positioned in the upper left corner */}
+          <div className="flex items-center">
+            <Link to="/">
+              <img 
+                src="./images/logo for vector dog dutyyellow.png" 
+                alt="Dog Duty Pros Logo"
+                className="h-16 w-auto"
+              />
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button - moved to upper right corner */}
+          <button
+            onClick={toggleMobileMenu}
+            className="text-primary focus:outline-none p-2 hover:bg-gray-100 rounded-full transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={toggleMobileMenu}
-          className="md:hidden text-primary focus:outline-none"
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        {/* Desktop Navigation - centered below logo on larger screens */}
+        <nav className="hidden md:flex justify-center items-center mt-2 space-x-1">
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
           >
             Home
           </a>
@@ -70,7 +74,7 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onServicesClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
           >
             Services
           </a>
@@ -80,7 +84,7 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onPricingClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
           >
             Pricing
           </a>
@@ -90,7 +94,7 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onAboutClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
           >
             About
           </a>
@@ -100,13 +104,13 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onContactClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
           >
             Contact
           </a>
           <Link
             to="/schedule"
-            className="font-medium text-gray-700 hover:text-primary transition duration-200"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
             onClick={() => setMobileMenuOpen(false)}
           >
             Schedule
@@ -114,13 +118,18 @@ export default function Header({
         </nav>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - dropdown menu */}
       <div
-        className={`md:hidden bg-white px-4 py-2 shadow-inner ${
-          mobileMenuOpen ? "block" : "hidden"
+        className={`md:hidden absolute top-[100%] left-0 right-0 bg-white px-4 py-3 shadow-lg transition-all duration-300 ease-in-out ${
+          mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
+        style={{ 
+          visibility: mobileMenuOpen ? 'visible' : 'hidden',
+          transitionProperty: 'opacity, transform, visibility',
+          transitionDelay: mobileMenuOpen ? '0s' : '0s, 0s, 300ms'
+        }}
       >
-        <div className="flex flex-col space-y-3 pb-3">
+        <div className="flex flex-col divide-y divide-gray-100">
           <a
             href="#"
             onClick={(e) => {
@@ -128,8 +137,9 @@ export default function Header({
               setMobileMenuOpen(false);
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-2"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
           >
+            <span className="text-primary mr-3">•</span>
             Home
           </a>
           <a
@@ -138,8 +148,9 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onServicesClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-2"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
           >
+            <span className="text-primary mr-3">•</span>
             Services
           </a>
           <a
@@ -148,8 +159,9 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onPricingClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-2"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
           >
+            <span className="text-primary mr-3">•</span>
             Pricing
           </a>
           <a
@@ -158,8 +170,9 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onAboutClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-2"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
           >
+            <span className="text-primary mr-3">•</span>
             About
           </a>
           <a
@@ -168,15 +181,17 @@ export default function Header({
               e.preventDefault();
               handleNavClick(onContactClick);
             }}
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-2"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
           >
+            <span className="text-primary mr-3">•</span>
             Contact
           </a>
           <Link
             to="/schedule"
-            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-2"
+            className="font-medium text-gray-700 hover:text-primary transition duration-200 py-3 px-2 flex items-center"
             onClick={() => setMobileMenuOpen(false)}
           >
+            <span className="text-primary mr-3">•</span>
             Schedule
           </Link>
         </div>
