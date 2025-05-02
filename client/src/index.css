@@ -13,7 +13,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 200 100% 30%; /* DogDuty.biz blue */
+    --primary: 198 100% 44%; /* #009fe3 from logo */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -21,22 +21,22 @@
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 358 85% 50%; /* #e41e25 from logo */
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
-    --sidebar-background: 200 100% 30%;
+    --sidebar-background: 198 100% 44%;
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 0 0% 100%;
     --sidebar-primary-foreground: 240 5.9% 10%;
     --sidebar-accent: 240 3.8% 46.1%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 200 90% 40%;
-    --sidebar-ring: 200 90% 25%;
-    --chart-1: 200 100% 30%;
-    --chart-2: 0 84.2% 60.2%;
+    --sidebar-border: 198 90% 50%;
+    --sidebar-ring: 198 90% 35%;
+    --chart-1: 198 100% 44%;
+    --chart-2: 358 85% 50%;
     --chart-3: 48 96.5% 53.9%;
     --chart-4: 130 60% 54.5%;
     --chart-5: 262 83.3% 57.8%;
@@ -60,7 +60,7 @@
 }
 
 .bg-primary-gradient {
-  background: linear-gradient(135deg, rgba(220, 240, 255, 0.9) 0%, rgba(173, 216, 230, 0.6) 35%, rgba(0, 102, 153, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(220, 240, 255, 0.9) 0%, rgba(0, 159, 227, 0.5) 35%, rgba(0, 120, 190, 0.3) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -83,8 +83,8 @@
 
 .cta-button {
   @apply font-bubble px-16 py-3 text-white rounded-full text-lg transition duration-200;
-  background-color: #990000; /* Deeper red color */
-  box-shadow: 0 4px 14px rgba(153, 0, 0, 0.4), 0 0 0 2px rgba(153, 0, 0, 0.2);
+  background-color: #e41e25; /* Red from logo */
+  box-shadow: 0 4px 14px rgba(228, 30, 37, 0.4), 0 0 0 2px rgba(228, 30, 37, 0.2);
   transform: translateY(0);
   transition: transform 0.2s, box-shadow 0.2s;
   position: relative;
@@ -93,9 +93,9 @@
 }
 
 .cta-button:hover {
-  background-color: #800000; /* Even deeper red on hover */
+  background-color: #c41920; /* Slightly darker red on hover */
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(153, 0, 0, 0.5), 0 0 0 2px rgba(153, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(228, 30, 37, 0.5), 0 0 0 2px rgba(228, 30, 37, 0.2);
 }
 
 .cta-button:before {
@@ -124,7 +124,7 @@
 
 .section-title {
   @apply font-bubble text-3xl md:text-4xl text-black mb-4;
-  text-shadow: 2px 2px 0px rgba(0, 102, 153, 0.4);
+  text-shadow: 2px 2px 0px rgba(0, 159, 227, 0.5);
   transform: rotate(-1deg);
   display: inline-block;
 }
