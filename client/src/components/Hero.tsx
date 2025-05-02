@@ -7,9 +7,9 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
     <section id="home" className="pt-24 bg-primary-gradient">
       <div className="container mx-auto px-4 py-16 md:py-24 relative">
         {/* Call Us button at top right */}
-        <div className="absolute top-2 right-4 z-20">
+        <div className="fixed top-2 right-20 z-50">
           <a 
-            href="tel:+17771234567" 
+            href="#contact" 
             className="font-bubble px-4 py-2 text-white rounded-full transition duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
             style={{ 
               backgroundColor: "#cc0000", 

@@ -56,7 +56,7 @@ export default function Header({
           </button>
         </div>
 
-        {/* Desktop Navigation - centered below logo on larger screens */}
+        {/* Desktop Navigation - centered below logo on larger screens, hidden on mobile */}
         <nav className="hidden md:flex justify-center items-center mt-2 space-x-1">
           <a
             href="#"
