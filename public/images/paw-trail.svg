@@ -1,86 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="600" height="100" viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Small Paw Print Trail -->
-  <g fill="#0084ff" opacity="0.5">
-    <!-- Paw 1 -->
-    <g transform="translate(50, 50) rotate(25)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+<svg width="1200" height="60" viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .paw {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+    .paw-animated {
+      animation: fade-in 3s ease-in-out infinite alternate;
+    }
+    @keyframes fade-in {
+      0% { opacity: 0.2; }
+      100% { opacity: 0.8; }
+    }
+  </style>
+
+  <!-- Paw prints trail -->
+  <g transform="translate(20, 10)">
+    <!-- Paw set 1 -->
+    <g class="paw paw-animated" opacity="0.6">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 2 -->
-    <g transform="translate(110, 60) rotate(15)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 2 -->
+    <g class="paw" opacity="0.6" transform="translate(80, -5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 3 -->
-    <g transform="translate(170, 45) rotate(30)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 3 -->
+    <g class="paw paw-animated" opacity="0.6" transform="translate(160, 5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 4 -->
-    <g transform="translate(230, 70) rotate(10)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 4 -->
+    <g class="paw" opacity="0.6" transform="translate(240, -5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 5 -->
-    <g transform="translate(290, 50) rotate(20)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 5 -->
+    <g class="paw paw-animated" opacity="0.6" transform="translate(320, 5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 6 -->
-    <g transform="translate(350, 65) rotate(5)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 6 -->
+    <g class="paw" opacity="0.6" transform="translate(400, -5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 7 -->
-    <g transform="translate(410, 40) rotate(25)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 7 -->
+    <g class="paw paw-animated" opacity="0.6" transform="translate(480, 5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 8 -->
-    <g transform="translate(470, 55) rotate(15)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 8 -->
+    <g class="paw" opacity="0.6" transform="translate(560, -5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
     
-    <!-- Paw 9 -->
-    <g transform="translate(530, 45) rotate(20)">
-      <ellipse cx="0" cy="-6" rx="5" ry="6" />
-      <ellipse cx="-7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="7" cy="-3" rx="4" ry="5" />
-      <ellipse cx="-4" cy="6" rx="4" ry="5" />
-      <ellipse cx="4" cy="6" rx="4" ry="5" />
+    <!-- Paw set 9 -->
+    <g class="paw paw-animated" opacity="0.6" transform="translate(640, 5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
+    </g>
+    
+    <!-- Paw set 10 -->
+    <g class="paw" opacity="0.6" transform="translate(720, -5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
+    </g>
+    
+    <!-- Paw set 11 -->
+    <g class="paw paw-animated" opacity="0.6" transform="translate(800, 5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
+    </g>
+    
+    <!-- Paw set 12 -->
+    <g class="paw" opacity="0.6" transform="translate(880, -5)">
+      <ellipse cx="10" cy="15" rx="8" ry="10" transform="rotate(-10 10 15)" />
+      <ellipse cx="30" cy="10" rx="8" ry="10" transform="rotate(10 30 10)" />
+      <ellipse cx="5" cy="35" rx="6" ry="7" transform="rotate(-10 5 35)" />
+      <ellipse cx="25" cy="40" rx="6" ry="7" transform="rotate(10 25 40)" />
+      <ellipse cx="18" cy="25" rx="10" ry="8" />
     </g>
   </g>
 </svg>

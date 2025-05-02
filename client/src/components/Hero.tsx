@@ -15,8 +15,10 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
             <span>Dog Duty Pros</span>
             <img src="/images/animated-paw.svg" alt="" className="w-12 h-12 md:w-16 md:h-16 ml-3" />
           </h1>
-          <h2 className="font-bubble text-3xl md:text-4xl mb-6 text-white" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.4)" }}>
-            Taking A Load Off Your Lawn!
+          <h2 className="font-bubble text-3xl md:text-4xl mb-6" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.4)" }}>
+            <span className="text-white">Taking A </span>
+            <span className="text-yellow-400">Load Off </span>
+            <span className="text-white">Your Lawn!</span>
           </h2>
           
           <div className="max-w-xl mx-auto bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md">
