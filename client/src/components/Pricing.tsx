@@ -44,12 +44,20 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                   <span>Text & email confirmations</span>
                 </li>
               </ul>
-              <Link 
-                to="/checkout?serviceName=Basic%20Package&amount=14.95"
-                className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
-              >
-                Scoop There It Is!
-              </Link>
+              <div className="space-y-2">
+                <Link 
+                  to="/checkout?serviceName=Basic%20Package&amount=14.95"
+                  className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
+                >
+                  One-time Payment
+                </Link>
+                <Link 
+                  to="/subscribe?serviceName=Basic%20Package&amount=14.95"
+                  className="font-bubble block text-center px-3 py-1.5 text-sm bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition duration-200 w-full"
+                >
+                  Subscribe & Save
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -84,12 +92,20 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 </li>
 
               </ul>
-              <Link
-                to="/checkout?serviceName=Premium%20Package&amount=19.95"
-                className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
-              >
-                Doo Business With Us!
-              </Link>
+              <div className="space-y-2">
+                <Link 
+                  to="/checkout?serviceName=Premium%20Package&amount=19.95"
+                  className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
+                >
+                  One-time Payment
+                </Link>
+                <Link 
+                  to="/subscribe?serviceName=Premium%20Package&amount=19.95"
+                  className="font-bubble block text-center px-3 py-1.5 text-sm bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition duration-200 w-full"
+                >
+                  Subscribe & Save
+                </Link>
+              </div>
             </div>
           </div>
         </div>

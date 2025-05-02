@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Checkout from "@/pages/Checkout";
+import Subscribe from "@/pages/Subscribe";
 import PaymentSuccess from "@/pages/PaymentSuccess";
 
 function Router() {
@@ -12,6 +13,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/checkout" component={Checkout} />
+      <Route path="/subscribe" component={Subscribe} />
       <Route path="/payment-success" component={PaymentSuccess} />
       <Route component={NotFound} />
     </Switch>

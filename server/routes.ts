@@ -600,12 +600,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Extract the payment intent from the invoice
       // The type definition might not be up-to-date, so we need to handle this carefully
+      // Extract the payment intent from the latest invoice
+      // Using any type since the stripe types might not match exactly
       const invoice = subscription.latest_invoice as any;
       let clientSecret = '';
       
       if (invoice && invoice.payment_intent) {
         const paymentIntent = invoice.payment_intent as any;
         clientSecret = paymentIntent.client_secret;
+      } else {
+        throw new Error('Could not retrieve payment intent from subscription invoice');
       }
       
       return res.status(200).json({
