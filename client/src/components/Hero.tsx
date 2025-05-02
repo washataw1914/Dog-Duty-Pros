@@ -11,14 +11,16 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
         </div>
         {/* Centered Business Name */}
         <div className="text-center mb-12 relative">
-          <div className="flex justify-center items-center gap-4 mb-4">
-            <div className="paw-print-animated"></div>
-            <div className="paw-print-animated"></div>
-            <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl leading-tight text-center cloud-effect">
-              <span className="text-black">Dog Duty Pros</span>
-            </h1>
-            <div className="paw-print-animated"></div>
-            <div className="paw-print-animated"></div>
+          <div className="relative mb-8">
+            <div className="flex justify-center items-center gap-5 md:gap-8">
+              <div className="paw-print-animated hidden sm:block"></div>
+              <div className="paw-print-animated"></div>
+              <h1 className="font-bubble text-5xl md:text-6xl lg:text-7xl leading-tight text-center cloud-effect px-4">
+                <span className="text-black">Dog Duty Pros</span>
+              </h1>
+              <div className="paw-print-animated"></div>
+              <div className="paw-print-animated hidden sm:block"></div>
+            </div>
           </div>
           
           <div className="flex justify-center mb-6">
