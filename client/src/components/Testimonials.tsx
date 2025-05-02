@@ -5,15 +5,15 @@ export default function Testimonials() {
     <section className="py-16 bg-primary/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="section-title">We Take The Load Off Their Lawn</h2>
+          <h2 className="section-title">Happy Customers, Happier Lawns!</h2>
           <p className="section-subtitle">
-            Don't just take our word for it. See what our customers have to say about our service!
+            These folks stepped in it (figuratively) when they found us. Now they're walking on cloud nine (and clean grass)!
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Testimonial 1 */}
-          <div className="bg-white p-8 rounded-xl shadow-md">
+          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all border-2 border-transparent hover:border-primary">
             <div className="flex items-center mb-4">
               <div className="text-yellow-400 flex">
                 <Star className="fill-yellow-400" size={20} />
@@ -25,7 +25,7 @@ export default function Testimonials() {
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
             <p className="text-gray-700 mb-6 italic">
-              "With 3 large dogs, our yard was impossible to keep clean. Dog Duty Pros has been a lifesaver! Their weekly service means we can actually enjoy our backyard again. Worth every penny!"
+              "With 3 large dogs, I was stepping in 'land mines' daily. Dog Duty Pros saved my shoes and my sanity! Now I can actually walk in my yard without doing the 'poop dodge dance'!"
             </p>
             <div className="flex items-center">
               <img
@@ -41,7 +41,7 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonial 2 */}
-          <div className="bg-white p-8 rounded-xl shadow-md">
+          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all border-2 border-transparent hover:border-destructive">
             <div className="flex items-center mb-4">
               <div className="text-yellow-400 flex">
                 <Star className="fill-yellow-400" size={20} />
@@ -53,7 +53,7 @@ export default function Testimonials() {
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
             <p className="text-gray-700 mb-6 italic">
-              "As a property manager for a large apartment complex, I needed a reliable service. Dog Duty Pros has been professional, thorough, and our residents are thrilled with the cleaner common areas."
+              "Our apartment complex used to be a minefield. Now thanks to Dog Duty Pros, residents can actually see the grass! One tenant said it best: 'I forgot our lawn was green, not brown with polka dots!'"
             </p>
             <div className="flex items-center">
               <img
@@ -81,7 +81,7 @@ export default function Testimonials() {
               <span className="ml-2 text-gray-600">5.0</span>
             </div>
             <p className="text-gray-700 mb-6 italic">
-              "I was skeptical at first about hiring someone for this, but now I can't imagine life without Dog Duty Pros! My kids can play freely in the yard, and I don't have to worry about the mess. Complete game-changer!"
+              "I used to ask 'who let the dogs out?' Now I ask 'who cleaned the poop up?' Dog Duty Pros is worth every penny! My kids play outside again and my husband no longer has his 'special poop shoes' by the door. Marriage saved!"
             </p>
             <div className="flex items-center">
               <img

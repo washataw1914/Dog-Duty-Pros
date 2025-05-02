@@ -31,7 +31,7 @@ export default function HowItWorks() {
             <div className="step-number">2</div>
             <h3 className="font-bubble text-2xl text-black mb-4">We Take The Load Off</h3>
             <p className="text-gray-700 mb-4">
-              Our Dog Duty Pros will visit your yard and remove all pet waste thoroughly.
+              Our elite poop commandos deploy to your yard with military precision. We leave no turd behind!
             </p>
             <img
               src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
@@ -45,7 +45,7 @@ export default function HowItWorks() {
             <div className="step-number">3</div>
             <h3 className="font-bubble text-2xl text-black mb-4">Enjoy Your Clean Yard</h3>
             <p className="text-gray-700 mb-4">
-              Relax and enjoy your clean, odor-free yard! We'll send you a notification when service is complete.
+              Go barefoot again! Your yard is now a poop-free paradise. Your nose and shoes will thank you profusely.
             </p>
             <img
               src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
