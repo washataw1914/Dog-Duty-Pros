@@ -13,7 +13,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 214 100% 50%; /* #0084ff matched to our design */
+    --primary: 196 100% 44%; /* #00A9E0 - exact blue from logo */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -27,20 +27,20 @@
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
-    --sidebar-background: 198 100% 44%;
+    --sidebar-background: 196 100% 44%; /* #00A9E0 */
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 0 0% 100%;
     --sidebar-primary-foreground: 240 5.9% 10%;
     --sidebar-accent: 240 3.8% 46.1%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 198 90% 50%;
-    --sidebar-ring: 198 90% 35%;
-    --chart-1: 198 100% 44%;
+    --sidebar-border: 196 90% 50%;
+    --sidebar-ring: 196 90% 35%;
+    --chart-1: 196 100% 44%; /* #00A9E0 */
     --chart-2: 358 85% 50%;
     --chart-3: 48 96.5% 53.9%;
     --chart-4: 130 60% 54.5%;
     --chart-5: 262 83.3% 57.8%;
-    --bright-blue: 214 100% 50%; /* #0084ff for tagline to match */
+    --bright-blue: 196 100% 44%; /* #00A9E0 - exact blue from logo */
   }
 
   * {
@@ -61,7 +61,7 @@
 }
 
 .bg-primary-gradient {
-  background: linear-gradient(135deg, rgba(0, 132, 255, 1) 0%, rgba(0, 102, 255, 0.95) 40%, rgba(255, 255, 255, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(0, 169, 224, 1) 0%, rgba(0, 149, 204, 0.95) 40%, rgba(255, 255, 255, 0.95) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -128,7 +128,7 @@
 
 .section-title {
   @apply font-bubble text-3xl md:text-4xl text-black mb-4;
-  text-shadow: 2px 2px 0px rgba(0, 132, 255, 0.5);
+  text-shadow: 2px 2px 0px rgba(0, 169, 224, 0.5);
   display: inline-block;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .highlight-box {
-  border: 2px dashed #0084ff;
+  border: 2px dashed #00A9E0;
   background-color: rgba(255, 255, 0, 0.1);
   border-radius: 12px;
   padding: 16px;

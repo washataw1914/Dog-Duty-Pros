@@ -47,30 +47,31 @@ export default function Schedule() {
   const [timeSlotId, setTimeSlotId] = useState<string>("");
   const [notes, setNotes] = useState<string>("");
   const { toast } = useToast();
-  const navigate = useNavigate();
+  const [, setLocation] = useLocation();
 
   // Fetch service types
   const { data: serviceTypes, isLoading: isLoadingServiceTypes } = useQuery({
-    queryKey: ['/api/service-types'],
-    enabled: true
+    queryKey: ['/api/service-types']
   });
 
   // Fetch service locations
   const { data: serviceLocations, isLoading: isLoadingServiceLocations } = useQuery({
-    queryKey: ['/api/service-locations'],
-    enabled: true
+    queryKey: ['/api/service-locations']
   });
 
   // Fetch available time slots for selected date and service type
   const { data: availableTimeSlots, isLoading: isLoadingTimeSlots } = useQuery({
     queryKey: ['/api/available-time-slots', date && format(date, 'yyyy-MM-dd'), serviceTypeId],
     enabled: !!date && !!serviceTypeId,
-    queryFn: async () => {
+    queryFn: async ({ queryKey }) => {
       const formattedDate = date ? format(date, 'yyyy-MM-dd') : '';
-      const response = await apiRequest(`/api/available-time-slots?date=${formattedDate}&serviceTypeId=${serviceTypeId}`, {
-        method: 'GET'
-      });
-      return response.data;
+      const response = await fetch(`/api/available-time-slots?date=${formattedDate}&serviceTypeId=${serviceTypeId}`);
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch available time slots');
+      }
+      
+      return response.json();
     }
   });
 
@@ -101,10 +102,20 @@ export default function Schedule() {
         notes: notes.trim() || null
       };
 
-      return apiRequest('/api/appointments', {
+      const response = await fetch('/api/appointments', {
         method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify(appointmentData)
       });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to book appointment');
+      }
+
+      return response.json();
     },
     onSuccess: () => {
       toast({
@@ -112,7 +123,7 @@ export default function Schedule() {
         description: "Your appointment has been scheduled.",
       });
       queryClient.invalidateQueries({ queryKey: ['/api/appointments'] });
-      navigate("/appointments");
+      setLocation("/");
     },
     onError: (error: any) => {
       console.error("Error booking appointment:", error);
@@ -196,7 +207,7 @@ export default function Schedule() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="font-bubble text-4xl text-center mb-8">Schedule Your Poop Pickup</h1>
+      <h1 className="font-display text-4xl text-center mb-8">Schedule Your Poop Pickup</h1>
       
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column - Selection Form */}
