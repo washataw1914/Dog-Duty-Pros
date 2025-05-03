@@ -45,12 +45,16 @@ export default function Header({
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <Link 
-              to="/services" 
-              className="font-bubble px-3 py-1.5 text-xs text-white bg-destructive rounded-full hover:bg-red-600 shadow-sm transition duration-200"
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
             >
-              Pay Now
-            </Link>
+              Home
+            </a>
             <Link 
               href="/services" 
               className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
@@ -90,13 +94,21 @@ export default function Header({
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMobileMenu}
-            className="md:hidden text-primary focus:outline-none p-2 hover:bg-gray-100 rounded-full transition-colors"
-            aria-label="Toggle menu"
-          >
-            {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="flex items-center">
+            <Link 
+              to="/services" 
+              className="hidden md:inline-block font-bubble px-3 py-1.5 text-xs text-white bg-destructive rounded-full hover:bg-red-600 shadow-sm transition duration-200 mr-3"
+            >
+              Quick Pay
+            </Link>
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden text-primary focus:outline-none p-2 hover:bg-gray-100 rounded-full transition-colors"
+              aria-label="Toggle menu"
+            >
+              {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -104,12 +116,23 @@ export default function Header({
       {showMobileMenu && (
         <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
           <div className="px-4 py-3">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setShowMobileMenu(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="block py-2 text-gray-700 hover:text-primary"
+            >
+              Home
+            </a>
             <Link
               to="/services"
               onClick={() => setShowMobileMenu(false)}
               className="block py-2 text-destructive font-bubble hover:text-red-600"
             >
-              Pay Now
+              Quick Pay
             </Link>
             <Link 
               href="/services"
