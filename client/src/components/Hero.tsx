@@ -33,7 +33,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
             </svg>
             <span className="text-base">Call Us Today!</span>
           </a>
-          <p className="mt-2 font-bubble px-3 py-1 rounded-full bg-white/80 text-primary inline-block">(555) 123-4567</p>
+          <p className="mt-2 font-bubble px-3 py-1 rounded-full bg-white/80 text-primary inline-block">(501) 470-8886</p>
         </div>
         
         {/* Removed paw trail at the bottom as requested */}

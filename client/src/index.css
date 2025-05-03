@@ -88,14 +88,14 @@
 }
 
 .cta-button {
-  @apply font-bubble px-16 py-3 text-white rounded-full text-lg transition duration-200;
+  @apply font-bubble px-8 py-2 text-white rounded-full text-base transition duration-200;
   background-color: #cc0000; /* Darker red */
-  box-shadow: 0 4px 14px rgba(204, 0, 0, 0.4), 0 0 0 2px rgba(204, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(204, 0, 0, 0.4), 0 0 0 2px rgba(204, 0, 0, 0.2);
   transform: translateY(0);
   transition: transform 0.2s, box-shadow 0.2s;
   position: relative;
   overflow: hidden;
-  min-width: 260px;
+  min-width: 180px;
 }
 
 .cta-button:hover {
