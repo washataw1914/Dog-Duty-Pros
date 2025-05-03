@@ -58,11 +58,11 @@ const regularServices: ServiceOption[] = [
   {
     id: 'premium-weekly',
     name: 'Premium Weekly',
-    description: 'Two weekly visits for homes with multiple dogs or larger yards.',
+    description: 'One weekly visit for homes with multiple dogs or larger yards.',
     price: 19.95,
     interval: 'per week',
     features: [
-      'Two visits per week',
+      'One visit per week',
       'Removal of all waste',
       'Text notification when complete',
       'Satisfaction guarantee',
