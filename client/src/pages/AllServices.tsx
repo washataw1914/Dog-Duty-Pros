@@ -33,8 +33,8 @@ interface ServiceOption {
 const spotSanitizationAddon = {
   id: 'spot-sanitization',
   name: 'Spot Sanitization',
-  description: 'Targeted sanitization for specific high-traffic or problem areas in your yard.',
-  price: 49.99,
+  description: 'Weekly targeted sanitization for specific high-traffic or problem areas in your yard.',
+  price: 2.00,
 };
 
 // Regular dog waste removal services
@@ -59,7 +59,7 @@ const regularServices: ServiceOption[] = [
     id: 'premium-weekly',
     name: 'Premium Weekly',
     description: 'Two weekly visits for homes with multiple dogs or larger yards.',
-    price: 24.99,
+    price: 19.95,
     interval: 'per week',
     features: [
       'Two visits per week',
@@ -84,8 +84,7 @@ const regularServices: ServiceOption[] = [
       'Satisfaction guarantee',
       'No long-term contracts'
     ],
-    popular: false,
-    addon: spotSanitizationAddon
+    popular: false
   },
   {
     id: 'quarterly',
@@ -100,8 +99,7 @@ const regularServices: ServiceOption[] = [
       'Text notification when complete',
       'Satisfaction guarantee'
     ],
-    popular: false,
-    addon: spotSanitizationAddon
+    popular: false
   }
 ];
 
@@ -111,7 +109,7 @@ const sanitizationServices: ServiceOption[] = [
     id: 'whole-yard',
     name: 'Whole Yard Sanitization',
     description: 'Complete sanitization service for your entire yard, eliminating odors and harmful bacteria.',
-    price: 89.99,
+    price: 19.95,
     features: [
       'Covers your entire yard area',
       'Eliminates harmful bacteria and parasites',
