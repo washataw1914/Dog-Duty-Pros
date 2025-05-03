@@ -207,7 +207,6 @@ export default function Checkout() {
   const { toast } = useToast();
 
   // Get service details from URL parameters
-  const serviceId = searchParams.get('serviceId');
   const serviceName = searchParams.get('serviceName') || 'Dog Duty Service';
   const amount = parseFloat(searchParams.get('amount') || '0');
 
