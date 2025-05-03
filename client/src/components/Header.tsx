@@ -45,16 +45,6 @@ export default function Header({
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
-            >
-              Home
-            </a>
             <Link 
               to="/services" 
               className="font-bubble px-3 py-1.5 text-xs text-white bg-destructive rounded-full hover:bg-red-600 shadow-sm transition duration-200"
@@ -114,17 +104,6 @@ export default function Header({
       {showMobileMenu && (
         <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
           <div className="px-4 py-3">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setShowMobileMenu(false);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="block py-2 text-gray-700 hover:text-primary"
-            >
-              Home
-            </a>
             <Link
               to="/services"
               onClick={() => setShowMobileMenu(false)}
