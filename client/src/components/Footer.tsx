@@ -1,4 +1,5 @@
 import { Phone, Mail, Clock } from "lucide-react";
+import { Link } from "wouter";
 
 interface FooterProps {
   onServicesClick: () => void;
@@ -220,12 +221,12 @@ export default function Footer({
               &copy; {new Date().getFullYear()} Dog Duty Pros. All Rights Reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition duration-200">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition duration-200">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition duration-200">
+              </Link>
+              <Link href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition duration-200">
                 Terms of Service
-              </a>
+              </Link>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition duration-200">
                 Sitemap
               </a>
