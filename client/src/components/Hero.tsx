@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 interface HeroProps {
   onGetQuoteClick: () => void;
 }
@@ -123,12 +125,19 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
               <p className="text-lg md:text-xl text-gray-700 mb-8 text-center">
                 Professional and reliable pet waste removal services that keep your yard pristine and enjoyable. <span className="font-bold" style={{ color: "#00A3F7" }}>Let us take care of your lawn while you enjoy more time doing what you love!</span>
               </p>
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center gap-4 mb-8">
+                <Link 
+                  to="/services"
+                  className="cta-button" 
+                  style={{ textDecoration: 'none' }}
+                >
+                  Get Started Now
+                </Link>
                 <button
                   onClick={onGetQuoteClick}
                   className="cta-button"
                 >
-                  Doo Business With Us
+                  Request a Quote
                 </button>
               </div>
               <div className="flex flex-col space-y-4">

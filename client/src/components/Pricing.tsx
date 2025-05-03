@@ -48,7 +48,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
                 </li>
               </ul>
               <Link 
-                to="/subscribe?serviceName=Basic%20Package&amount=14.95"
+                to="/services"
                 className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
                 Scoop There It Is!
@@ -91,7 +91,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
 
               </ul>
               <Link 
-                to="/subscribe?serviceName=Premium%20Package&amount=19.95"
+                to="/services"
                 className="font-bubble block text-center px-3 py-1.5 text-sm bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200 w-full"
               >
                 Doo Business With Us!
@@ -106,7 +106,7 @@ export default function Pricing({ onGetStartedClick }: PricingProps) {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              to="/checkout?serviceName=One-Time%20Cleanup&amount=49.99"
+              to="/services"
               className="font-bubble inline-block px-6 py-3 bg-destructive text-white rounded-full hover:bg-red-600 transition duration-200"
             >
               Pay for One-Time Cleanup
