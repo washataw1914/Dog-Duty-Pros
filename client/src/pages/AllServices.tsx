@@ -256,14 +256,125 @@ export default function AllServices() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-bubble text-3xl md:text-4xl text-center mb-3 text-primary">Our Services</h1>
-          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-gray-600 mb-4 max-w-2xl mx-auto">
             Choose from our range of professional dog waste removal and yard sanitization services.
           </p>
           
+          {/* Quick Pay Options */}
+          <div className="bg-gradient-to-b from-blue-50 to-white rounded-lg p-6 mb-8 max-w-3xl mx-auto border border-blue-100 shadow-sm">
+            <h2 className="font-bubble text-2xl text-center mb-6 text-primary">Popular Service Plans</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div 
+                className="bg-white rounded-lg p-5 border-2 border-blue-200 hover:border-primary hover:shadow-lg transition-all cursor-pointer"
+                onClick={() => {
+                  // Add Basic Weekly service
+                  const basicWeekly = allServices.find(s => s.id === 'basic-weekly');
+                  if (basicWeekly && !selectedServices.some(s => s.id === 'basic-weekly')) {
+                    setSelectedServices([...selectedServices, basicWeekly]);
+                  }
+                }}
+              >
+                <div className="flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="font-semibold text-lg text-primary mb-1">Basic Weekly</h3>
+                    <p className="text-sm text-gray-600 mb-3">One visit per week</p>
+                    <div className="text-2xl font-bold mb-3">$14.95<span className="text-xs text-gray-500"> /week</span></div>
+                    <ul className="text-xs text-gray-600 space-y-1 mb-4">
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>Removal of all waste</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>Text notification</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>No long-term contracts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <Button size="sm" className="w-full">Select Basic Plan</Button>
+                </div>
+              </div>
+              
+              <div 
+                className="bg-white rounded-lg p-5 border-2 border-primary shadow-md hover:shadow-lg transition-all cursor-pointer relative"
+                onClick={() => {
+                  // Add Premium Weekly service
+                  const premiumWeekly = allServices.find(s => s.id === 'premium-weekly');
+                  if (premiumWeekly && !selectedServices.some(s => s.id === 'premium-weekly')) {
+                    setSelectedServices([...selectedServices, premiumWeekly]);
+                  }
+                }}
+              >
+                <div className="absolute -top-3 left-0 right-0 mx-auto w-max px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full">
+                  Most Popular
+                </div>
+                <div className="flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="font-semibold text-lg text-primary mb-1">Premium Weekly</h3>
+                    <p className="text-sm text-gray-600 mb-3">For multiple dogs or larger yards</p>
+                    <div className="text-2xl font-bold mb-3">$19.95<span className="text-xs text-gray-500"> /week</span></div>
+                    <ul className="text-xs text-gray-600 space-y-1 mb-4">
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>One visit per week</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>Perfect for multiple dogs</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>Priority scheduling</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <Button size="sm" className="w-full bg-primary hover:bg-primary/90">Select Premium Plan</Button>
+                </div>
+              </div>
+              
+              <div 
+                className="bg-white rounded-lg p-5 border-2 border-blue-200 hover:border-primary hover:shadow-lg transition-all cursor-pointer"
+                onClick={() => {
+                  // Add One-Time Cleanup service
+                  const oneTimeCleanup = allServices.find(s => s.id === 'one-time-cleanup');
+                  if (oneTimeCleanup && !selectedServices.some(s => s.id === 'one-time-cleanup')) {
+                    setSelectedServices([...selectedServices, oneTimeCleanup]);
+                  }
+                }}
+              >
+                <div className="flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="font-semibold text-lg text-primary mb-1">One-Time Cleanup</h3>
+                    <p className="text-sm text-gray-600 mb-3">Complete yard cleanup</p>
+                    <div className="text-2xl font-bold mb-3">$49.99</div>
+                    <ul className="text-xs text-gray-600 space-y-1 mb-4">
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>No ongoing commitment</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>Perfect for special occasions</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-3 w-3 text-green-500 mr-1 flex-shrink-0 mt-0.5" />
+                        <span>Satisfaction guarantee</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <Button size="sm" className="w-full">Select One-Time Cleanup</Button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle className="text-xl">Build Your Custom Service Package</CardTitle>
-              <CardDescription>Select services to add to your package</CardDescription>
+              <CardTitle className="text-xl text-primary">Build Your Custom Service Package</CardTitle>
+              <CardDescription>Combine multiple services or add options to create your ideal package</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
@@ -381,20 +492,20 @@ export default function AllServices() {
                 </div>
                 
                 <Button
-                  className="w-full"
+                  className="w-full bg-primary hover:bg-primary-dark text-white py-6 text-lg"
                   size="lg"
                   onClick={handleProceedToCheckout}
                   disabled={isProcessing || selectedServices.length === 0}
                 >
                   {isProcessing ? (
                     <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
                       Processing...
                     </>
                   ) : (
                     <>
-                      Proceed to Checkout
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      Proceed to Checkout - ${calculateTotal()}
+                      <ArrowRight className="ml-2 h-5 w-5" />
                     </>
                   )}
                 </Button>
