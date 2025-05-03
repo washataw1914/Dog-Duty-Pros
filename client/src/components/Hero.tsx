@@ -131,7 +131,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
                   className="cta-button" 
                   style={{ textDecoration: 'none' }}
                 >
-                  Get Started Now
+                  Doo Business With Us
                 </Link>
                 <button
                   onClick={onGetQuoteClick}

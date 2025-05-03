@@ -56,6 +56,12 @@ export default function Header({
               Home
             </a>
             <Link 
+              to="/services" 
+              className="font-bubble px-3 py-1.5 text-xs text-white bg-destructive rounded-full hover:bg-red-600 shadow-sm transition duration-200"
+            >
+              Pay Now
+            </Link>
+            <Link 
               href="/services" 
               className="font-medium text-gray-700 hover:text-primary transition duration-200 px-4 py-2 rounded-lg hover:bg-gray-50"
             >
@@ -119,6 +125,13 @@ export default function Header({
             >
               Home
             </a>
+            <Link
+              to="/services"
+              onClick={() => setShowMobileMenu(false)}
+              className="block py-2 text-destructive font-bubble hover:text-red-600"
+            >
+              Pay Now
+            </Link>
             <Link 
               href="/services"
               onClick={() => setShowMobileMenu(false)}
