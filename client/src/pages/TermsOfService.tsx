@@ -99,9 +99,9 @@ export default function TermsOfService() {
           </p>
           
           <p className="mb-4">
-            <strong>Dog Duty Pros</strong><br />
-            Email: terms@dogdutypros.com<br />
-            Phone: (555) 123-4567
+            <strong>Dog Duty Pros LLC</strong><br />
+            Email: terms@dogduty.biz<br />
+            Phone: (501) 470-8886
           </p>
           
         </div>

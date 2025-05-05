@@ -90,8 +90,8 @@ export default function PrivacyPolicy() {
           
           <p className="mb-4">
             <strong>Dog Duty Pros</strong><br />
-            Email: privacy@dogdutypros.com<br />
-            Phone: (555) 123-4567
+            Email: privacy@dogduty.biz<br />
+            Phone: (501) 470-8886
           </p>
           
         </div>
