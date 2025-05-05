@@ -99,4 +99,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Dog Duty Pros - info@dogduty.biz
+Dog Duty Pros - info@dogduty.biz# Dog-Duty-Pros
