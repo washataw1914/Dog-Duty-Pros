@@ -159,6 +159,10 @@
 .accent-yellow-text {
   color: #F4F00F;
   font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3), 
+               -1px -1px 0 rgba(0, 0, 0, 0.3),  
+               1px -1px 0 rgba(0, 0, 0, 0.3),
+               -1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Fun decorative elements */
