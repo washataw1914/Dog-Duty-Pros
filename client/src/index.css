@@ -25,7 +25,7 @@
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 60 94% 51%; /* #F4F00F - Bright yellow accent to match logo */
+    --accent: 55 100% 45%; /* #E4D000 - Slightly darker yellow for better readability */
     --accent-foreground: 240 5.9% 10%;
     --destructive: 358 85% 50%; /* #e41e25 from logo */
     --destructive-foreground: 0 0% 98%;
@@ -152,7 +152,7 @@
 
 /* Yellow accent elements */
 .accent-yellow {
-  background-color: #F4F00F;
+  background-color: #E4D000;
   color: black;
 }
 
@@ -227,7 +227,7 @@
 
 .highlight-box {
   border: 2px dashed #00A3F7;
-  background-color: rgba(244, 240, 15, 0.1);
+  background-color: rgba(228, 208, 0, 0.1);
   border-radius: 12px;
   padding: 16px;
   position: relative;
@@ -238,7 +238,7 @@
   position: absolute;
   top: -15px;
   left: 20px;
-  background-color: #F4F00F;
+  background-color: #E4D000;
   color: #000;
   width: 30px;
   height: 30px;
@@ -260,7 +260,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color: #F4F00F;
+  background-color: #E4D000;
   color: #000;
   font-size: 0.7rem;
   font-weight: bold;

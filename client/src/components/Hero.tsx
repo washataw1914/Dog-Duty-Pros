@@ -112,7 +112,7 @@ export default function Hero({ onGetQuoteClick }: HeroProps) {
           </div>
           
           <h2 className="font-bubble text-2xl sm:text-3xl md:text-4xl mb-6 text-white px-2">
-            Taking A <span style={{ color: "#F4F00F" }}>Load Off</span> Your Lawn!
+            Taking A <span style={{ color: "#E4D000" }}>Load Off</span> Your Lawn!
           </h2>
         </div>
         
