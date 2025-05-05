@@ -10,7 +10,7 @@ export default function About() {
             
           </p>
           <p className="text-lg text-gray-700 mb-6">
-            We are a family-owned business dedicated to providing top-notch pet waste removal services to keep your yard clean and enjoyable. We are committed to excellence, reliability, and 100% customer satisfaction.
+            We are a family-owned business dedicated to providing top-notch pet waste removal services to keep your yard clean and both you and your pets happier. We are committed to excellence, reliability, and 100% customer satisfaction.
           </p>
           <p className="text-lg text-gray-700 mb-6">
             We're more than just pet waste removal experts. We're committed to making your life easier and your yard more enjoyable. That's the Dog Duty Pros promise!
