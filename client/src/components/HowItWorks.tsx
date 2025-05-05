@@ -23,33 +23,30 @@ export default function HowItWorks() {
             <div className="space-y-6">
               {/* Step 1 */}
               <div className="border-b border-gray-100 pb-4">
-                <div className="flex items-center mb-2">
-                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">1</div>
+                <div className="text-center mb-2">
                   <h3 className="font-bubble text-xl text-black">Schedule Today</h3>
                 </div>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center">
                   Click a few buttons and poof! Your dooty disaster is scheduled to disappear. <span className="accent-yellow-text">No more stepping in "surprises!"</span>
                 </p>
               </div>
 
               {/* Step 2 */}
               <div className="border-b border-gray-100 pb-4">
-                <div className="flex items-center mb-2">
-                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">2</div>
+                <div className="text-center mb-2">
                   <h3 className="font-bubble text-xl text-black">We Take The Load Off</h3>
                 </div>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center">
                   We promptly and efficiently clean up and thoroughly sanitize between clients. We send a text when finished of a picture of your locked gate ensuring that you know your furry friends are safely inside. <span className="accent-yellow-text">No duty left undone!</span>
                 </p>
               </div>
 
               {/* Step 3 */}
               <div>
-                <div className="flex items-center mb-2">
-                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2">3</div>
+                <div className="text-center mb-2">
                   <h3 className="font-bubble text-xl text-black">Enjoy Your Clean Yard</h3>
                 </div>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center">
                   <span className="accent-yellow-text">Go barefoot again!</span> Enjoy a sigh of relief knowing your yard is dooty free and we'll be back soon to keep it that way.
                 </p>
               </div>
